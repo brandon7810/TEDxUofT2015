@@ -1,9 +1,54 @@
 .container{
-	height:75%;
+	height:80%;
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
-.nva{
-	height:25%;
+
+.nav-boxes{
+	height:20%;
+	border-left: 3px solid #404444;
+	border-bottom: 3px solid #404444;
 }
 
+.nav-boxes .boxes{
+	margin:0px;
+	height:50%;
+}
+
+.nav-boxes .boxes li{
+	margin:0px;
+	height:100%;
+	background-color:#0F1647;
+	border: 3px solid #404444;
+	border-bottom:0px;
+	border-left:0px;
+	text-align:center;
+	padding-top:1.5%;
+	line-height: 100%;
+}
+
+.nav-boxes .boxes li a{
+	color:white;
+}
+
+
+/*Mobile view*/
+@media all and (max-width: 480px) {
+	.nav-boxes .boxes li{
+		padding-top:5%;
+	}
+}
+
+/*Tablet*/
+@media all and (min-width: 481px) and (max-width: 768px){
+  	.nav-boxes .boxes li{
+		padding-top:3%;
+	}
+}
+
+/*Small window*/
+@media all and (min-width: 769px) and (max-width: 966px){
+  	.nav-boxes .boxes li{
+		padding-top:2%;
+	}
+}
