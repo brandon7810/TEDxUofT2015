@@ -24,6 +24,10 @@ angular.module('tedxUofT2015App', [
         templateUrl: 'views/conference.html',
         controller: 'MainCtrl'
       })
+      .when('/speakers', {
+        templateUrl: 'views/speakers.html',
+        controller: 'MainCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
