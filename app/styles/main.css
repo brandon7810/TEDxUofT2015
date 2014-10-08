@@ -38,6 +38,14 @@
 	color:white;
 }
 
+#trigger-overlay{
+	position: fixed;
+	top: 0;
+	right: 2.5%;
+	z-index: 10;
+	margin: 5px;
+}
+
 /* main.html */
 .large-header {
 	position: relative;
@@ -86,3 +94,6 @@
 		padding-top:2%;
 	}
 }
+
+
+

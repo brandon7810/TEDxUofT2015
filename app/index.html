@@ -17,7 +17,9 @@
     <!-- build:css({.tmp,app}) styles/main.css -->
       <link rel="stylesheet" href="styles/normalize.css">
       <link rel="stylesheet" href="styles/foundation.min.css">
+	  <link rel="stylesheet" href="styles/overlay-menu.css">
       <link rel="stylesheet" href="styles/main.css">
+	  
     <!-- endbuild -->
   </head>
   <body ng-app="tedxUofT2015App">
@@ -26,6 +28,12 @@
     <![endif]-->
 		<!-- <div class="header"></div> -->
 
+		
+	<div class="header">
+		<button id="trigger-overlay" type="button">Open Overlay</button>
+	<div>
+	
+	
     <div class="container"  ng-view="">
 	</div>
 	
@@ -43,6 +51,19 @@
 			<li><a ng-href="#/conference">Conference</a></li>
 		</ul>
 	</div>
+	
+	<div class="overlay overlay-hugeinc">
+			<button type="button" class="overlay-close">Close</button>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Work</a></li>
+					<li><a href="#">Clients</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
 	
 	<div class="footer">
 		<span>Licence<span>
@@ -81,6 +102,9 @@
         <script src="scripts/foundation.min.js"></script>
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+		<script src="scripts/plugins/OverlayMenu/modernizr.custom.js"></script>
+		<script src="scripts/plugins/OverlayMenu/classie.js"></script>
+		<script src="scripts/plugins/OverlayMenu/demo1.js"></script>
         <!-- endbuild -->
 </body>
 </html>

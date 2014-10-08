@@ -27,3 +27,6 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 .tmp/
+.tmp/styles/foundation.min.csss
+.tmp/styles/main.css
+.tmp/styles/normalize.css
