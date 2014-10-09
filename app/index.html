@@ -19,6 +19,8 @@
       <link rel="stylesheet" href="styles/foundation.min.css">
 	  <link rel="stylesheet" href="styles/overlay-menu.css">
       <link rel="stylesheet" href="styles/main.css">
+	  <link rel="stylesheet" href="styles/font.css">
+	  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300, 400,600,800' rel='stylesheet' type='text/css'>
 	  
     <!-- endbuild -->
   </head>
@@ -33,41 +35,46 @@
 		<button id="trigger-overlay" type="button">Open Overlay</button>
 	<div>
 	
-	
-    <div class="container"  ng-view="">
-	</div>
-	
-	<div class="nav-boxes"> 
-		<ul class="small-block-grid-4 medium-block-grid-4 large-block-grid-4 boxes">
-			<li><a ng-href="/">Main</a></li>
-			<li><a ng-href="#/about">About</a></li>
-			<li><a ng-href="#/speakers">Speakers</a></li>
-			<li><a ng-href="#/conference">Conference</a></li>
-		</ul>
-		<ul class="small-block-grid-4 medium-block-grid-4 large-block-grid-4 boxes">
-			<li><a ng-href="/">Main</a></li>
-			<li><a ng-href="#/about">About</a></li>
-			<li><a ng-href="#/speakers">Speaker</a></li>
-			<li><a ng-href="#/conference">Conference</a></li>
-		</ul>
+    <div class="container" ng-view="">
 	</div>
 	
 	<div class="overlay overlay-hugeinc">
-			<button type="button" class="overlay-close">Close</button>
-			<nav>
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Work</a></li>
-					<li><a href="#">Clients</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-	
-	<div class="footer">
-		<span>Licence<span>
+		<button type="button" class="overlay-close">Close</button>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Conference</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Videos</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Nomination</a></li>
+			</ul>
+		</nav>
 	</div>
+	
+	<div class="row">
+		<div class="nav-boxes"> 
+			<ul class="small-block-grid-2 medium-block-grid-4 boxes">
+				<li><a ng-href="/"><h2>What's New</h2></a></li>
+				<li><a ng-href="#/about"><h2>What's New</h2></a></li>
+				<li><a ng-href="#/speakers"><h2>2015 Conference</h2>
+				<li><a ng-href="#/conference">
+					<h2>Know of an influential Speaker?</h2>
+					<h3>Nominate them here</h3></a></li>
+					</a></li>
+			</ul>
+			<ul class="small-block-grid-2 medium-block-grid-4 boxes">
+				<li><a ng-href="/"><h2>What's New</h2></a></li>
+				<li><a ng-href="#/about"><h2>What's New</h2></a></li>
+				<li><a ng-href="#/speakers"><h2>What's New</h2></a></li>
+				<li><a ng-href="#/conference"><h2>What's New</h2></a></li>
+			</ul>
+		</div>
+
+		<div class="small-12 columns footer">
+			<p><span>This independent TEDx event is operated under license from TED.<span></p>
+		</div>
+	</div>	
 	
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->

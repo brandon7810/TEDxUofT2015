@@ -6,36 +6,34 @@
 
 .nav-boxes{
 	height:17%;
-	border-left: 3px solid #404444;
 	border-bottom: 3px solid #404444;
 }
 
 .nav-boxes .boxes{
 	margin:0px;
-	height:50%;
 }
 
 .nav-boxes .boxes li{
 	margin:0px;
 	height:100%;
-	background-color:#0F1647;
-	border: 3px solid #404444;
+	background-color:#233180;
+	border: 2px solid #31459B;
 	border-bottom:0px;
 	border-left:0px;
 	text-align:center;
-	padding-top:1.5%;
+	padding: 3% 2%;
 	line-height: 100%;
 }
 
-.nav-boxes .boxes li a{
-	color:white;
-}
-
 .footer {
-	height:3%;
+	height:8vw;
 	background-color:black;
 	text-align: center;
 	color:white;
+}
+
+.footer p {
+	padding-top: 3%;
 }
 
 #trigger-overlay{
