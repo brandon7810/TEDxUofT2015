@@ -16,13 +16,37 @@
 .nav-boxes .boxes li{
 	margin:0px;
 	height:100%;
-	background-color:#233180;
+	background-color:;
 	border: 2px solid #31459B;
 	border-bottom:0px;
 	border-left:0px;
 	text-align:center;
 	padding: 3% 2%;
 	line-height: 100%;
+}
+
+.boxdarkblue {
+	background-color: #233180;
+}
+
+.boxblue {
+	background-color: #3461D4;
+}
+
+.boxred {
+	background-color: #E62B1E;
+}
+
+.boxpink {
+	background-color: #E62C50;
+}
+
+.boxgreen {
+	background-color: #25A3A2;
+}
+
+.boxyellow {
+	background-color: #FFCD3D;
 }
 
 .footer {
@@ -68,7 +92,7 @@
 }
 
 .large-header {
-	background-image: url('../img/demo-1-bg.jpg');
+	background-image: url('../img/constellation.png');
 }
 /*END main.html */
 
