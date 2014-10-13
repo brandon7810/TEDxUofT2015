@@ -33,47 +33,46 @@
 		
 	<div class="header">
 		<button id="trigger-overlay" type="button">Open Overlay</button>
-	<div>
-	
+	</div>
     <div class="container" ng-view="">
 	</div>
-	
 	<div class="overlay overlay-hugeinc">
 		<button type="button" class="overlay-close">Close</button>
 		<nav>
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Conference</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Videos</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">Nomination</a></li>
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="views/conference.html">Conference</a></li>
+				<li><a href="views/about.html">About</a></li>
+				<li><a href="views/videos.html">Videos</a></li>
+				<li><a href="views/nomination.html">Nomination</a></li>
 			</ul>
 		</nav>
 	</div>
 	
 	<div class="row">
 		<div class="nav-boxes"> 
-			<ul class="small-block-grid-2 medium-block-grid-4 boxes">
-				<li class="boxdarkblue"><a ng-href="/">
+			<ul class="small-block-grid-2 medium-block-grid-4 boxes data-equalizer">
+				<li class="boxdarkblue" data-equalizer-watch><a ng-href="/">
 					<h3>Know of an influential Speaker?</h3>
 					<h4>Nominate them here</h4></a></li>
-				<li class="boxblue"><a ng-href="#/about">
+				<li class="boxblue" data-equalizer-watch><a ng-href="#/about">
 					<h3>Follow us on Facebook, Twitter and Instagram</h3>
 					<h4>Nominate them here</h4></a></li>
-				<li class="boxred"><a ng-href="#/speakers">
+				<li class="boxred" data-equalizer-watch><a ng-href="#/speakers">
 					<h3>TEDxUofT 2015 Conference</h3>
 					<h4>Coming soon</h4></a></li>
-				<li class="boxblue"><a ng-href="#/conference">
+				<li class="boxblue" data-equalizer-watch><a ng-href="#/conference">
 					<h3>Know of an influential Speaker?</h3>
 					<h4>Nominate them here</h4></a></li>
 					</a></li>
 			</ul>
-			<ul class="small-block-grid-2 medium-block-grid-4 boxes">
-				<li class="boxblue"><a ng-href="/"><h2>What's New</h2></a></li>
-				<li class="boxpink"><a ng-href="#/about"><h2>What's New</h2></a></li>
-				<li class="boxdarkblue"><a ng-href="#/speakers"><h2>What's New</h2></a></li>
-				<li class="boxgreen"><a ng-href="#/conference"><h2>What's New</h2></a></li>
+			<ul class="small-block-grid-2 medium-block-grid-2 boxes">
+				<li class="boxpink" data-equalizer-watch><a ng-href="#/about">
+					<h3>What is TEDx?</h3>
+					<p>In the spirit of ideas worth spreading, TED has created a program called TEDx. <br> TEDx is a program of local, self-organized events that bring people together to share a TED-like experience.</p></a></li>
+				<li class="boxblue" data-equalizer-watch><a ng-href="/">
+					<h3>What is TEDxUofT</h3>
+					<p>An open ended and all encompassing theme that reflects the various fields of study of our speakers, the many skills and interests of 82,000 students at the University of Toronto’s three campuses, and the endless outcomes of ideas worth sharing.</p></a></li>
 			</ul>
 		</div>
 
