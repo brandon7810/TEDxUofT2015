@@ -8,14 +8,10 @@ body {
 }
 
 .footer {
-	height:8vw;
+	height:5vw;
 	background-color:black;
 	text-align: center;
 	color:white;
-}
-
-.footer p {
-	padding-top: 3%;
 }
 
 #trigger-overlay{
@@ -25,6 +21,17 @@ body {
 	z-index: 10;
 	margin: 5px;
 }
+
+/*Social Media */
+.socialmedia {
+	height: 12vw;
+	padding-top: 2vw;
+}
+
+.socialicon {
+	padding: 3vw;
+	opacity: .8;}
+	.socialicon:hover {opacity: 1;}
 
 /*Home Page*/
 .container{
@@ -66,15 +73,13 @@ body {
 
 .aboutBody {
 	background: #000000; /* Old browsers */
-background: -moz-linear-gradient(top,  #000000 36%, #233180 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(36%,#000000), color-stop(100%,#233180)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #000000 36%,#233180 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #000000 36%,#233180 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #000000 36%,#233180 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #000000 36%,#233180 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#233180',GradientType=0 ); /* IE6-9 */
-
-
+		background: -moz-linear-gradient(top,  #000000 36%, #233180 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(36%,#000000), color-stop(100%,#233180)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #000000 36%,#233180 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #000000 36%,#233180 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #000000 36%,#233180 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #000000 36%,#233180 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#233180',GradientType=0 ); /* IE6-9 */
 }
 
 .aboutTitle {
@@ -85,6 +90,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 .aboutBodyText {
 	padding: 8vw 16vw;
 	text-align: center;
+}
+
+.aboutTitleTEDx {
+	margin-bottom: 0;
 }
 
 .aboutTEDxUofT {
