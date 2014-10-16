@@ -17,6 +17,7 @@
     <!-- build:css({.tmp,app}) styles/main.css -->
       <link rel="stylesheet" href="styles/normalize.css">
       <link rel="stylesheet" href="styles/foundation.min.css">
+	  <link rel="stylesheet" href="styles/foundation-icons/foundation-icons.css" />
 	  <link rel="stylesheet" href="styles/overlay-menu.css">
       <link rel="stylesheet" href="styles/main.css">
 	  <link rel="stylesheet" href="styles/font.css">
@@ -32,7 +33,7 @@
 
 		
 	<div class="header">
-		<button id="trigger-overlay" type="button">Open Overlay</button>
+		<button class="small" id="trigger-overlay" type="button"><i class="fi-list large"></i> </button>
 	</div>
 	
     <div class="container" ng-view="">
@@ -40,39 +41,39 @@
 	
 	
 	<div class="overlay overlay-hugeinc" ng-controller = "MainCtrl">
-		<button type="button" class="overlay-close" id="close_overlay"">Close</button>
+		<button type="button" class="overlay-close" id="close_overlay">Close</button>
 		<nav>
 			<ul>
-				<li><a href="#/" ng-click="closeOverlay()">Home</a></li>
-				<li><a href="#/conference"  ng-click="closeOverlay()">Conference</a></li>
-				<li><a href="#/about"  ng-click="closeOverlay()">About</a></li>
-				<li><a href="#/videos" ng-click="closeOverlay()">Videos</a></li>
-				<li><a href="#/nomination" ng-click="closeOverlay()">Nomination</a></li>
+				<li><a href="#/" ng-click="overlayMenuClick()">Home</a></li>
+				<li><a href="#/conference"  ng-click="overlayMenuClick()">Conference</a></li>
+				<li><a href="#/about"  ng-click="overlayMenuClick()">About</a></li>
+				<li><a href="#/videos" ng-click="overlayMenuClick()">Videos</a></li>
+				<li><a href="#/nomination" ng-click="overlayMenuClick()">Nomination</a></li>
 			</ul>
 		</nav>
 	</div>
 	<div class="row" ng-controller = "MainCtrl">
 		<div class="nav-boxes"> 
 			<ul class="small-block-grid-2 medium-block-grid-4 boxes data-equalizer">
-				<li class="boxdarkblue" data-equalizer-watch><a ng-href="/">
+				<li class="boxdarkblue" data-equalizer-watch><a href="#/">
 					<h3>Know of an influential Speaker?</h3>
 					<h4>Nominate them here</h4></a></li>
-				<li class="boxblue" data-equalizer-watch><a ng-href="#/about">
+				<li class="boxblue" data-equalizer-watch><a href="#/about">
 					<h3>Follow us on Facebook, Twitter and Instagram</h3>
 					<h4>Nominate them here</h4></a></li>
-				<li class="boxred" data-equalizer-watch><a ng-href="#/speakers">
+				<li class="boxred" data-equalizer-watch><a href="#/speakers">
 					<h3>TEDxUofT 2015 Conference</h3>
 					<h4>Coming soon</h4></a></li>
-				<li class="boxblue" data-equalizer-watch><a ng-href="#/conference">
+				<li class="boxblue" data-equalizer-watch><a href="#/conference">
 					<h3>Know of an influential Speaker?</h3>
 					<h4>Nominate them here</h4></a></li>
 					</a></li>
 			</ul>
 			<ul class="small-block-grid-2 medium-block-grid-2 boxes">
-				<li class="boxpink" data-equalizer-watch><a ng-href="#/about">
+				<li class="boxpink" data-equalizer-watch>
 					<h3>What is TEDx?</h3>
 					<p>In the spirit of ideas worth spreading, TED has created a program called TEDx. <br> TEDx is a program of local, self-organized events that bring people together to share a TED-like experience.</p></a></li>
-				<li class="boxblue" data-equalizer-watch><a ng-href="/">
+				<li class="boxblue" data-equalizer-watch>
 					<h3>What is TEDxUofT</h3>
 					<p>An open ended and all encompassing theme that reflects the various fields of study of our speakers, the many skills and interests of 82,000 students at the University of Toronto’s three campuses, and the endless outcomes of ideas worth sharing.</p></a></li>
 			</ul>
@@ -81,9 +82,9 @@
 	<div class="row" ng-controller = "MainCtrl">
 		<div class="small-12 medium-8 large-6 columns small-centered socialmedia">
 			<ul class="small-block-grid-3">
-				<li><a href="#"><img src="/img/TED15_Twitter_icon.png" class="socialicon"></a></li>
-				<li><a href="#"><img src="/img/TED15_Fb_icon.png" class="socialicon"></a></li>
-				<li><a href="#"><img src="/img/TED15_Instagram_icon.png" class="socialicon"></a></li>
+				<li><a href="https://twitter.com/TEDxUofT" target="_blank"><img src="/img/TED15_Twitter_icon.png" class="socialicon"></a></li>
+				<li><a href="https://www.facebook.com/tedxuoft" target="_blank"><img src="/img/TED15_Fb_icon.png" class="socialicon"></a></li>
+				<li><a href="http://instagram.com/tedxuoft" target="_blank"><img src="/img/TED15_Instagram_icon.png" class="socialicon"></a></li>
 			</ul>
 		</div>
 		<div class="small-12 columns footer">
