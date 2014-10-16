@@ -34,22 +34,24 @@
 	<div class="header">
 		<button id="trigger-overlay" type="button">Open Overlay</button>
 	</div>
+	
     <div class="container" ng-view="">
 	</div>
-	<div class="overlay overlay-hugeinc">
-		<button type="button" class="overlay-close">Close</button>
+	
+	
+	<div class="overlay overlay-hugeinc" ng-controller = "MainCtrl">
+		<button type="button" class="overlay-close" id="close_overlay"">Close</button>
 		<nav>
 			<ul>
-				<li><a href="/index.html">Home</a></li>
-				<li><a href="views/conference.html">Conference</a></li>
-				<li><a href="views/about.html">About</a></li>
-				<li><a href="views/videos.html">Videos</a></li>
-				<li><a href="views/nomination.html">Nomination</a></li>
+				<li><a href="#/" ng-click="closeOverlay()">Home</a></li>
+				<li><a href="#/conference"  ng-click="closeOverlay()">Conference</a></li>
+				<li><a href="#/about"  ng-click="closeOverlay()">About</a></li>
+				<li><a href="#/videos" ng-click="closeOverlay()">Videos</a></li>
+				<li><a href="#/nomination" ng-click="closeOverlay()">Nomination</a></li>
 			</ul>
 		</nav>
 	</div>
-	
-	<div class="row">
+	<div class="row" ng-controller = "MainCtrl">
 		<div class="nav-boxes"> 
 			<ul class="small-block-grid-2 medium-block-grid-4 boxes data-equalizer">
 				<li class="boxdarkblue" data-equalizer-watch><a ng-href="/">
@@ -76,7 +78,7 @@
 			</ul>
 		</div>
 	</div>	
-	<div class="row">
+	<div class="row" ng-controller = "MainCtrl">
 		<div class="small-12 medium-8 large-6 columns small-centered socialmedia">
 			<ul class="small-block-grid-3">
 				<li><a href="#"><img src="/img/TED15_Twitter_icon.png" class="socialicon"></a></li>

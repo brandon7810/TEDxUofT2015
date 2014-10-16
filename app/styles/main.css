@@ -35,8 +35,7 @@ body {
 
 /*Home Page*/
 .container{
-	height:99%;
-	overflow-y: scroll;
+	overflow-y: hidden;
 	overflow-x: hidden;
 }
 

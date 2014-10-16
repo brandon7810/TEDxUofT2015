@@ -2,9 +2,10 @@
 
 angular.module('tedxUofT2015App')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+	
+    $scope.closeOverlay = function(){
+		$('#close_overlay').click();
+	};
+	
+});
+  
