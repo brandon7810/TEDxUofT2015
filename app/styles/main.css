@@ -142,21 +142,39 @@ body {
 }
 /*END main.html */
 
-
+/*video.html*/
 .videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
 	height: 0;
+	margin-bottom: -16%;
 }
 .videoWrapper iframe {
 	position: absolute;
 	top: 0;
-	left: 10%;
-	width: 80%;
-	height: 80%;
+	left: 15%;
+	width: 70%;
+	height: 70%;
 }
 
+.video_box{
+	height:100px;
+	border-right: 1px solid black;
+	cursor:pointer;
+}
+
+.video_buttons {
+    display: flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column; /* column | row */
+	color:white;
+	background-color:rgba(0, 0, 0, 1) !important; 
+	border:0px solid black !important;
+}
+
+/*END video.html*/
 
 /*Mobile view*/
 @media all and (max-width: 480px) {
