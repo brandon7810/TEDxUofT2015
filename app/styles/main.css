@@ -52,8 +52,28 @@ body {
 	overflow-x: hidden;
 }
 
+.Newbox {
+	background-color: #3461D4;
+	width: 100%;
+	text-align: center;
+	padding: 10vw 3vw;
+	padding-bottom: 0;
+}
+
+.NewboxTitle {
+	font-size: 6rem;
+}
+
+.NewboxText {
+	padding: 0vw 20vw;
+}
+
+.nav-boxes {
+	padding-top: 3vw;
+}
+
 .nav-boxes .boxes{
-	margin:0px;
+	margin: 0px;
 }
 
 .nav-boxes .boxes li{
