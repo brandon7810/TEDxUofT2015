@@ -7,6 +7,10 @@ body {
 	text-align: left;
 }
 
+.cityimg {
+	width: 100vw;
+}
+
 .compass {
 	background-image: url(/img/compass.png);
 	background-size: contain;
@@ -144,6 +148,9 @@ body {
 	.abcover4 {background-image: url(/img/UT3.jpg);}
 	.abcover5 {background-image: url(/img/UT4.jpg);}
 
+.uoftstar {
+	width: 40%;
+}
 
 /* main.html */
 .large-header {
