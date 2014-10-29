@@ -5,22 +5,24 @@
 			<iframe src="{{trustSrc(videoLinkPlaying)}}" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</div>
-	<div class="small-12 columns">
-		<div class="small-1 columns">
-			<a href="javascript:void(0)" class="button video_box video_buttons" ng-disabled="currentIndexFirstDisplayedVideo==0" ng-click="leftNaviVideo()">
-				<i class="fi-arrow-left large"></i>
-			</a>
-		</div>
-		
-		<div class="small-10 columns">
-			<div class="small-3 columns video_box text-center" ng-repeat="video in displayVideos" back-img="http://img.youtube.com/vi/{{video['id']}}/maxresdefault.jpg" ng-click="playVideo(currentIndexFirstDisplayedVideo+$index)">
-			</div>
-		</div>
-		
-		<div class="small-1 columns">
-			<a href="javascript:void(0)" class="button video_box video_buttons" ng-disabled="currentIndexFirstDisplayedVideo==videos.length-4" ng-click="rightNaviVideo()">
-				<i class="fi-arrow-right large"></i>
-			</a>
-		</div>
+</div>
+	
+<div class="row">
+	<div class="small-10 columns displayVideoInfo">
+		<h3>{{displayVideoInfo.speaker}}</h3>
+		<h4>{{displayVideoInfo.title}}</h4>
+		<h6>{{displayVideoInfo.description}}</h6>
 	</div>
+</div>	
+
+
+<div class="row collapse">
+	<div class="large-3 small-6 columns left text-center" ng-repeat="video in displayVideos">
+		<div class="video_box" back-img="http://img.youtube.com/vi/{{video['id']}}/maxresdefault.jpg" 
+		ng-click="playVideo(currentIndexFirstDisplayedVideo+$index)">
+			<h3>{{video.speaker}}</h3>
+			<h6>{{video.title}}</h6>
+		</div>
+	</div> 	
+
 </div>	

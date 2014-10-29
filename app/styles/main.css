@@ -186,30 +186,34 @@ body {
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
 	height: 0;
-	margin-bottom: -16%;
+	margin-bottom: -20%;
 }
 .videoWrapper iframe {
 	position: absolute;
 	top: 0;
 	left: 15%;
-	width: 70%;
-	height: 70%;
+	width: 65%;
+	height: 65%;
 }
 
+.displayVideoInfo{
+	padding-left:15%;
+}
+	
 .video_box{
-	height:100px;
-	border-right: 1px solid black;
+	height:200px;
+	border: 1px solid white;
 	cursor:pointer;
 }
 
-.video_buttons {
-    display: flex;
-    justify-content:center;
-    align-content:center;
-    flex-direction:column; /* column | row */
-	color:white;
-	background-color:rgba(0, 0, 0, 1) !important; 
-	border:0px solid black !important;
+.video_box h3{
+	margin-top:10%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.video_box h6{
+	background-color: rgba(0, 0, 0, 0.9);
+	color: rgb(150, 150, 150);
 }
 
 /*END video.html*/
