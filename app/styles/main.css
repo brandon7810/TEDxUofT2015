@@ -218,6 +218,26 @@ body {
 
 /*END video.html*/
 
+/*nomination.html*/
+.step-button{
+	text-align:center;
+	position:relative;
+	border-radius: 25px;
+	background-color: blue;
+	width:50px;
+	height:50px;
+	margin: 1% 5%;	
+}
+.step-button-text { 
+	position:absolute; 
+	top:30%;	
+	margin-left:0.3em;
+	color:white;
+}
+
+
+/*END nomination.html*/
+
 /*Mobile view*/
 @media all and (max-width: 480px) {
 	.nav-boxes .boxes li{
