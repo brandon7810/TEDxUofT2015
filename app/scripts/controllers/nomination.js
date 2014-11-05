@@ -25,6 +25,13 @@ angular.module('tedxUofT2015App')
 	  localStorageService.set('submission', $scope.submission);
 	}, true);
 	
+	
+	$scope.setStepIndex = function(index){
+		if($scope.stepIndex.value != 6){
+			$scope.stepIndex.value = index;
+		}
+	};
+	
 	$scope.stepIndex = {value: 0};
 	
 	$scope.nextStep = function(){
@@ -33,7 +40,7 @@ angular.module('tedxUofT2015App')
 		if($scope.stepIndex.value == 6){
 			localStorageService.clearAll();
 			
-			 $http.post('php/nomination_engine.php', $scope.submission).
+			 $http.post('../../php/nomination_engine.php', $scope.submission).
 			  success(function(data, status, headers, config) {
 				$('#stepSuccess').hide();
 				$('#stepFailure').hide();

@@ -1,65 +1,65 @@
 <div class="row">
-	<div class="small-2 columns step-button-undone" ng-if="stepIndex.value<1">
+	<div class="small-2 columns step-button-undone" ng-if="stepIndex.value<1" ng-click="setStepIndex(0)">
 		<div class="step-button-text">
 			X
 		</div>
 	</div>	
-	<div class="small-2 columns step-button-done" ng-if="stepIndex.value>0">
+	<div class="small-2 columns step-button-done" ng-if="stepIndex.value>0" ng-click="setStepIndex(0)">
 		<div class="step-button-text">
 			X
 		</div>
 	</div>
 	
-	<div class="small-2 columns step-button-undone" ng-if="stepIndex.value<2">
+	<div class="small-2 columns step-button-undone" ng-if="stepIndex.value<2"  ng-click="setStepIndex(1)">
 		<div class="step-button-text">
 				X
 		</div>
 	</div>
-	<div class="small-2 columns step-button-done" ng-if="stepIndex.value>1">
+	<div class="small-2 columns step-button-done" ng-if="stepIndex.value>1" ng-click="setStepIndex(1)">
 		<div class="step-button-text">
 				X
 		</div>
 	</div>
 	
-	<div class="small-2 columns step-button-undone" ng-if="stepIndex.value<3">
+	<div class="small-2 columns step-button-undone" ng-if="stepIndex.value<3" ng-click="setStepIndex(2)">
 		<div class="step-button-text">
 			X
 		</div>
 	</div>
-	<div class="small-2 columns step-button-done" ng-if="stepIndex.value>2">
-		<div class="step-button-text">
-			X
-		</div>
-	</div>
-	
-	<div class="small-2 columns step-button-undone" ng-if="stepIndex.value<4">
-		<div class="step-button-text">
-			X
-		</div>
-	</div>
-	<div class="small-2 columns step-button-done" ng-if="stepIndex.value>3">
+	<div class="small-2 columns step-button-done" ng-if="stepIndex.value>2" ng-click="setStepIndex(2)">
 		<div class="step-button-text">
 			X
 		</div>
 	</div>
 	
-	<div class="small-2 columns step-button-undone" ng-if="stepIndex.value<5">
+	<div class="small-2 columns step-button-undone" ng-if="stepIndex.value<4" ng-click="setStepIndex(3)">
 		<div class="step-button-text">
 			X
 		</div>
 	</div>
-	<div class="small-2 columns step-button-done" ng-if="stepIndex.value>4">
+	<div class="small-2 columns step-button-done" ng-if="stepIndex.value>3" ng-click="setStepIndex(3)">
 		<div class="step-button-text">
 			X
 		</div>
 	</div>
 	
-	<div class="small-2 columns end step-button-undone" ng-if="stepIndex.value<6">
+	<div class="small-2 columns step-button-undone" ng-if="stepIndex.value<5" ng-click="setStepIndex(4)">
 		<div class="step-button-text">
 			X
 		</div>
 	</div>
-	<div class="small-2 columns end step-button-done" ng-if="stepIndex.value>5">
+	<div class="small-2 columns step-button-done" ng-if="stepIndex.value>4" ng-click="setStepIndex(4)">
+		<div class="step-button-text">
+			X
+		</div>
+	</div>
+	
+	<div class="small-2 columns end step-button-undone" ng-if="stepIndex.value<6" ng-click="setStepIndex(5)">
+		<div class="step-button-text">
+			X
+		</div>
+	</div>
+	<div class="small-2 columns end step-button-done" ng-if="stepIndex.value>5" ng-click="setStepIndex(5)">
 		<div class="step-button-text">
 			X
 		</div>
