@@ -219,7 +219,7 @@ body {
 /*END video.html*/
 
 /*nomination.html*/
-.step-button{
+.step-button-undone{
 	text-align:center;
 	position:relative;
 	border-radius: 25px;
@@ -227,14 +227,27 @@ body {
 	width:50px;
 	height:50px;
 	margin: 1% 5%;	
+	opacity: 0.5;
 }
+
+.step-button-done{
+	text-align:center;
+	position:relative;
+	border-radius: 25px;
+	background-color: blue;
+	width:50px;
+	height:50px;
+	margin: 1% 5%;	
+	opacity: 1;
+}
+
+
 .step-button-text { 
 	position:absolute; 
 	top:30%;	
 	margin-left:0.3em;
 	color:white;
 }
-
 
 /*END nomination.html*/
 

@@ -4,8 +4,15 @@ angular.module('tedxUofT2015App', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'LocalStorageModule'
 ])
+
+.config(['localStorageServiceProvider', function(localStorageServiceProvider){
+  localStorageServiceProvider.setPrefix('ls');
+}])
+
+
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -26,11 +33,11 @@ angular.module('tedxUofT2015App', [
       })
 	  .when('/videos', {
         templateUrl: 'views/videos.html',
-        controller: 'MainCtrl'
+        controller: 'VideoCtrl'
       })
 	  .when('/nomination', {
         templateUrl: 'views/nomination.html',
-        controller: 'MainCtrl'
+        controller: 'NominationCtrl'
       })
       .otherwise({
         redirectTo: '/'

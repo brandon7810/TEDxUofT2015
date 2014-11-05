@@ -1,39 +1,75 @@
 <div class="row">
-	<div class="small-2 columns step-button">
+	<div class="small-2 columns step-button-undone" ng-if="stepIndex.value<1">
+		<div class="step-button-text">
+			X
+		</div>
+	</div>	
+	<div class="small-2 columns step-button-done" ng-if="stepIndex.value>0">
 		<div class="step-button-text">
 			X
 		</div>
 	</div>
-	<div class="small-2 columns step-button">
-	<div class="step-button-text">
-			X
+	
+	<div class="small-2 columns step-button-undone" ng-if="stepIndex.value<2">
+		<div class="step-button-text">
+				X
 		</div>
 	</div>
-	<div class="small-2 columns step-button">
+	<div class="small-2 columns step-button-done" ng-if="stepIndex.value>1">
+		<div class="step-button-text">
+				X
+		</div>
+	</div>
+	
+	<div class="small-2 columns step-button-undone" ng-if="stepIndex.value<3">
 		<div class="step-button-text">
 			X
 		</div>
 	</div>
-	<div class="small-2 columns step-button">
+	<div class="small-2 columns step-button-done" ng-if="stepIndex.value>2">
 		<div class="step-button-text">
 			X
 		</div>
 	</div>
-	<div class="small-2 columns step-button">
+	
+	<div class="small-2 columns step-button-undone" ng-if="stepIndex.value<4">
 		<div class="step-button-text">
 			X
 		</div>
 	</div>
-	<div class="small-2 columns end step-button">
+	<div class="small-2 columns step-button-done" ng-if="stepIndex.value>3">
+		<div class="step-button-text">
+			X
+		</div>
+	</div>
+	
+	<div class="small-2 columns step-button-undone" ng-if="stepIndex.value<5">
+		<div class="step-button-text">
+			X
+		</div>
+	</div>
+	<div class="small-2 columns step-button-done" ng-if="stepIndex.value>4">
+		<div class="step-button-text">
+			X
+		</div>
+	</div>
+	
+	<div class="small-2 columns end step-button-undone" ng-if="stepIndex.value<6">
+		<div class="step-button-text">
+			X
+		</div>
+	</div>
+	<div class="small-2 columns end step-button-done" ng-if="stepIndex.value>5">
 		<div class="step-button-text">
 			X
 		</div>
 	</div>
 </div>
-<br><br>
-<div class="row">
+<br><br><br><br>
+
+<div class="row" ng-if="stepIndex.value==0" >
 	<div class="small-8  small-centered columns">
-		<h4>Hi there!<h4>
+		<h4>Hi there!</h4>
 		<p>As a tri-campus initiative, TEDxUofT aims to showcase talent from the University of Toronto. 
 		If you have come across fascinating work, stories, or ideas of individuals from UofT, whether they 
 		are faculty, staff, students, or alumni, please don’t hesitate to nominate them to speak at the TEDxUofT2015
@@ -42,4 +78,130 @@
 		</p>
 		<p>Regards, <br>The TEDxUofT Team</p>
 	</div>
-<div>
+</div>
+
+<div class="row" ng-if="stepIndex.value==1">
+    <div class="small-8	 small-centered columns">
+	
+      <div class="row">
+		<div class="large-3 columns">
+          <label for="right-label" class="left Inline "><p>Hi, my name is</p></label>
+        </div>
+        <div class="large-3 columns  end">
+          <input type="text" id="right-label" placeholder="Alex Nominator" ng-model="submission.Name">
+        </div>
+      </div>
+	  
+	  <div class="row">
+		<div class="large-3 columns">
+           <label for="right-label" class="left Inline "><p>You can reach me at</p></label>
+        </div>
+		<div class="large-3 columns"> 
+          <input type="text" id="right-label" placeholder="theGreat@ruling.com" ng-model="submission.Email">
+        </div>
+		<div class="large-1 columns">
+          <label for="right-label" class="left Inline "><p>or</p></label>
+        </div>
+		<div class="large-3 columns end">
+          <input type="text" id="right-label" placeholder="647-IAM-COOL" ng-model="submission.Phone">
+        </div>
+      </div>
+	  
+	  <div class="row">
+		<div class="large-3	 columns">
+           <label for="right-label" class="left Inline "><p>I am going to nominate</p></label>
+        </div>
+        <div class="large-3 columns">
+          <input type="text" id="right-label" placeholder="Jenny Nominee" ng-model="submission.Nominee_Name">
+        </div>
+		<div class="large-5 columns end">
+          <label for="right-label" class="left Inline "><p>You must go find this person at</p></label>
+        </div>
+      </div>
+	  
+	  <div class="row">
+		<div class="large-3 columns">
+          <input type="text" id="right-label" placeholder="theWOW@person.com" ng-model="submission.Nominee_Email">
+        </div>
+		<div class="large-1 columns">
+          <label for="right-label" class="left Inline "><p>or at</p></label>
+        </div>
+		<div class="large-3 columns">
+          <input type="text" id="right-label" placeholder="647-TOO-GOOD" ng-model="submission.Nominee_Phone">
+        </div>
+		<div class="large-1 columns end">
+          <label for="right-label" class="left Inline "><p>ASAP!</p></label>
+        </div>
+	  </div>
+	  
+    </div>
+</div>
+
+
+<div class="row" ng-if="stepIndex.value==2">
+    <div class="small-8	 small-centered columns">
+		<div class="large-12 columns">
+          <label for="right-label" class="left Inline "><p>Brief overview (occupation/field, honours/achievements, recent work/activity, why do you recommend this person?)<p></label>
+        </div>
+		<div class="large-12 columns">
+          	<textarea rows="10" placeholder="This person loves/plays/does/cares/is passionate" ng-model="submission.Overview_ans"></textarea>
+        </div>
+	</div>
+</div>
+
+
+<div class="row" ng-if="stepIndex.value==3">
+    <div class="small-8	 small-centered columns">
+		<div class="large-12 columns">
+          <label for="right-label" class="left Inline "><p>Links to any websites or articles about the speaker:</p></label>
+        </div>
+		<div class="large-12 columns">
+          	<textarea rows="10" placeholder="www.theCoolPerson.info" ng-model="submission.links_ans"></textarea>
+        </div>
+	</div>
+</div>
+
+
+<div class="row" ng-if="stepIndex.value==4">
+    <div class="small-8	 small-centered columns">
+		<div class="large-12 columns">
+          <label for="right-label" class="left Inline "><p>Have you heard this person speak in public? If so, where? Are there an online audio/video links available?</p></label>
+        </div>
+		<div class="large-12 columns">
+          	<textarea rows="10" placeholder="www.theAwesomePerson.video" ng-model="submission.videos_ans"></textarea>
+        </div>
+	</div>
+</div>
+
+<div class="row" ng-if="stepIndex.value==5">
+    <div class="small-8	 small-centered columns">
+		<div class="large-12 columns">
+          <label for="right-label" class="left Inline "><p>Describe this person’s speaking style.</p></label>
+        </div>
+		<div class="large-12 columns">
+          	<textarea rows="10" placeholder="This person can speak." ng-model="submission.speak_style_ans"></textarea>
+        </div>
+	</div>
+</div>
+
+<br><br><br>
+<div class="row">
+	<div class="small-8 columns small-centered ">
+		<a class="button round left" ng-if="(stepIndex.value>0 && stepIndex.value<6)" ng-click="prevStep()">Previous</a>
+		<a class="button round right" ng-if="stepIndex.value<5"  ng-click="nextStep()">Continue</a>
+		<a class="button round right" ng-if="stepIndex.value==5"  ng-click="nextStep()">Finish</a>
+	</div>
+</div>
+
+<div class="row" ng-if="stepIndex.value==6">
+	<div class="small-3 columns small-centered" id="stepFinish">
+		<h1>Submitting....</h1>
+	</div>
+	<div class="small-7 columns small-centered" id="stepSuccess">
+		<h1>Thanks! Your message has been submitted! 	We'll get back to you real soon :)</h1>
+	</div>
+	<div class="small-7 columns small-centered" id="stepFailure">
+		<h1>Oh No! Something went wrong with the submission process!</h1>
+		<p>Don't worry! You can email us at <a href="mailto:applications.tedxuoft@gmail.com">Applications@TEDxUofT.com</a> and we'll take a look into this situation</p>
+	</div>
+</div>
