@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('tedxUofT2015App')
-  .controller('VideoCtrl', function ($scope,$window,$sce) {
+  .controller('VideoCtrl', ["$scope", "$window", "$sce", function ($scope,$window,$sce) {
     
 	//Scroll To Top
 	$window.scrollTo(0,0);
@@ -124,4 +124,4 @@ T			hree years ago, Jessie developed an herbicide composed of used coffee ground
 		$scope.displayVideos.push($scope.videos[i]);
 	}
 	
-  });
+  }]);

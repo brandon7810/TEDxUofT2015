@@ -1,8 +1,14 @@
 'use strict';
 
+/**
+ * @ngdoc function
+ * @name tedxUofT2015App.controller:VolunteerCtrl
+ * @description
+ * # VolunteerCtrl
+ * Controller of the tedxUofT2015App
+ */
 angular.module('tedxUofT2015App')
-  .controller('NominationCtrl', function ($scope,$window,$http,localStorageService) {
-    	
+  .controller('VolunteerCtrl', ["$scope", "$window", "$http", "localStorageService", function ($scope,$window,$http,localStorageService) {	
 	//Scroll To Top
 	$window.scrollTo(0,0);
 
@@ -40,7 +46,7 @@ angular.module('tedxUofT2015App')
 		if($scope.stepIndex.value == 6){
 			localStorageService.clearAll();
 			
-			 $http.post('../../php/nomination_engine.php', $scope.submission).
+			 $http.post('/php/nomination_engine.php', $scope.submission).
 			  success(function(data, status, headers, config) {
 				$('#stepSuccess').hide();
 				$('#stepFailure').hide();
@@ -56,7 +62,7 @@ angular.module('tedxUofT2015App')
 				});
 			  });
 			  
-			 $http.post('php/postSpreadSheet/post_SpreadSheet_Nomination.php', {
+			 $http.post('/php/postSpreadSheet/post_SpreadSheet_Nomination.php', {
 				Nominator_Name: $scope.submission.Name,
 				Nominator_Email: $scope.submission.Email, 
 				Nominator_Phone: $scope.submission.Phone,
@@ -80,4 +86,4 @@ angular.module('tedxUofT2015App')
 		$scope.stepIndex.value--
 	};
 	
-  });
+  }]);

@@ -20,7 +20,21 @@ body {
 	z-index: 99999;
 	width: 6vw;
 	height: 6vw;
+	-webkit-animation:spin 8s linear infinite;
+    -moz-animation:spin 8s linear infinite;
+    animation:spin 8s linear infinite;
 }
+
+.compass:hover{
+	-webkit-animation-play-state: paused;
+	-moz-animation:paused;
+    animation:paused;
+
+}
+@-moz-keyframes spin { to { transform: rotate(1turn); } }
+@-webkit-keyframes spin { to { transform: rotate(1turn); } }
+@keyframes spin {  to { transform: rotate(1turn); } }
+
 
 .bodyTitle {
 	text-align: center;
