@@ -103,17 +103,18 @@ body {
 
 .Feedbox {
 	padding: 0;
-	margin: 0;
 	background-color: #233180;
 	min-height: 20em;
-	border-right: 1em solid #3461D4;
 	margin-bottom: 1em;
+	border-radius: 6px;
+	vertical-align: top;
 }
 
 .Feedbox img {
 	padding: 0;
 	width: 200%;
 	overflow: hidden;
+	border-radius: 6px 6px 0% 0%;
 }
 
 .FeedboxText {
@@ -126,6 +127,7 @@ body {
 	text-align: left;
 	padding-top: 0;
 }
+
 
 .boxdarkblue {background-color: #233180;}
 .boxblue {background-color: #3461D4;}
@@ -287,27 +289,6 @@ body {
 }
 
 /*END nomination.html*/
-
-/*Mobile view*/
-@media all and (max-width: 480px) {
-	.nav-boxes .boxes li{
-		padding-top:5%;
-	}
-}
-
-/*Tablet*/
-@media all and (min-width: 481px) and (max-width: 768px){
-  	.nav-boxes .boxes li{
-		padding-top:3%;
-	}
-}
-
-/*Small window*/
-@media all and (min-width: 769px) and (max-width: 966px){
-  	.nav-boxes .boxes li{
-		padding-top:2%;
-	}
-}
 
 
 
