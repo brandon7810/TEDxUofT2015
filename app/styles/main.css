@@ -83,6 +83,28 @@ body {
 	padding: 0vw 20vw;
 }
 
+.NewboxFeed {
+	padding-top: 2vw;
+}
+
+.NewboxFeedcontent {
+	background-color: #233180;
+	padding: 3vw;
+	padding-top: 5vw;
+	border-right: 1px solid #3461D4;
+	border-top: 1px solid #3461D4;
+}
+
+.NewboxFeedcontentSmall {
+	height: 22vw;
+}
+.NewboxFeedcontentBig {
+	height: 44vw;
+	background-image: url(/img/TED15Nominations.png);
+	background-size: cover;
+}
+
+
 .nav-boxes {
 	padding-top: 2vw;
 }
@@ -96,7 +118,6 @@ body {
 	border: 1px solid #31459B;
 	border-bottom:0px;
 	border-left:0px;
-	text-align:center;
 	padding: 3% 2% 1.8% 2%;
 	line-height: 100%;
 }
@@ -190,14 +211,23 @@ body {
 }
 .videoWrapper iframe {
 	position: absolute;
-	top: 0;
+	top: 2vw;
 	left: 15%;
-	width: 65%;
-	height: 65%;
+	width: 70%;
+	height: 70%;
 }
 
 .displayVideoInfo{
-	padding-left:15%;
+	padding-left: 16vw;
+	padding-top: 7vw;
+}
+
+.videoDescription {
+	margin: 0; padding: 0;
+	margin-top: 3vw;
+	margin-bottom: 5vw;
+	line-height: 1.6;
+	
 }
 	
 .video_box{

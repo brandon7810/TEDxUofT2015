@@ -9,12 +9,11 @@
 	
 <div class="row">
 	<div class="small-10 columns displayVideoInfo">
-		<h3>{{displayVideoInfo.speaker}}</h3>
-		<h4>{{displayVideoInfo.title}}</h4>
-		<h6>{{displayVideoInfo.description}}</h6>
+		<h2 class="small-12">{{displayVideoInfo.speaker}}</h2>
+		<h3 class="small-12"><span>{{displayVideoInfo.title}}</span></h3>
+		<h6 class="videoDescription small-12 large-10 columns">{{displayVideoInfo.description}}</h6>
 	</div>
 </div>	
-
 
 <div class="row collapse">
 	<div class="large-3 small-6 columns left text-center" ng-repeat="video in displayVideos">
@@ -24,5 +23,4 @@
 			<h6>{{video.title}}</h6>
 		</div>
 	</div> 	
-
 </div>	
