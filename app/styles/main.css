@@ -45,9 +45,9 @@ body {
 	right: 0%;
 	z-index: 10;
 	margin: 5px;
-	background-color:#000; 
-	border: 2px solid white; 
+	background-color:rgba(0,0,0,0);
 	border-radius: 10px;
+	cursor: pointer;
 }
 
 /*Social Media */
