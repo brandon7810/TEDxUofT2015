@@ -98,42 +98,33 @@ body {
 }
 
 .NewboxFeed {
-	padding-top: 2vw;
+	padding-top: 3vw;
 }
 
-.NewboxFeedcontent {
+.Feedbox {
+	padding: 0;
+	margin: 0;
 	background-color: #233180;
-	padding: 3vw;
-	padding-top: 5vw;
-	border-right: 1px solid #3461D4;
-	border-top: 1px solid #3461D4;
+	min-height: 20em;
+	border-right: 1em solid #3461D4;
+	margin-bottom: 1em;
 }
 
-.NewboxFeedcontentSmall {
-	height: 22vw;
-}
-.NewboxFeedcontentBig {
-	height: 44vw;
-	background-image: url(/img/TED15Nominations.png);
-	background-size: cover;
+.Feedbox img {
+	padding: 0;
+	width: 200%;
+	overflow: hidden;
 }
 
-
-.nav-boxes {
-	padding-top: 2vw;
+.FeedboxText {
+	margin-top: 2vw;
+	margin-bottom: 5em;
+	padding: 2vw;
 }
 
-.nav-boxes .boxes{
-	margin: 0px;
-}
-
-.nav-boxes .boxes li{
-	margin:0px;
-	border: 1px solid #31459B;
-	border-bottom:0px;
-	border-left:0px;
-	padding: 3% 2% 1.8% 2%;
-	line-height: 100%;
+.Left {
+	text-align: left;
+	padding-top: 0;
 }
 
 .boxdarkblue {background-color: #233180;}
