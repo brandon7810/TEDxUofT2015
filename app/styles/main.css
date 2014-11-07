@@ -218,7 +218,7 @@ body {
 }
 .videoWrapper iframe {
 	position: absolute;
-	top: 2vw;
+	top: 1vw;
 	left: 15%;
 	width: 70%;
 	height: 70%;
@@ -234,23 +234,59 @@ body {
 	margin-top: 3vw;
 	margin-bottom: 5vw;
 	line-height: 1.6;
-	
 }
 	
 .video_box{
-	height:200px;
-	border: 1px solid white;
+	height:20vw;
 	cursor:pointer;
 }
 
-.video_box h3{
-	margin-top:10%;
-	background-color: rgba(0, 0, 0, 0.4);
+.video_box .video_boxContent::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.65) 100%);;
+    content: '';
+    opacity: 0;
+    transform: translate3d(0,50%,0);
 }
 
-.video_box h6{
-	background-color: rgba(0, 0, 0, 0.9);
-	color: rgb(150, 150, 150);
+.video_box .videoTitle {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+	padding: 2vw;
+    transition: transform 0.35s, color 0.35s;
+    transform: translate3d(0,-50%,0);
+}
+ 
+.video_box video_boxContent::before,
+.video_box p {
+    transition: opacity 0.35s, transform 0.35s;
+	overflow: hidden;
+}
+ 
+.video_box p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2em;
+    width: 100%;
+    opacity: 0;
+    transform: translate3d(0,10px,0);
+}
+ 
+.video_box:hover .videoTitle {
+    transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+}
+ 
+.video_box:hover .video_boxContent::before ,
+.video_box:hover p {
+    opacity: 1;
+    transform: translate3d(0,0,0);
 }
 
 /*END video.html*/

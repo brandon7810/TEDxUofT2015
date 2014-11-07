@@ -11,16 +11,20 @@
 	<div class="small-10 columns displayVideoInfo">
 		<h2 class="small-12">{{displayVideoInfo.speaker}}</h2>
 		<h3 class="small-12"><span>{{displayVideoInfo.title}}</span></h3>
-		<h6 class="videoDescription small-12 large-10 columns">{{displayVideoInfo.description}}</h6>
+		<h5 class="videoDescription small-12 large-10 columns">{{displayVideoInfo.description}}</h5>
 	</div>
 </div>	
 
 <div class="row collapse">
-	<div class="large-3 small-6 columns left text-center" ng-repeat="video in displayVideos">
+	<div class="small-6 large-3 columns" ng-repeat="video in displayVideos">
 		<div class="video_box" back-img="http://img.youtube.com/vi/{{video['id']}}/maxresdefault.jpg" 
 		ng-click="playVideo(currentIndexFirstDisplayedVideo+$index)">
-			<h3>{{video.speaker}}</h3>
-			<h6>{{video.title}}</h6>
+			<div class="video_boxContent">
+				<div class="videoTitle">
+					<h3>{{video.speaker}}</h3>
+				<h4>{{video.title}}</h4>
+				</div>
+			</div>
 		</div>
 	</div> 	
 </div>	
