@@ -108,6 +108,7 @@ body {
 	margin-bottom: 1em;
 	border-radius: 6px;
 	vertical-align: top;
+	margin: 0 auto;
 }
 
 .Feedbox img {
@@ -123,11 +124,30 @@ body {
 	padding: 2vw;
 }
 
+.item { 
+	width: 20%; 
+	background-color: #233180;
+	border-radius: 6px;
+	margin-bottom: 10px;
+}
+.item.w2 { 
+	width: 35%; 
+	background-color: #233180;
+	border-radius: 6px;
+	margin-bottom: 10px;
+}
+
+.item.w3 { 
+	width: 45%; 
+	background-color: #233180;
+	border-radius: 6px;
+	margin-bottom: 10px;
+}
+
 .Left {
 	text-align: left;
 	padding-top: 0;
 }
-
 
 .boxdarkblue {background-color: #233180;}
 .boxblue {background-color: #3461D4;}
