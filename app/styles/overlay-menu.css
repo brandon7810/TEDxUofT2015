@@ -90,8 +90,7 @@ a:hover, a:focus {
 	font-weight: 400;
 	display: block;
 	color: #eee;
-	-webkit-transition: color 0.2s;
-	transition: color 0.2s;
+
 	font-size: 54px;
 }
 
