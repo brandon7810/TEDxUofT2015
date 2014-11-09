@@ -39,17 +39,17 @@ a:hover, a:focus {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: #233180;
+	background: #3461D4;
 	z-index: 50;
 }
 
 /* Overlay closing cross */
 .overlay .overlay-close {
-	width: 80px;
-	height: 80px;
+	width: .8em;
+	height: .8em;
 	position: absolute;
-	right: 20px;
-	top: 20px;
+	right: 1em;
+	top: 2em;
 	overflow: hidden;
 	border: none;
 	background: url(../img/cross.png) no-repeat center center;
@@ -63,7 +63,7 @@ a:hover, a:focus {
 .overlay nav {
 	text-align: center;
 	position: relative;
-	top: 50%;
+	top: 45%;
 	height: 60%;
 	font-size: 54px;
 	-webkit-transform: translateY(-50%);
@@ -87,9 +87,9 @@ a:hover, a:focus {
 }
 
 .overlay ul li a {
-	font-weight: 300;
+	font-weight: 400;
 	display: block;
-	color: #fff;
+	color: #eee;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
 	font-size: 54px;
@@ -97,7 +97,8 @@ a:hover, a:focus {
 
 .overlay ul li a:hover,
 .overlay ul li a:focus {
-	color: #E62B1E;
+	font-weight: 600;
+	color: #fff;
 }
 
 /* Effects */
@@ -109,7 +110,7 @@ a:hover, a:focus {
 }
 
 .overlay-hugeinc.open {
-	opacity: 1;
+	opacity: .93;
 	visibility: visible;
 	-webkit-transition: opacity 0.5s;
 	transition: opacity 0.5s;

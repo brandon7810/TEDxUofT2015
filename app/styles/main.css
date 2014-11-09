@@ -65,6 +65,10 @@ body {
 }
 
 /*Social Media */
+.smbackground {
+	background-color: #000;
+}
+
 .socialmedia {
 	height: 12vw;
 	padding-top: 2vw;
@@ -97,31 +101,18 @@ body {
 	padding: 0vw 13vw;
 }
 
-/*.NewboxFeed {
-	padding-top: 3vw;
-}
-
-.Feedbox {
-	padding: 0;
-	background-color: #233180;
-	min-height: 20em;
-	margin-bottom: 1em;
-	border-radius: 6px;
-	vertical-align: top;
-	margin: 0 auto;
-}
-
-.Feedbox img {
-	padding: 0;
-	width: 200%;
-	overflow: hidden;
-	border-radius: 6px 6px 0% 0%;
-}*/
-
 .FeedboxText {
 	margin-top: 2vw;
 	margin-bottom: 3vw;
-	padding: 2vw;
+	padding: 3vw;
+}
+
+.FeedboxText h3 {
+	font-size: 2em;
+}
+
+.FeedboxText bnormal {
+	padding: 3vw;
 }
 
 .containerFeeds {
@@ -139,6 +130,14 @@ body {
 
 .item img {
 	border-radius: 6px 6px 0 0;
+}
+
+.boxtwitter {
+	padding: 2vw;
+}
+
+.twittercontent {
+	margin-bottom: 1em;
 }
 
 .Left {
