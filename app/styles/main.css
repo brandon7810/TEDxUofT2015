@@ -15,25 +15,19 @@ body {
 	background-image: url(/img/compass.png);
 	background-size: contain;
 	position: fixed;
-	right: 1vw;
+	right: 5vw;
 	top: 5vw;
 	z-index: 99999;
 	width: 6vw;
 	height: 6vw;
-	-webkit-animation:spin 8s linear infinite;
-    -moz-animation:spin 8s linear infinite;
-    animation:spin 8s linear infinite;
+	transition: all .2s ease-in-out;
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
 }
-
 .compass:hover{
-	-webkit-animation-play-state: paused;
-	-moz-animation:paused;
-    animation:paused;
-
-}
-@-moz-keyframes spin { to { transform: rotate(1turn); } }
-@-webkit-keyframes spin { to { transform: rotate(1turn); } }
-@keyframes spin {  to { transform: rotate(1turn); } }
+	transform: scale(1.2);
+		-webkit-transform: scale(1.2);
+		-moz-transform: scale(1.2);}
 
 
 .bodyTitle {
