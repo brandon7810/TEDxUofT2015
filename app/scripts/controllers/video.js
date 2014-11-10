@@ -97,7 +97,15 @@ T			hree years ago, Jessie developed an herbicide composed of used coffee ground
 	$scope.displayVideoInfo = {
 		title:"The power and danger of the kiss",
 		speaker:"Marcel Danesi",
-		description:""
+		description:"Marcel Danesi is professor of anthropology and director of the Program in Semiotics at the University of \
+			Toronto. He is a Fellow of the Royal Society of Canada in recognition of his work in the field of semiotics and communications.\
+			He has published extensively on various topics, including the meanings of puzzles in human life. His books have been translated\
+			into many languages including Farsi, Russian, Italian, French, Chinese, Japanese, Korean, and others. He is currently editor of\
+			'Semiotica' the leading journal in the field. He also writes a blog for 'Psychology Today' on the relation between puzzles and \
+			the brain. In addition to his academic interests, he founded a band with students at the University of Toronto seven years ago at\
+			Victoria College, called the Semiotones, which is still playing for charity. All the proceeds from gigs and record sales go to the \
+			Hospital for Sick Children. He has composed and written the lyrics for two CDs that are on iTunes. A third CD, titled In My Dreams will\
+			be on iTunes shortly."
 	};
 	
 	//first video index on the list
