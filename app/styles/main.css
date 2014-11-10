@@ -201,7 +201,6 @@ body {
 	background-size: cover;
 	background-position: center center;
 	z-index: 1;
-	opacity: .9;
 }
 
 .headerText {
@@ -233,11 +232,10 @@ body {
 .sub2-title {
 	font-size: 3.6em;
 	top: 60%;
-	font-weight: 800;
 }
 
 .scroll-title {
-	top: 80%;
+	top: 89%;
 }
 
 .large-header {
