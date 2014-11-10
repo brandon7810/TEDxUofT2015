@@ -1,6 +1,6 @@
 /*All Pages*/
 body {
-	background-color: #222;
+	background-color: #151515;
 }
 
 .left {
@@ -42,7 +42,7 @@ body {
 
 .footer {
 	height:5vw;
-	background-color:black;
+	background-color:#151515;
 	text-align: center;
 	color:white;
 }
@@ -60,7 +60,7 @@ body {
 
 /*Social Media */
 .smbackground {
-	background-color: #000;
+	background-color: #151515;
 }
 
 .socialmedia {
@@ -80,7 +80,7 @@ body {
 }
 
 .Newbox {
-	background-color: #3461D4;
+	background-color: #476FD1;
 	width: 100%;
 	text-align: center;
 	padding: 10vw 8vw;
@@ -214,18 +214,29 @@ body {
 	transform: translate3d(-50%,-50%,0);
 }
 
+.headerText span {
+	color: #E62B1E;
+	font-weight: 800;
+}
+
 .main-title {
 	font-size: 6em;
-	top: 30%;
+	top: 25%;
 }
 
 .sub-title {
-	font-size: 4em;
-	top: 50%;
+	font-size: 3.8em;
+	top: 38%;
+}
+
+.sub2-title {
+	font-size: 3.6em;
+	top: 60%;
+	font-weight: 800;
 }
 
 .scroll-title {
-	top: 85%;
+	top: 80%;
 }
 
 .large-header {
@@ -334,7 +345,4 @@ body {
 }
 
 /*END nomination.html*/
-
-
-
 
