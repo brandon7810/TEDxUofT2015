@@ -16,6 +16,7 @@ $Overview_ans = Trim(stripslashes($_POST['Overview_ans']));
 $links_ans = Trim(stripslashes($_POST['links_ans'])); 
 $videos_ans = Trim(stripslashes($_POST['videos_ans'])); 
 $speak_style_ans = Trim(stripslashes($_POST['speak_style_ans'])); 
+$Why_fits_the_theme = Trim(stripslashes($_POST['Why_fits_the_theme']));
 
 
 $EmailTo2 = $Email;
@@ -69,6 +70,10 @@ $Body .= " \n";
 
 $Body .= "speak_style_ans: ";
 $Body .= $speak_style_ans;
+$Body .= " \n";
+
+$Body .= "Why_fits_the_theme: ";
+$Body .= $Why_fits_the_theme;
 $Body .= " \n";
 
 $Body2 = "Hey, we have received your application:\n\n";

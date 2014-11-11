@@ -64,6 +64,17 @@
 			X
 		</div>
 	</div>
+	
+	<div class="small-2 columns end step-button-undone" ng-if="stepIndex.value<7" ng-click="setStepIndex(6)">
+		<div class="step-button-text">
+			X
+		</div>
+	</div>
+	<div class="small-2 columns end step-button-done" ng-if="stepIndex.value>6" ng-click="setStepIndex(6)">
+		<div class="step-button-text">
+			X
+		</div>
+	</div>
 </div>
 <br><br><br><br>
 
@@ -87,8 +98,9 @@
 		<div class="large-3 columns">
           <label for="right-label" class="left Inline "><p>Hi, my name is</p></label>
         </div>
-        <div class="large-3 columns  end">
-          <input type="text" id="right-label" placeholder="Alex Nominator" ng-model="submission.Name">
+        <div class="large-3 columns  end" ng-class="{error: validation.Name}">
+          <input type="text" id="right-label" placeholder="Alex Nominator" ng-model="submission.Name" ng-class="{error: validation.Name}">
+		  <small ng-class="{error: validation.Name}" ng-if="validation.Name">Don't be shy :D</small>
         </div>
       </div>
 	  
@@ -96,14 +108,16 @@
 		<div class="large-3 columns">
            <label for="right-label" class="left Inline "><p>You can reach me at</p></label>
         </div>
-		<div class="large-3 columns"> 
-          <input type="text" id="right-label" placeholder="theGreat@ruling.com" ng-model="submission.Email">
+		<div class="large-3 columns" ng-class="{error: validation.Email}"> 
+          <input type="text" id="right-label" placeholder="theGreat@ruling.com" ng-model="submission.Email" ng-class="{error: validation.Email}">
+		  <small ng-class="{error: validation.Email}" ng-if="validation.Email">What..?</small>
         </div>
 		<div class="large-1 columns">
           <label for="right-label" class="left Inline "><p>or</p></label>
         </div>
-		<div class="large-3 columns end">
-          <input type="text" id="right-label" placeholder="647-IAM-COOL" ng-model="submission.Phone">
+		<div class="large-3 columns end" ng-class="{error: validation.Phone}">
+          <input type="text" id="right-label" placeholder="647-IAM-COOL" ng-model="submission.Phone" ng-class="{error: validation.Phone}">
+		  <small ng-class="{error: validation.Phone}" ng-if="validation.Phone">No phone and email? Caveman?</small>
         </div>
       </div>
 	  
@@ -111,8 +125,9 @@
 		<div class="large-3	 columns">
            <label for="right-label" class="left Inline "><p>I am going to nominate</p></label>
         </div>
-        <div class="large-3 columns">
-          <input type="text" id="right-label" placeholder="Jenny Nominee" ng-model="submission.Nominee_Name">
+        <div class="large-3 columns" ng-class="{error: validation.Nominee_Name}">
+          <input type="text" id="right-label" placeholder="Jenny Nominee" ng-model="submission.Nominee_Name" ng-class="{error: validation.Nominee_Name}">
+		  <small ng-class="{error: validation.Nominee_Name}" ng-if="validation.Nominee_Name">I know.. Nobody is the right person we need</small>
         </div>
 		<div class="large-5 columns end">
           <label for="right-label" class="left Inline "><p>You must go find this person at</p></label>
@@ -120,15 +135,17 @@
       </div>
 	  
 	  <div class="row">
-		<div class="large-3 columns">
-          <input type="text" id="right-label" placeholder="theWOW@person.com" ng-model="submission.Nominee_Email">
-        </div>
+		<div class="large-3 columns" ng-class="{error: validation.Nominee_Email}">
+          <input type="text" id="right-label" placeholder="theWOW@person.com" ng-model="submission.Nominee_Email" ng-class="{error: validation.Nominee_Email}">
+			<small ng-class="{error: validation.Nominee_Email}" ng-if="validation.Nominee_Email">Help us find it!</small>
+		</div>
 		<div class="large-1 columns">
           <label for="right-label" class="left Inline "><p>or at</p></label>
         </div>
-		<div class="large-3 columns">
-          <input type="text" id="right-label" placeholder="647-TOO-GOOD" ng-model="submission.Nominee_Phone">
-        </div>
+		<div class="large-3 columns" ng-class="{error: validation.Nominee_Phone}">
+          <input type="text" id="right-label" placeholder="647-TOO-GOOD" ng-model="submission.Nominee_Phone" ng-class="{error: validation.Nominee_Phone}">
+			<small ng-class="{error: validation.Nominee_Phone}" ng-if="validation.Nominee_Phone">We want to call this person 24/7!</small>
+		</div>
 		<div class="large-1 columns end">
           <label for="right-label" class="left Inline "><p>ASAP!</p></label>
         </div>
@@ -144,8 +161,9 @@
           <label for="right-label" class="left Inline "><p>Brief overview (occupation/field, honours/achievements, recent work/activity, why do you recommend this person?)<p></label>
         </div>
 		<div class="large-12 columns">
-          	<textarea rows="10" placeholder="This person loves/plays/does/cares/is passionate" ng-model="submission.Overview_ans"></textarea>
-        </div>
+          	<textarea rows="10" placeholder="This person loves/plays/does/cares/is passionate" ng-model="submission.Overview_ans" ng-class="{error: validation.Overview_ans}"></textarea>
+			<small ng-class="{error: validation.Overview_ans}" ng-if="validation.Overview_ans">That's it?</small>
+		</div>
 	</div>
 </div>
 
@@ -179,28 +197,41 @@
           <label for="right-label" class="left Inline "><p>Describe this person’s speaking style.</p></label>
         </div>
 		<div class="large-12 columns">
-          	<textarea rows="10" placeholder="This person can speak." ng-model="submission.speak_style_ans"></textarea>
+          	<textarea rows="10" placeholder="This person can speak." ng-model="submission.speak_style_ans" ng-class="{error: validation.speak_style_ans}"></textarea>
+			<small ng-class="{error: validation.speak_style_ans}" ng-if="validation.speak_style_ans">That's it?</small>
+		</div>
+	</div>
+</div>
+
+<div class="row" ng-if="stepIndex.value==6">
+    <div class="small-8	 small-centered columns">
+		<div class="large-12 columns">
+          <label for="right-label" class="left Inline "><p>Explain why this person fits our theme</p></label>
         </div>
+		<div class="large-12 columns">
+          	<textarea rows="10" placeholder="This person can speak." ng-model="submission.Why_fits_the_theme" ng-class="{error: validation.Why_fits_the_theme}"></textarea>
+			<small ng-class="{error: validation.Why_fits_the_theme}" ng-if="validation.Why_fits_the_theme">That's it?</small>
+		</div>
 	</div>
 </div>
 
 <br><br><br>
 <div class="row">
-	<div class="small-8 columns small-centered ">
-		<a class="button round left" ng-if="(stepIndex.value>0 && stepIndex.value<6)" ng-click="prevStep()">Previous</a>
-		<a class="button round right" ng-if="stepIndex.value<5"  ng-click="nextStep()">Continue</a>
-		<a class="button round right" ng-if="stepIndex.value==5"  ng-click="nextStep()">Finish</a>
+	<div class="small-12 large-8 columns small-centered ">
+		<a class="button round left" ng-if="(stepIndex.value>0 && stepIndex.value<7)" ng-click="prevStep()">Previous</a>
+		<a class="button round right" ng-if="stepIndex.value<6"  ng-click="nextStep()">Continue</a>
+		<a class="button round right" ng-if="stepIndex.value==6"  ng-click="nextStep()">Finish</a>
 	</div>
 </div>
 
-<div class="row" ng-if="stepIndex.value==6">
+<div class="row" ng-if="stepIndex.value==7">
 	<div class="small-3 columns small-centered" id="stepFinish">
 		<h1>Submitting....</h1>
 	</div>
-	<div class="small-7 columns small-centered" id="stepSuccess">
+	<div class="small-7 columns small-centered" id="stepSuccess" style="display:none">
 		<h1>Thanks! Your message has been submitted! 	We'll get back to you real soon :)</h1>
 	</div>
-	<div class="small-7 columns small-centered" id="stepFailure">
+	<div class="small-7 columns small-centered" id="stepFailure" style="display:none">
 		<h1>Oh No! Something went wrong with the submission process!</h1>
 		<p>Don't worry! You can email us at <a href="mailto:applications.tedxuoft@gmail.com">Applications@TEDxUofT.com</a> and we'll take a look into this situation</p>
 	</div>
