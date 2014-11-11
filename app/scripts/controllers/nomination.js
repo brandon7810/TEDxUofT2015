@@ -57,7 +57,7 @@ angular.module('tedxUofT2015App')
 	$scope.stepIndex = {value: 0};
 	
 	$scope.nextStep = function(){
-		$window.scrollTo(0,100);
+		$window.scrollTo(0,20);
 	
 		if($scope.stepIndex.value == 0){
 			$scope.stepIndex.value++;
@@ -137,7 +137,7 @@ angular.module('tedxUofT2015App')
 	};
 	
 	$scope.prevStep = function(){
-		$window.scrollTo(0,100);
+		$window.scrollTo(0,20);
 		$scope.stepIndex.value--
 	};
 	
