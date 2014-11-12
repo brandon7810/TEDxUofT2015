@@ -57,7 +57,20 @@
 		<div class="item">
 			<div class="FeedboxText" style="padding:0px">
 				<a class="twitter-timeline" href="https://twitter.com/TEDxUofT" data-widget-id="532394099039404033">@TEDxUofT 發送的推文</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				<script>
+					!function(d,s,id){
+						var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+						if(!d.getElementById(id)){
+							js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+							js.setAttribute('onload', 
+							
+								"twttr.events.bind('rendered',function(e) {var container = document.querySelector('#containerFeeds'); var msnry; imagesLoaded( container, function() { msnry = new Masonry( container, { itemSelector: '.item', 'columnWidth': 60, 'gutter': 3 }); });});"
+							
+							);
+							fjs.parentNode.insertBefore(js,fjs);
+						}
+					}(document,"script","twitter-wjs");
+						</script>
 			</div>
 		</div>
 		<div class="item">
@@ -83,16 +96,7 @@
 </div>
 
 <script>
-	var container = document.querySelector('#containerFeeds');
-	var msnry;
-	// initialize Masonry after all images have loaded
-	imagesLoaded( container, function() {
-	  msnry = new Masonry( container, {
-		 itemSelector: '.item',
-		 "columnWidth": 60,
-		 "gutter": 3	
-	  });
-	});
+
 </script>
 		
 <script src="scripts/plugins/AnimatedHeaderBackgrounds/TweenLite.min.js"></script>
