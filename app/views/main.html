@@ -31,12 +31,33 @@
 		<div class="item">
 			<div class="FeedboxText boxtwitter">
 				<h4>Twitter Feed <span>@TEDxUofT</span></h4>
-				<h7>Women of Influence</h7>
-				<h6 class="twittercontent">We've heard it before and we hear it from Brigid: there is no such thing as balance. Life is about work and life consequence management.</h6>
-				<h7>TEDxUofT <span>@TEDxUofT</span></h7>
-				<h6 class="twittercontent">Wonder what they do up at the International Space Station? Wonder no more! via @mental_floss http://bit.ly/1wCOOdj  </h6>
-				<h7>TEDxUofT <span>@TEDxUofT</span></h7>
-				<h6 class="twittercontent">Mayor envy! Computer science students @UofT get to play with @IBM 's @IBMWatson. http://news.utoronto.ca/ibms-watson-comes-computer-science-department-university-toronto …</h6>
+				
+				<h7>
+					<span ng-if="tweets[0].text.indexOf('RT @') != 0">@TEDxUofT</span>
+					<span ng-if="tweets[0].text.indexOf('RT @') == 0">@{{tweets[0].text.substring(tweets[0].text.indexOf('@')+1, tweets[0].text.indexOf(':'))}}</span>
+				</h7>
+				<h6 class="twittercontent" ng-if="tweets[0].text.indexOf('RT @') != 0">{{tweets[0].text}}</h6>
+				<h6 class="twittercontent" ng-if="tweets[0].text.indexOf('RT @') == 0">{{tweets[0].text.substring(tweets[0].text.indexOf(':')+1, tweets[0].text.length)}}</h6>
+				
+				<h7>
+					<span ng-if="tweets[1].text.indexOf('RT @') != 0">@TEDxUofT</span>
+					<span ng-if="tweets[1].text.indexOf('RT @') == 0">@{{tweets[1].text.substring(tweets[1].text.indexOf('@')+1, tweets[1].text.indexOf(':'))}}</span>
+				</h7>
+				<h6 class="twittercontent" ng-if="tweets[1].text.indexOf('RT @') != 0">{{tweets[1].text}}</h6>
+				<h6 class="twittercontent" ng-if="tweets[1].text.indexOf('RT @') == 0">{{tweets[1].text.substring(tweets[1].text.indexOf(':')+1, tweets[1].text.length)}}</h6>
+				
+				<h7>
+					<span ng-if="tweets[2].text.indexOf('RT @') != 0">@TEDxUofT</span>
+					<span ng-if="tweets[2].text.indexOf('RT @') == 0">@{{tweets[2].text.substring(tweets[2].text.indexOf('@')+1, tweets[2].text.indexOf(':'))}}</span>
+				</h7>
+				<h6 class="twittercontent" ng-if="tweets[2].text.indexOf('RT @') != 0">{{tweets[2].text}}</h6>
+				<h6 class="twittercontent" ng-if="tweets[2].text.indexOf('RT @') == 0">{{tweets[2].text.substring(tweets[2].text.indexOf(':')+1, tweets[2].text.length)}}</h6>
+			</div>
+		</div>
+		<div class="item">
+			<div class="FeedboxText" style="padding:0px">
+				<a class="twitter-timeline" href="https://twitter.com/TEDxUofT" data-widget-id="532394099039404033">@TEDxUofT 發送的推文</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			</div>
 		</div>
 		<div class="item">
