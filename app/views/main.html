@@ -30,32 +30,6 @@
 				</div>
 			</div>
 			<div class="item">
-				<div class="FeedboxText boxtwitter">
-					<h4>Twitter Feed <span>@TEDxUofT</span></h4>
-
-					<h7>
-						<span ng-if="tweets[0].text.indexOf('RT @') != 0">@TEDxUofT</span>
-						<span ng-if="tweets[0].text.indexOf('RT @') == 0">@{{tweets[0].text.substring(tweets[0].text.indexOf('@')+1, tweets[0].text.indexOf(':'))}}</span>
-					</h7>
-					<h6 class="twittercontent" ng-if="tweets[0].text.indexOf('RT @') != 0">{{tweets[0].text}}</h6>
-					<h6 class="twittercontent" ng-if="tweets[0].text.indexOf('RT @') == 0">{{tweets[0].text.substring(tweets[0].text.indexOf(':')+1, tweets[0].text.length)}}</h6>
-
-					<h7>
-						<span ng-if="tweets[1].text.indexOf('RT @') != 0">@TEDxUofT</span>
-						<span ng-if="tweets[1].text.indexOf('RT @') == 0">@{{tweets[1].text.substring(tweets[1].text.indexOf('@')+1, tweets[1].text.indexOf(':'))}}</span>
-					</h7>
-					<h6 class="twittercontent" ng-if="tweets[1].text.indexOf('RT @') != 0">{{tweets[1].text}}</h6>
-					<h6 class="twittercontent" ng-if="tweets[1].text.indexOf('RT @') == 0">{{tweets[1].text.substring(tweets[1].text.indexOf(':')+1, tweets[1].text.length)}}</h6>
-
-					<h7>
-						<span ng-if="tweets[2].text.indexOf('RT @') != 0">@TEDxUofT</span>
-						<span ng-if="tweets[2].text.indexOf('RT @') == 0">@{{tweets[2].text.substring(tweets[2].text.indexOf('@')+1, tweets[2].text.indexOf(':'))}}</span>
-					</h7>
-					<h6 class="twittercontent" ng-if="tweets[2].text.indexOf('RT @') != 0">{{tweets[2].text}}</h6>
-					<h6 class="twittercontent" ng-if="tweets[2].text.indexOf('RT @') == 0">{{tweets[2].text.substring(tweets[2].text.indexOf(':')+1, tweets[2].text.length)}}</h6>
-				</div>
-			</div>
-			<div class="item">
 				<div class="FeedboxText" style="padding:0px">
 					<a class="twitter-timeline" href="https://twitter.com/TEDxUofT" 
 						data-widget-id="532394099039404033"
