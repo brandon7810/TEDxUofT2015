@@ -117,11 +117,11 @@ body {
 }
 
 .item { 
-	width: 23%; 
+	width: 25%; 
 	background-color: #FFF;
 	text-align: left;
 	min-height: 22vw;
-	border-bottom: .2em solid #E62C50;
+	border-bottom: .2em solid #F7C02F;
 }
 
 .firstBox {
@@ -240,15 +240,11 @@ body {
 	background-image: url('../img/Header.png');
 }
 
-.scroll-title {
-	top: 89%;	
-}
-
 .scrollimg {
 	background-image: url(../img/scroll.png);
 	background-size: contain;
 	position: absolute;
-	top: 80%;
+	top: 82%;
 	left: 47%;
 	z-index: 99999;
 	width: 6em;
