@@ -1,3 +1,9 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 /*All Pages*/
 body {
 	background-color: #151515;
@@ -111,7 +117,7 @@ body {
 }
 
 .item { 
-	width: 20vw; 
+	width: 23%; 
 	background-color: #FFF;
 	text-align: left;
 	min-height: 22vw;
@@ -380,6 +386,12 @@ body {
 	}
 	/*END All page*/
 	
+	/*main page*/
+	.item { 
+		width: 48%;
+	}
+	/*END main page*/
+	
 	/*about page*/	
 	.abcover{
 		height:70vw;
@@ -388,7 +400,6 @@ body {
 		text-align:center;
 	}
 	/*END about page*/
-
 
 	/*video page*/
 	.displayVideoInfo {
@@ -415,6 +426,10 @@ body {
 
 /*Tablet*/
 @media all and (min-width: 481px) and (max-width: 768px){
+
+	.item { 
+		width: 48%;
+	}
 
 }
 

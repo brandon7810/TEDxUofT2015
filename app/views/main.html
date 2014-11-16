@@ -25,7 +25,7 @@
 		<div class="item">
 			<div class="FeedboxText">
 				<h3>Volunteer Applications</h3>
-				<h4>Now Open!</h4>
+					<h4>Now Open!</h4>
 			</div>
 		</div>
 		<div class="item">
@@ -64,7 +64,7 @@
 							js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
 							js.setAttribute('onload', 
 							
-								"twttr.events.bind('rendered',function(e) {var container = document.querySelector('#containerFeeds'); var msnry; imagesLoaded( container, function() { msnry = new Masonry( container, { itemSelector: '.item', 'columnWidth': 60, 'gutter': 3 }); });});"
+								"twttr.events.bind('rendered',function(e) {var container = document.querySelector('#containerFeeds'); var msnry; imagesLoaded( container, function() { msnry = new Masonry( container, { itemSelector: '.item', 'gutter': 0}); });});"
 							
 							);
 							fjs.parentNode.insertBefore(js,fjs);
