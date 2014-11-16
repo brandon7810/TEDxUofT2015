@@ -32,8 +32,8 @@ body {
 }
 .compass:hover{
 	transform: scale(1.2);
-		-webkit-transform: scale(1.2);
-		-moz-transform: scale(1.2);}
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);}
 
 
 .bodyTitle {
@@ -418,7 +418,7 @@ body {
 .step-button-text { 
 	position:absolute; 
 	top:30%;	
-	margin-left:0.3em;
+	margin-left:40%;
 	color:white;
 }
 
