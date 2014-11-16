@@ -85,6 +85,10 @@ body {
 	overflow-x: hidden;
 }
 
+.containerFeeds {
+	margin-bottom: 5em;
+}
+
 .Newbox {
 	background-color: #476FD1;
 	width: 100vw;
@@ -109,11 +113,16 @@ body {
 .FeedboxText h3 {
 	font-size: 2em;
 	color: #222;
+	transition: all .2s ease-in;
+		-webkit-transition: all .2s ease-in;
+		-moz-transition: all .2s ease-in-out;	
 }
 
-.FeedboxText h4,
-.FeedboxText h6 {
+.FeedboxText h4 {
 	color: #222;
+	transition: all .2s ease-in;
+		-webkit-transition: all .2s ease-in;
+		-moz-transition: all .2s ease-in-out;
 }
 
 .item { 
@@ -124,16 +133,27 @@ body {
 	border-bottom: .2em solid #F7C02F;
 	transition: all .2s ease-in;
 		-webkit-transition: all .2s ease-in;
-		-moz-transition: all .2s ease-in-out;
-	
+		-moz-transition: all .2s ease-in-out;	
 }
 
-.item .FeedboxText::before {
+.item:hover {
+	background-color: #233180;
+	cursor: pointer;
+}
+
+
+.item:hover h3,
+.item:hover h4 {	
+	color: #fff;
+}
+
+<!--.item .hoverBox::before {
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	width: 100%;
 	height: 10px;
+	background-color: red;
 	background: #F7C02F;
 	content: '';
 	-webkit-transform: translate3d(0,10px,0);
@@ -141,29 +161,21 @@ body {
 }
 
 
-.item .FeedboxText::before {
+.item .hoverBox::before {
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 }
 
-.item:hover .FeedboxText::before {
+.item:hover .hoverBox::before {
 	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
-}
+}-->
 
 
 .firstBox {
 	background-color: #E62C50;
-}
-
-.boxtwitter {
-	padding: 2vw;
-	cursor: default;
-}
-
-.twittercontent {
-	margin-bottom: 1.5em;
+	min-height: 44vw;
 }
 
 

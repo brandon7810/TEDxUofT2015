@@ -89,14 +89,14 @@ a:hover, a:focus {
 .overlay ul li a {
 	font-weight: 600;
 	display: block;
-	color: #E62C50;
+	color: #E62B1E;
 	font-size: 54px;
 }
 
 .overlay ul li a:hover,
 .overlay ul li a:focus {
 	font-weight: 300;
-	color: #E62C50;
+	color: #E62B1E;
 }
 
 /* Effects */
