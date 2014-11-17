@@ -44,6 +44,7 @@ body {
 .bodyText {
 	padding: 4vw 16vw;
 	text-align: center;
+	margin-bottom: 10vw;
 }
 
 .footer {
@@ -100,6 +101,7 @@ body {
 }
 
 .Newbox {
+	padding-top: 2vw;
 	background-color: #476FD1;
 	width: 100vw;
 	text-align: center;
@@ -108,6 +110,7 @@ body {
 
 .NewboxTitle {
 	font-size: 6rem;
+	margin: 5vw 0px;
 }
 
 .NewboxText {
@@ -447,6 +450,11 @@ body {
 	.aboutBody p{
 		text-align:center;
 	}
+	
+	.bodyText {
+		padding-left: 0.9375em;
+		padding-right: 0.9375em;
+	}
 	/*END about page*/
 
 	/*video page*/
@@ -478,7 +486,11 @@ body {
 	.item { 
 		width: 48%;
 	}
-
+	
+	.bodyText {
+		padding-left: 0.9375em;
+		padding-right: 0.9375em;
+	}
 }
 
 /*Small window*/
