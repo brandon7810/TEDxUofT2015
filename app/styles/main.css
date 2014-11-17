@@ -356,8 +356,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vw;
+    width: 100%;
+    height: 100%;
 	content: '';
     opacity: 1;
     transform: translate3d(0,0%,0);
