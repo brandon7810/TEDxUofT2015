@@ -115,23 +115,10 @@ angular.module('tedxUofT2015App')
 					});
 				  });
 				  
-				 $http.post('php/postSpreadSheet/post_SpreadSheet_Nomination.php', {
-					Nominator_Name: $scope.submission.Name,
-					Nominator_Email: $scope.submission.Email, 
-					Nominator_Phone: $scope.submission.Phone,
-					Nominee_Name: $scope.submission.Nominee_Name,
-					Nominee_Email: $scope.submission.Nominee_Email,
-					Nominee_Phone: $scope.submission.Nominee_Phone,
-					Overview: $scope.submission.Overview_ans,
-					Websites_Articles: $scope.submission.links_ans,
-					Audios_Videos: $scope.submission.videos_ans,
-					Speaking_Style: $scope.submission.speak_style_ans,
-					Why_fits_the_theme: $scope.submission.Why_fits_the_theme
-				 }).
-				  success(function(data, status, headers, config) {
-				  }).
-				  error(function(data, status, headers, config) {
-				  });
+				  
+				$.post( "php/postSpreadSheet/post_SpreadSheet_Nomination.php?Nominator_Name=" + $scope.submission.Name + "&Nominator_Email=" + $scope.submission.Email + "&Nominator_Phone=" + $scope.submission.Phone + "&Nominee_Name=" + $scope.submission.Nominee_Name + 
+				"&Nominee_Email=" + $scope.submission.Nominee_Email + "&Nominee_Phone=" + $scope.submission.Nominee_Phone + "&Overview=" + $scope.submission.Overview_ans
+					+ "&Websites_Articles=" + $scope.submission.links_ans + "&Audios_Videos=" + $scope.submission.videos_ans + "&Speaking_Style=" + $scope.submission.speak_style_ans + "&Why_fits_the_theme=" + $scope.submission.Why_fits_the_theme);
 			}
 		}
 	};
