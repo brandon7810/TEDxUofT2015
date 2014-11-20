@@ -12,7 +12,7 @@ angular.module('tedxUofT2015App')
     $scope.overlayMenuClick = function(){
 		$('#close_overlay').click();
 		//Refresh page
-		location.reload();
+		//location.reload();
 	};
 	
 	
