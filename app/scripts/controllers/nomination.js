@@ -12,7 +12,7 @@ angular.module('tedxUofT2015App')
 	//Scroll To Top
 	$window.scrollTo(0,0);
 
-	var submissionInStore = localStorageService.get('submission');
+	var submissionInStore = localStorageService.get('speakerSubmission');
 
 	$scope.submission = submissionInStore || {
 		Name:"",
@@ -44,7 +44,7 @@ angular.module('tedxUofT2015App')
 	};;
 	
 	$scope.$watch('submission', function () {
-	  localStorageService.set('submission', $scope.submission);
+	  localStorageService.set('speakerSubmission', $scope.submission);
 	}, true);
 	
 	
@@ -101,7 +101,7 @@ angular.module('tedxUofT2015App')
 			}
 			else{
 				$scope.stepIndex.value++;
-				localStorageService.clearAll();
+				localStorageService.remove('speakerSubmission');
 				
 				 $http.post('php/nomination_engine.php', $scope.submission).
 				  success(function(data, status, headers, config) {

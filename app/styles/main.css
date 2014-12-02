@@ -408,6 +408,32 @@ body {
 
 /*END nomination.html*/
 
+/*Volunteer.html*/
+.volunteer_pos{
+	margin-left:5px;
+	background-color:#E5E5E5 !important;
+	color:black !important;
+	-webkit-transition: all 250ms linear;
+    -moz-transition: all 250ms linear;
+    -o-transition: all 250ms linear;
+    -ms-transition: all 250ms linear;
+    transition: all 250ms linear;
+}
+.volunteer_posActive{
+	margin-left:5px;
+	background-color:#114F89 !important;
+	color:white !important;
+	-webkit-transition: all 250ms linear;
+    -moz-transition: all 250ms linear;
+    -o-transition: all 250ms linear;
+    -ms-transition: all 250ms linear;
+    transition: all 250ms linear;
+}
+
+
+
+/*END */
+
 
 /*Mobile view*/
 @media all and (max-width: 480px) {
