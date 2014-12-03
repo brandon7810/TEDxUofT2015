@@ -13,6 +13,7 @@ $Campus = Trim(stripslashes($_POST['Campus']));
 $Positions = Trim(stripslashes($_POST['Positions']));
 $HowHearTEDxUofT = Trim(stripslashes($_POST['HowHearTEDxUofT']));
 $ExperiencePosi = Trim(stripslashes($_POST['ExperiencePosi']));
+$StrongAttr = Trim(stripslashes($_POST['StrongAttr']));
 $PastExper = Trim(stripslashes($_POST['PastExper']));
 $LikeSeeInEvent = Trim(stripslashes($_POST['LikeSeeInEvent']));
 $Questions = Trim(stripslashes($_POST['Questions']));
@@ -68,6 +69,10 @@ $Body .= " \n\n";
 
 $Body .= "What’s your past experience with TED?: ";
 $Body .= $PastExper;
+$Body .= " \n\n";
+
+$Body .= "What is your strongest attribute and how can you use it as a volunteer?: ";
+$Body .= $StrongAttr;
 $Body .= " \n\n";
 
 $Body .= "Is there anything you would really like to see in the upcoming TEDxUofT event?: ";
