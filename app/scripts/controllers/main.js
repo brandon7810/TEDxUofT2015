@@ -20,7 +20,7 @@ angular.module('tedxUofT2015App')
 				js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
 				js.setAttribute('onload', 
 
-					"twttr.events.bind('rendered',function(e) {});"
+					"twttr.events.bind('rendered',function(e) {var container = document.querySelector('#containerFeeds'); var msnry; imagesLoaded( container, function() { msnry = new Masonry( container, { itemSelector: '.item', 'gutter': 0}); });});"
 
 				);
 				fjs.parentNode.insertBefore(js,fjs);
