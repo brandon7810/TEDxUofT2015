@@ -193,6 +193,7 @@
         </div>
 		<div class="large-12 columns">
           	<textarea rows="10" placeholder="I know it all" ng-model="submission.HowHearTEDxUofT"></textarea>
+			<small ng-class="{error: validation.HowHearTEDxUofT}" ng-if="validation.HowHearTEDxUofT">Do you know us at all?</small>
         </div>
 	</div>
 </div>
@@ -205,6 +206,7 @@
         </div>
 		<div class="large-12 columns">
           	<textarea rows="10" placeholder="I am born with it" ng-model="submission.ExperiencePosi"></textarea>
+			<small ng-class="{error: validation.ExperiencePosi}" ng-if="validation.ExperiencePosi">You have no clue, do you?</small>
         </div>
 	</div>
 </div>
@@ -215,7 +217,8 @@
           <label for="right-label" class="left Inline "><p>What’s your past experience with TED?</p></label>
         </div>
 		<div class="large-12 columns">
-          	<textarea rows="10" placeholder="I attend any TED conference since I was born" ng-model="submission.PastExper"></textarea>
+          	<textarea rows="10" placeholder="I have attended all the TED conferences since I was born" ng-model="submission.PastExper"></textarea>
+			<small ng-class="{error: validation.PastExper}" ng-if="validation.PastExper">That's it?</small>
         </div>
 	</div>
 </div>
@@ -227,6 +230,7 @@
         </div>
 		<div class="large-12 columns">
           	<textarea rows="10" placeholder="See myself dancing on the stage as one of the performances in the conference" ng-model="submission.LikeSeeInEvent"></textarea>
+			<small ng-class="{error: validation.LikeSeeInEvent}" ng-if="validation.LikeSeeInEvent">At least something...</small>
         </div>
 	</div>
 </div>

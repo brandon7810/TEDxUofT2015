@@ -101,12 +101,11 @@ angular.module('tedxUofT2015App')
 			}
 			else{
 				$scope.stepIndex.value++;
-				localStorageService.remove('speakerSubmission');
-				
 				 $http.post('php/nomination_engine.php', $scope.submission).
 				  success(function(data, status, headers, config) {
 					$('#stepFinish').fadeOut(300, function() {
 						$('#stepSuccess').fadeIn(300);
+						localStorageService.remove('speakerSubmission');
 					});
 				  }).
 				  error(function(data, status, headers, config) {

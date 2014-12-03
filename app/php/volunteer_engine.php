@@ -7,6 +7,16 @@ $Subject = "Volunteer Application";
 $Name = Trim(stripslashes($_POST['Name'])); 
 $Email = Trim(stripslashes($_POST['Email'])); 
 $Phone = Trim(stripslashes($_POST['Phone']));
+$AvailableOnCon = Trim(stripslashes($_POST['AvailableOnCon']));
+$Year = Trim(stripslashes($_POST['Year']));
+$Campus = Trim(stripslashes($_POST['Campus']));
+$Positions = Trim(stripslashes($_POST['Positions']));
+$HowHearTEDxUofT = Trim(stripslashes($_POST['HowHearTEDxUofT']));
+$ExperiencePosi = Trim(stripslashes($_POST['ExperiencePosi']));
+$PastExper = Trim(stripslashes($_POST['PastExper']));
+$LikeSeeInEvent = Trim(stripslashes($_POST['LikeSeeInEvent']));
+$Questions = Trim(stripslashes($_POST['Questions']));
+
 
 $EmailTo2 = $Email;
 $Subject2 = "Confirmation";
@@ -31,6 +41,43 @@ $Body .= " \n";
 $Body .= "Phone: ";
 $Body .= $Phone;
 $Body .= " \n";
+
+$Body .= "Available On Conference Date: ";
+$Body .= $AvailableOnCon;
+$Body .= " \n";
+
+$Body .= "Year: ";
+$Body .= $Year;
+$Body .= " \n";
+
+$Body .= "Campus: ";
+$Body .= $Campus;
+$Body .= " \n";
+
+$Body .= "Positions: ";
+$Body .= $Positions;
+$Body .= " \n";
+
+$Body .= "How did you hear about TEDxUofT: ";
+$Body .= $HowHearTEDxUofT;
+$Body .= " \n";
+
+$Body .= "How did you learn about this volunteer position?: ";
+$Body .= $ExperiencePosi;
+$Body .= " \n";
+
+$Body .= "What’s your past experience with TED?: ";
+$Body .= $PastExper;
+$Body .= " \n";
+
+$Body .= "Is there anything you would really like to see in the upcoming TEDxUofT event?: ";
+$Body .= $LikeSeeInEvent;
+$Body .= " \n";
+
+$Body .= "Any questions for us?: ";
+$Body .= $Questions;
+$Body .= " \n";
+
 
 $Body2 = "Hey, we have received your application:\n\n";
 $Body2 .= $Body;

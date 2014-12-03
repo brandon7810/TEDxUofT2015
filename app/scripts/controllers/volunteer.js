@@ -167,9 +167,38 @@ angular.module('tedxUofT2015App')
 				$scope.stepIndex.value++;
 			}
 		}
-		else if($scope.stepIndex.value == 7){
-			localStorageService.clearAll();
-			
+		else if($scope.stepIndex.value == 2){
+			if($scope.submission.HowHearTEDxUofT.length < 50){
+				$scope.validation.HowHearTEDxUofT = true;
+			}else{
+				$scope.stepIndex.value++;
+			}	
+		}
+		else if($scope.stepIndex.value == 3){
+			if($scope.submission.ExperiencePosi.length < 50){
+				$scope.validation.ExperiencePosi = true;
+			}else{
+				$scope.stepIndex.value++;
+			}	
+		}
+		else if($scope.stepIndex.value == 4){
+			if($scope.submission.PastExper.length < 50){
+				$scope.validation.PastExper = true;
+			}else{
+				$scope.stepIndex.value++;
+			}	
+		}
+		else if($scope.stepIndex.value == 5){
+			if($scope.submission.LikeSeeInEvent.length < 20){
+				$scope.validation.LikeSeeInEvent = true;
+			}else{
+				$scope.stepIndex.value++;
+			}	
+		}
+		else if($scope.stepIndex.value == 6){
+			$scope.stepIndex.value++;
+		}
+		if($scope.stepIndex.value == 7){
 			 $http.post('/php/nomination_engine.php', $scope.submission).
 			  success(function(data, status, headers, config) {
 				$('#stepSuccess').hide();
@@ -177,6 +206,7 @@ angular.module('tedxUofT2015App')
 				$('#stepFinish').fadeOut(300, function() {
 					$('#stepSuccess').fadeIn(300);
 				});
+				localStorageService.remove('volunteerSubmission');
 			  }).
 			  error(function(data, status, headers, config) {
 				$('#stepSuccess').hide();
@@ -185,26 +215,6 @@ angular.module('tedxUofT2015App')
 					$('#stepFailure').fadeIn(300);
 				});
 			  });
-			  
-			 $http.post('/php/postSpreadSheet/post_SpreadSheet_Nomination.php', {
-				Nominator_Name: $scope.submission.Name,
-				Nominator_Email: $scope.submission.Email, 
-				Nominator_Phone: $scope.submission.Phone,
-				Nominee_Name: $scope.submission.Nominee_Name,
-				Nominee_Email: $scope.submission.Nominee_Email,
-				Nominee_Phone: $scope.submission.Nominee_Phone,
-				Overview: $scope.submission.Overview_ans,
-				Websites_Articles: $scope.submission.links_ans,
-				Audios_Videos: $scope.submission.videos_ans,
-				Speaking_Style: $scope.submission.speak_style_ans,
-				Why_fits_the_theme: "N/A"
-			 }).
-			  success(function(data, status, headers, config) {
-			  }).
-			  error(function(data, status, headers, config) {
-			  });
-			  
-			  $scope.stepIndex.value++;
 		}
 		
 	};
