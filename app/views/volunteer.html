@@ -255,13 +255,13 @@
 </div>
 
 <div class="row" ng-if="stepIndex.value==7">
-	<div class="small-3 columns small-centered" id="stepFinish">
+	<div class="small-3 columns small-centered animate-hide" ng-hide="submitStatus!='submitting'">
 		<h1>Submitting....</h1>
 	</div>
-	<div class="small-7 columns small-centered" id="stepSuccess">
+	<div class="small-7 columns small-centered animate-hide" ng-hide="submitStatus!='success'">
 		<h1>Thanks! Your message has been submitted! 	We'll get back to you real soon :)</h1>
 	</div>
-	<div class="small-7 columns small-centered" id="stepFailure">
+	<div class="small-7 columns small-centered animate-hide" ng-hide="submitStatus!='fail'">
 		<h1>Oh No! Something went wrong with the submission process!</h1>
 		<p>Don't worry! You can email us at <a href="mailto:applications.tedxuoft@gmail.com">Applications@TEDxUofT.com</a> and we'll take a look into this situation</p>
 	</div>

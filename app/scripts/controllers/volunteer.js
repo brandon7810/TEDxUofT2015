@@ -127,7 +127,6 @@ angular.module('tedxUofT2015App')
 	};
 	//END Positions
 	
-	
 	$scope.setStepIndex = function(index){
 		if($scope.stepIndex.value != 6){
 			$scope.stepIndex.value = index;
@@ -196,30 +195,15 @@ angular.module('tedxUofT2015App')
 			}	
 		}
 		else if($scope.stepIndex.value == 6){
+			$scope.submitStatus="submitting";
 			$scope.stepIndex.value++;
-		}
-		
-		if($scope.stepIndex.value == 7){
-		
-			$('#stepSuccess').hide();
-			$('#stepFailure').hide();
-			
-			
 			 $http.post('/php/volunteer_engine.php', $scope.submission).
 			  success(function(data, status, headers, config) {
-				$('#stepSuccess').hide();
-				$('#stepFailure').hide();
-				$('#stepFinish').fadeOut(300, function() {
-					$('#stepSuccess').fadeIn(300);
-				});
+				$scope.submitStatus="success";
 				localStorageService.remove('volunteerSubmission');
 			  }).
 			  error(function(data, status, headers, config) {
-				$('#stepSuccess').hide();
-				$('#stepFailure').hide();
-				$('#stepFinish').fadeOut(300, function() {
-					$('#stepFailure').fadeIn(300);
-				});
+				$scope.submitStatus="fail";
 			  });
 		}
 		

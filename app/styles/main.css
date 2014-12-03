@@ -69,6 +69,16 @@ body {
 }
 
 
+.animate-hide {
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+  opacity: 1;
+}
+
+.animate-hide.ng-hide {
+	opacity: 0;
+}
+
 /*Social Media */
 .smbackground {
 	background-color: #151515;
