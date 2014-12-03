@@ -100,6 +100,11 @@ angular.module('tedxUofT2015App')
 				$scope.validation.Why_fits_the_theme = true;
 			}
 			else{
+				$('#stepSuccess').hide();
+				$('#stepFailure').hide();
+			
+			
+			
 				$scope.stepIndex.value++;
 				 $http.post('php/nomination_engine.php', $scope.submission).
 				  success(function(data, status, headers, config) {

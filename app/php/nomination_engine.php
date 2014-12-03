@@ -54,27 +54,27 @@ $Body .= " \n";
 
 $Body .= "Nominee_Phone: ";
 $Body .= $Nominee_Phone;
-$Body .= " \n";
+$Body .= " \n\n";
 
 $Body .= "Overview_ans: ";
 $Body .= $Overview_ans;
-$Body .= " \n";
+$Body .= " \n\n";
 
 $Body .= "links_ans: ";
 $Body .= $links_ans;
-$Body .= " \n";
+$Body .= " \n\n";
 
 $Body .= "videos_ans: ";
 $Body .= $videos_ans;
-$Body .= " \n";
+$Body .= " \n\n";
 
 $Body .= "speak_style_ans: ";
 $Body .= $speak_style_ans;
-$Body .= " \n";
+$Body .= " \n\n";
 
 $Body .= "Why_fits_the_theme: ";
 $Body .= $Why_fits_the_theme;
-$Body .= " \n";
+$Body .= " \n\n";
 
 $Body2 = "Hey, we have received your application:\n\n";
 $Body2 .= $Body;

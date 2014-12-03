@@ -198,8 +198,14 @@ angular.module('tedxUofT2015App')
 		else if($scope.stepIndex.value == 6){
 			$scope.stepIndex.value++;
 		}
+		
 		if($scope.stepIndex.value == 7){
-			 $http.post('/php/nomination_engine.php', $scope.submission).
+		
+			$('#stepSuccess').hide();
+			$('#stepFailure').hide();
+			
+			
+			 $http.post('/php/volunteer_engine.php', $scope.submission).
 			  success(function(data, status, headers, config) {
 				$('#stepSuccess').hide();
 				$('#stepFailure').hide();

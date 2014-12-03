@@ -56,27 +56,27 @@ $Body .= " \n";
 
 $Body .= "Positions: ";
 $Body .= $Positions;
-$Body .= " \n";
+$Body .= " \n\n";
 
 $Body .= "How did you hear about TEDxUofT: ";
 $Body .= $HowHearTEDxUofT;
-$Body .= " \n";
+$Body .= " \n\n";
 
 $Body .= "How did you learn about this volunteer position?: ";
 $Body .= $ExperiencePosi;
-$Body .= " \n";
+$Body .= " \n\n";
 
 $Body .= "What’s your past experience with TED?: ";
 $Body .= $PastExper;
-$Body .= " \n";
+$Body .= " \n\n";
 
 $Body .= "Is there anything you would really like to see in the upcoming TEDxUofT event?: ";
 $Body .= $LikeSeeInEvent;
-$Body .= " \n";
+$Body .= " \n\n";
 
 $Body .= "Any questions for us?: ";
 $Body .= $Questions;
-$Body .= " \n";
+$Body .= " \n\n";
 
 
 $Body2 = "Hey, we have received your application:\n\n";
