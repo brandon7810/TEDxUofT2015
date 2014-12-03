@@ -206,7 +206,6 @@ angular.module('tedxUofT2015App')
 				$scope.submitStatus="fail";
 			  });
 		}
-		
 	};
 	
 	$scope.prevStep = function(){
