@@ -24,6 +24,7 @@ angular.module('tedxUofT2015App')
 		Positions:"",
 		HowHearTEDxUofT:"",
 		ExperiencePosi:"",
+		StrongAttr:"",
 		PastExper:"",
 		LikeSeeInEvent:"",
 		Questions:""
@@ -38,6 +39,7 @@ angular.module('tedxUofT2015App')
 		Positions:false,
 		HowHearTEDxUofT:false,
 		ExperiencePosi:false,
+		StrongAttr:false,
 		PastExper:false,
 		LikeSeeInEvent:false,
 		Questions: false
@@ -128,7 +130,7 @@ angular.module('tedxUofT2015App')
 	//END Positions
 	
 	$scope.setStepIndex = function(index){
-		if($scope.stepIndex.value != 6){
+		if($scope.stepIndex.value != 9){
 			$scope.stepIndex.value = index;
 		}
 	};
@@ -137,8 +139,12 @@ angular.module('tedxUofT2015App')
 	
 	$scope.nextStep = function(){
 		$window.scrollTo(0,20);
-		
 		if($scope.stepIndex.value == 0){
+		
+			$scope.stepIndex.value++;
+	
+		}
+		else if($scope.stepIndex.value == 1){
 			if($scope.submission.Name == ""){
 				$scope.validation.Name = true;
 			}else if($scope.submission.Email == "" && $scope.submission.Phone == ""){
@@ -153,9 +159,8 @@ angular.module('tedxUofT2015App')
 			else{
 				$scope.stepIndex.value++;
 			}
-		
 		}
-		else if($scope.stepIndex.value == 1){
+		else if($scope.stepIndex.value == 2){
 			if($scope.submission.Year == ""){
 				$scope.validation.Year = true;
 			}else if($scope.submission.Campus == ""){
@@ -166,35 +171,42 @@ angular.module('tedxUofT2015App')
 				$scope.stepIndex.value++;
 			}
 		}
-		else if($scope.stepIndex.value == 2){
+		else if($scope.stepIndex.value == 3){
 			if($scope.submission.HowHearTEDxUofT.length < 50){
 				$scope.validation.HowHearTEDxUofT = true;
 			}else{
 				$scope.stepIndex.value++;
 			}	
 		}
-		else if($scope.stepIndex.value == 3){
+		else if($scope.stepIndex.value == 4){
 			if($scope.submission.ExperiencePosi.length < 50){
 				$scope.validation.ExperiencePosi = true;
 			}else{
 				$scope.stepIndex.value++;
 			}	
 		}
-		else if($scope.stepIndex.value == 4){
+		else if($scope.stepIndex.value == 5){
+			if($scope.submission.StrongAttr.length < 50){
+				$scope.validation.StrongAttr = true;
+			}else{
+				$scope.stepIndex.value++;
+			}	
+		}
+		else if($scope.stepIndex.value == 6){
 			if($scope.submission.PastExper.length < 50){
 				$scope.validation.PastExper = true;
 			}else{
 				$scope.stepIndex.value++;
 			}	
 		}
-		else if($scope.stepIndex.value == 5){
+		else if($scope.stepIndex.value == 7){
 			if($scope.submission.LikeSeeInEvent.length < 20){
 				$scope.validation.LikeSeeInEvent = true;
 			}else{
 				$scope.stepIndex.value++;
 			}	
 		}
-		else if($scope.stepIndex.value == 6){
+		else if($scope.stepIndex.value == 8){
 			$scope.submitStatus="submitting";
 			$scope.stepIndex.value++;
 			 $http.post('/php/volunteer_engine.php', $scope.submission).

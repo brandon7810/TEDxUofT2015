@@ -1,84 +1,97 @@
 <div class="row">
-	<div class="small-2 columns step-button-undone" ng-if="stepIndex.value<1" ng-click="setStepIndex(0)">
+	<div class="small-1 columns step-button-undone" ng-if="stepIndex.value<1" ng-click="setStepIndex(0)">
 		<div class="step-button-text">
 			X
 		</div>
 	</div>	
-	<div class="small-2 columns step-button-done" ng-if="stepIndex.value>0" ng-click="setStepIndex(0)">
+	<div class="small-1 columns step-button-done" ng-if="stepIndex.value>0" ng-click="setStepIndex(0)">
 		<div class="step-button-text">
 			X
 		</div>
 	</div>
 	
-	<div class="small-2 columns step-button-undone" ng-if="stepIndex.value<2"  ng-click="setStepIndex(1)">
+	<div class="small-1 columns step-button-undone" ng-if="stepIndex.value<2"  ng-click="setStepIndex(1)">
 		<div class="step-button-text">
 				X
 		</div>
 	</div>
-	<div class="small-2 columns step-button-done" ng-if="stepIndex.value>1" ng-click="setStepIndex(1)">
+	<div class="small-1 columns step-button-done" ng-if="stepIndex.value>1" ng-click="setStepIndex(1)">
 		<div class="step-button-text">
 				X
 		</div>
 	</div>
 	
-	<div class="small-2 columns step-button-undone" ng-if="stepIndex.value<3" ng-click="setStepIndex(2)">
+	<div class="small-1 columns step-button-undone" ng-if="stepIndex.value<3" ng-click="setStepIndex(2)">
 		<div class="step-button-text">
 			X
 		</div>
 	</div>
-	<div class="small-2 columns step-button-done" ng-if="stepIndex.value>2" ng-click="setStepIndex(2)">
-		<div class="step-button-text">
-			X
-		</div>
-	</div>
-	
-	<div class="small-2 columns step-button-undone" ng-if="stepIndex.value<4" ng-click="setStepIndex(3)">
-		<div class="step-button-text">
-			X
-		</div>
-	</div>
-	<div class="small-2 columns step-button-done" ng-if="stepIndex.value>3" ng-click="setStepIndex(3)">
+	<div class="small-1 columns step-button-done" ng-if="stepIndex.value>2" ng-click="setStepIndex(2)">
 		<div class="step-button-text">
 			X
 		</div>
 	</div>
 	
-	<div class="small-2 columns step-button-undone" ng-if="stepIndex.value<5" ng-click="setStepIndex(4)">
+	<div class="small-1 columns step-button-undone" ng-if="stepIndex.value<4" ng-click="setStepIndex(3)">
 		<div class="step-button-text">
 			X
 		</div>
 	</div>
-	<div class="small-2 columns step-button-done" ng-if="stepIndex.value>4" ng-click="setStepIndex(4)">
+	<div class="small-1 columns step-button-done" ng-if="stepIndex.value>3" ng-click="setStepIndex(3)">
 		<div class="step-button-text">
 			X
 		</div>
 	</div>
 	
-	<div class="small-2 columns end step-button-undone" ng-if="stepIndex.value<6" ng-click="setStepIndex(5)">
+	<div class="small-1 columns step-button-undone" ng-if="stepIndex.value<5" ng-click="setStepIndex(4)">
 		<div class="step-button-text">
 			X
 		</div>
 	</div>
-	<div class="small-2 columns end step-button-done" ng-if="stepIndex.value>5" ng-click="setStepIndex(5)">
+	<div class="small-1 columns step-button-done" ng-if="stepIndex.value>4" ng-click="setStepIndex(4)">
+		<div class="step-button-text">
+			X
+		</div>
+	</div>
+	
+	<div class="small-1 columns step-button-undone" ng-if="stepIndex.value<6" ng-click="setStepIndex(5)">
+		<div class="step-button-text">
+			X
+		</div>
+	</div>
+	<div class="small-1 columns step-button-done" ng-if="stepIndex.value>5" ng-click="setStepIndex(5)">
+		<div class="step-button-text">
+			X
+		</div>
+	</div>
+	
+	<div class="small-1 columns end step-button-undone" ng-if="stepIndex.value<7" ng-click="setStepIndex(6)">
+		<div class="step-button-text">
+			X
+		</div>
+	</div>
+	<div class="small-1 columns end step-button-done" ng-if="stepIndex.value>6" ng-click="setStepIndex(6)">
 		<div class="step-button-text">
 			X
 		</div>
 	</div>
 </div>
-<br><br><br><br>
 
-<!--
+
 <div class="row" ng-if="stepIndex.value==0" >
 	<div class="small-8  small-centered columns">
-		<h4>Hi there!</h4>
-		<p>Thank you v
-		</p>
-		<p>Regards, <br>The TEDxUofT Team</p>
+		<h4>Hello!</h4>
+		<p>So much hard work and effort goes into our conference and we would not be as successful if it wasn’t for our volunteers. 
+		As a volunteer you will help us in executing TEDxUofT; you will be able to watch some of the show but you will also be attending to the greater needs of the conference. 
+		It’s an amazing opportunity that includes backstage access and being the first point of contact for our audience.  
+		This is a volunteer opportunity you don’t want to miss! </p>
+		<p>Good luck, <br>The TEDxUofT Team</p>
+		<p>(All your input will be saved in your local machine until you submit)</p>
 	</div>
 </div>
--->
 
-<div class="row" ng-if="stepIndex.value==0">
+
+<div class="row" ng-if="stepIndex.value==1">
     <div class="small-8	 small-centered columns">
 	
 	<div class="row">
@@ -110,7 +123,7 @@
 
 	  
 	  <div class="row">
-		<div class="large-5	 columns">
+		<div class="large-7	 columns">
            <label for="right-label" class="left Inline "><p>Are you available on March 15th, 2015 (the date of our TEDx event)?</p></label>
         </div>
         <div class="large-3 columns end">
@@ -124,30 +137,27 @@
 </div>
 
 
-<div class="row" ng-if="stepIndex.value==1">
-	<div class="small-6 small-centered columns">
+<div class="row" ng-if="stepIndex.value==2">
+	<div class="small-8 small-centered columns">
 			<div class="row small-centered">
 				<div class="large-1 columns"> 
 					<label for="right-label" class="left Inline "><p>Year</p></label>
 				</div>
 				
-				<div class="large-11 columns" ng-class="{error: validation.Year}"> 
+				<div class="large-5 columns" ng-class="{error: validation.Year}"> 
 					<input type="radio" ng-model="submission.Year" value="1">  1 &nbsp;&nbsp;
 					<input type="radio" ng-model="submission.Year" value="2">  2 	&nbsp;&nbsp;
 					<input type="radio" ng-model="submission.Year" value="3">  3 &nbsp;&nbsp;
 					<input type="radio" ng-model="submission.Year" value="4">  4 &nbsp;&nbsp;
 					<input type="radio" ng-model="submission.Year" value="Other">  Other 
+					<small ng-class="{error: validation.Year}" ng-if="validation.Year" style="width:35%">Tell me please :(</small>
 				</div>
-				<div class="large-2 columns end">
-						<small ng-class="{error: validation.Year}" ng-if="validation.Year">Tell me please :(</small>
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="large-6 columns" >
+				
+				<div class="large-1 columns" >
 				  <label for="right-label" class="left Inline "><p>Campus:</p></label>
 				</div>
-				<div class="large-6 columns">
+				
+				<div class="large-5 columns end">
 					<a href="javascript:void(0);" class="button tiny" ng-class="campusUTSC" 
 					ng-click="getCampus('UTSC');" >UTSC</a>
 					
@@ -159,8 +169,13 @@
 					
 					<a href="javascript:void(0);" class="button tiny" ng-class="campusOther"
 					ng-click="getCampus('Other');" >Other</a>
-					<small ng-class="{error: validation.Campus}" ng-if="validation.Campus">You trust me. I trust you.</small>
+					<small ng-class="{error: validation.Campus}" ng-if="validation.Campus" style="width:45%">You trust me. I trust you.</small>
 				</div>
+				
+			</div>
+			
+			<div class="row">
+				
 			</div>
 			
 			<div class="row">
@@ -186,7 +201,7 @@
 </div>
 
 
-<div class="row" ng-if="stepIndex.value==2">
+<div class="row" ng-if="stepIndex.value==3">
     <div class="small-8	 small-centered columns">
 		<div class="large-12 columns">
           <label for="right-label" class="left Inline "><p>How did you hear about TEDxUofT? </p></label>
@@ -199,7 +214,7 @@
 </div>
 
 
-<div class="row" ng-if="stepIndex.value==3">
+<div class="row" ng-if="stepIndex.value==4">
     <div class="small-8	 small-centered columns">
 		<div class="large-12 columns">
           <label for="right-label" class="left Inline "><p>How did you learn about this volunteer position? </p></label>
@@ -211,7 +226,19 @@
 	</div>
 </div>
 
-<div class="row" ng-if="stepIndex.value==4">
+<div class="row" ng-if="stepIndex.value==5">
+    <div class="small-8	 small-centered columns">
+		<div class="large-12 columns">
+          <label for="right-label" class="left Inline "><p>What is your strongest attribute and how can you use it as a volunteer? </p></label>
+        </div>
+		<div class="large-12 columns">
+          	<textarea rows="10" placeholder="I am always all in for TED" ng-model="submission.StrongAttr"></textarea>
+			<small ng-class="{error: validation.StrongAttr}" ng-if="validation.StrongAttr">Tell me more!</small>
+        </div>
+	</div>
+</div>
+
+<div class="row" ng-if="stepIndex.value==6">
     <div class="small-8	 small-centered columns">
 		<div class="large-12 columns">
           <label for="right-label" class="left Inline "><p>What’s your past experience with TED?</p></label>
@@ -223,7 +250,7 @@
 	</div>
 </div>
 
-<div class="row" ng-if="stepIndex.value==5">
+<div class="row" ng-if="stepIndex.value==7">
     <div class="small-8	 small-centered columns">
 		<div class="large-12 columns">
           <label for="right-label" class="left Inline "><p>Is there anything you would really like to see in the upcoming TEDxUofT event?</p></label>
@@ -234,7 +261,7 @@
         </div>
 	</div>
 </div>
-<div class="row" ng-if="stepIndex.value==6">
+<div class="row" ng-if="stepIndex.value==8">
     <div class="small-8	 small-centered columns">
 		<div class="large-12 columns">
           <label for="right-label" class="left Inline "><p>Any questions for us? </p></label>
@@ -248,13 +275,13 @@
 <br><br><br>
 <div class="row">
 	<div class="small-8 columns small-centered ">
-		<a class="button round left" ng-if="(stepIndex.value>0 && stepIndex.value<7)" ng-click="prevStep()">Previous</a>
-		<a class="button round right" ng-if="stepIndex.value<6"  ng-click="nextStep()">Continue</a>
-		<a class="button round right" ng-if="stepIndex.value==6"  ng-click="nextStep()">Finish</a>
+		<a class="button round left" ng-if="(stepIndex.value>0 && stepIndex.value<9)" ng-click="prevStep()">Previous</a>
+		<a class="button round right" ng-if="stepIndex.value<8"  ng-click="nextStep()">Continue</a>
+		<a class="button round right" ng-if="stepIndex.value==8"  ng-click="nextStep()">Finish</a>
 	</div>
 </div>
 
-<div class="row" ng-if="stepIndex.value==7">
+<div class="row" ng-if="stepIndex.value==9">
 	<div class="small-3 columns small-centered animate-hide" ng-hide="submitStatus!='submitting'">
 		<h1>Submitting....</h1>
 	</div>
