@@ -6,8 +6,6 @@ angular.module('tedxUofT2015App')
 	//Scroll To Top
 	$window.scrollTo(0,0);
 	
-	
-	
 	//Close the overlay menu
     $scope.overlayMenuClick = function(){
 		$('#close_overlay').click();
@@ -15,5 +13,27 @@ angular.module('tedxUofT2015App')
 		//location.reload();
 	};
 	
+	function loadTwitter() {
+		!function(d,s,id){
+			var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+			if(!d.getElementById(id)){
+				js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+				js.setAttribute('onload', 
+
+					"twttr.events.bind('rendered',function(e) {});"
+
+				);
+				fjs.parentNode.insertBefore(js,fjs);
+			}
+		}(document,"script","twitter-wjs");
+	}
+	loadTwitter(); 
+	
+	var twitter = $('#twitter-wjs');
+	if(twitter != null){
+		console.log("Reload twitter");
+		twitter.remove();
+		loadTwitter(); 
+	}
 	
 }]);
