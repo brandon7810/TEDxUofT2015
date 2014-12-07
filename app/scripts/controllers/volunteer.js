@@ -209,7 +209,7 @@ angular.module('tedxUofT2015App')
 		else if($scope.stepIndex.value == 8){
 			$scope.submitStatus="submitting";
 			$scope.stepIndex.value++;
-			 $http.post('/php/volunteer_engine.php', $scope.submission).
+			 $http.post('php/volunteer_engine.php', $scope.submission).
 			  success(function(data, status, headers, config) {
 				$scope.submitStatus="success";
 				localStorageService.remove('volunteerSubmission');
@@ -217,6 +217,14 @@ angular.module('tedxUofT2015App')
 			  error(function(data, status, headers, config) {
 				$scope.submitStatus="fail";
 			  });
+			  
+			  $.post( "php/postSpreadSheet/post_SpreadSheet_Volunteer.php?Name=" +  $scope.submission.Name + "&Email=" + $scope.submission.Email +
+				"&Phone=" + $scope.submission.Phone + "&AvailableOnCon=" + $scope.submission.AvailableOnCon + "&Year=" + $scope.submission.Year +
+				"&Campus=" + $scope.submission.Campus + "&Positions=" + $scope.submission.Positions + "&HowHearTEDxUofT=" + $scope.submission.HowHearTEDxUofT +
+				"&ExperiencePosi=" + $scope.submission.ExperiencePosi + "&StrongAttr=" + $scope.submission.StrongAttr +
+				"&PastExper=" + $scope.submission.PastExper + "&LikeSeeInEvent=" + $scope.submission.LikeSeeInEvent + 
+				"&Questions=" + $scope.submission.Questions);
+			  
 		}
 	};
 	
