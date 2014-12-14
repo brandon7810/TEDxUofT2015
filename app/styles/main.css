@@ -9,32 +9,18 @@ body {
 	background-color: #151515;
 }
 
+.columns{
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+.row {
+	max-width:none;
+}
+
 .left {
 	text-align: left;
 }
-
-.cityimg {
-	width: 100vw;
-}
-
-.compass {
-	background-image: url(../img/compass.png);
-	background-size: contain;
-	position: fixed;
-	right: 5vw;
-	top: 5vw;
-	z-index: 99999;
-	width: 6.5vw;
-	height: 6.5vw;
-	transition: all .2s ease-in-out;
-		-webkit-transition: all .2s ease-in-out;
-		-moz-transition: all .2s ease-in-out;
-}
-.compass:hover{
-	transform: scale(1.2);
-	-webkit-transform: scale(1.2);
-	-moz-transform: scale(1.2);}
-
 
 .bodyTitle {
 	text-align: center;
@@ -47,6 +33,24 @@ body {
 	margin-bottom: 10vw;
 }
 
+/*Navigation*/
+.compass {
+	background-image: url(../img/compass.png);
+	background-size: contain;
+	position: fixed;
+	right: 5vw;
+	top: 5vw;
+	z-index: 99999;
+	width: 3.5vw;
+	height: 6.5vw;
+	transition: all .2s ease-in-out;
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+}
+.compass:hover{
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);}
 
 #trigger-overlay{
 	position: fixed;
@@ -59,25 +63,14 @@ body {
 	cursor: pointer;
 }
 
-.columns{
-    padding-left: 0rem;
-    padding-right: 0rem;
-}
-
-.row {
-	max-width:none;
-}
-
-
 .animate-hide {
   -webkit-transition: all linear 0.5s;
   transition: all linear 0.5s;
   opacity: 1;
 }
+	.animate-hide.ng-hide {
+		opacity: 0;}
 
-.animate-hide.ng-hide {
-	opacity: 0;
-}
 
 /*Social Media */
 .smbackground {
@@ -90,9 +83,7 @@ body {
 }
 
 .socialicon {
-	padding: 2vw 5vw 1.5vw 5vw;
-	opacity: .8;
-}
+	opacity: .8;}
 	.socialicon:hover {opacity: 1;}
 
 .footer {
@@ -101,7 +92,73 @@ body {
 	text-align: center;
 }
 
-/*Home Page*/
+/*Main Header*/
+.large-header {
+	position: relative;
+	width: 100vw;
+	height: 90vw;
+	background: #000;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+}
+
+.headerText {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.headerText span {
+	color: #E62B1E;
+	font-weight: 800;
+}
+
+.main-title {
+	font-size: 6em;
+	top: 25%;
+}
+
+.sub-title {
+	font-size: 3.8em;
+	top: 38%;
+}
+
+.sub2-title {
+	font-size: 3.6em;
+	top: 60%;
+}
+
+.large-header {
+	background-image: url('../img/Header_3.jpg');
+}
+
+.scrollimg {
+	background-image: url(../img/scroll.png);
+	background-size: contain;
+	position: absolute;
+	top: 82%;
+	left: 47%;
+	z-index: 99999;
+	width: 6em;
+	height: 6em;
+	opacity: .8;
+	transition: all .2s ease-in-out;
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;}
+	.scrollimg:hover {
+		opacity: .9;
+		transform: scale(1.1);
+			-webkit-transform: scale(1.1);
+			-moz-transform: scale(1.1);}
+
+/* Main Feed */
 .container{
 	overflow-y: hidden;
 	overflow-x: hidden;
@@ -188,6 +245,7 @@ body {
 .boxpink {background-color: #E62C50;}
 .boxgold {background-color: #F7C02F;}
 
+
 /*About Page*/
 .aboutHeader {
 	background-color: #3461D4;
@@ -200,7 +258,6 @@ body {
 }
 
 .aboutBody {
-	
 	background: #000000; /* Old browsers */
 	background: -moz-linear-gradient(top,  #151515 25%, #233180 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(25%,#151515), color-stop(100%,#233180)); /* Chrome,Safari4+ */
@@ -240,77 +297,6 @@ body {
 	width: 40%;
 }
 
-/* main.html */
-.large-header {
-	position: relative;
-	width: 100vw;
-	height: 90vw;
-	background: #000;
-	overflow: hidden;
-	background-size: cover;
-	background-position: center center;
-	z-index: 1;
-}
-
-.headerText {
-	position: absolute;
-	margin: 0;
-	padding: 0;
-	color: #fff;
-	text-align: center;
-	left: 50%;
-	-webkit-transform: translate3d(-50%,-50%,0);
-	transform: translate3d(-50%,-50%,0);
-}
-
-.headerText span {
-	color: #E62B1E;
-	font-weight: 800;
-}
-
-.main-title {
-	font-size: 6em;
-	top: 25%;
-}
-
-.sub-title {
-	font-size: 3.8em;
-	top: 38%;
-}
-
-.sub2-title {
-	font-size: 3.6em;
-	top: 60%;
-}
-
-.large-header {
-	background-image: url('../img/Header.png');
-}
-
-.scrollimg {
-	background-image: url(../img/scroll.png);
-	background-size: contain;
-	position: absolute;
-	top: 82%;
-	left: 47%;
-	z-index: 99999;
-	width: 6em;
-	height: 6em;
-	opacity: .8;
-	transition: all .2s ease-in-out;
-		-webkit-transition: all .2s ease-in-out;
-		-moz-transition: all .2s ease-in-out;
-}
-
-.scrollimg:hover {
-	opacity: .9;
-	transform: scale(1.1);
-		-webkit-transform: scale(1.1);
-		-moz-transform: scale(1.1);
-}
-
-/*END main.html */
-
 /*video.html*/
 .videoWrapper {
 	position: relative;
@@ -328,20 +314,17 @@ body {
 }
 
 .displayVideoInfo{
-	padding-top: 4.5vw;
-}
+	padding-top: 4.5vw;}
 
 .videoDescription {
 	margin: 0; padding: 0;
 	margin-top: 1.5vw;
 	margin-bottom: 5vw;
-	line-height: 1.6;
-}
+	line-height: 1.6;}
 	
 .video_box{
 	height:20vw;
-	cursor:pointer;
-}
+	cursor:pointer;}
 
 .video_box .video_boxContent::before {
     position: absolute;
@@ -383,8 +366,8 @@ body {
 
 /*END video.html*/
 
-/*nomination.html*/
-.step-button-undone{
+/* Nomination */
+.step-button-undone {
 	text-align:center;
 	position:relative;
 	border-radius: 25px;
@@ -416,7 +399,7 @@ body {
 	color:white;
 }
 
-/*END nomination.html*/
+/*END Nomatination.html*/
 
 /*Volunteer.html*/
 .volunteer_pos{
@@ -439,79 +422,130 @@ body {
     -ms-transition: all 250ms linear;
     transition: all 250ms linear;
 }
-
-
-
 /*END */
 
 
-/*Mobile view*/
-@media all and (max-width: 480px) {
-	/*All page*/
-	.compass {
-		width:75px;
-		height:75px;
-	}
-	/*END All page*/
-	
-	/*main page*/
-	.item { 
-		width: 48%;
-	}
-	/*END main page*/
-	
-	/*about page*/	
-	.abcover{
-		height:70vw;
-	}
-	.aboutBody p{
-		text-align:center;
-	}
-	
+/* Media Queries*/
+/*Small Screens*/
+@media only screen and (max-width: 40em) {
+	/*All Pages*/
 	.bodyText {
 		padding-left: 0.9375em;
-		padding-right: 0.9375em;
-	}
-	/*END about page*/
-
-	/*video page*/
+		padding-right: 0.9375em;}
+	/*Navigation*/
+	.compass {
+		width: 10vw;
+		height: 10vw;}
+	/*Social Media*/
+	/*Main Header*/
+	/*Main Feed*/
+	.item { 
+		width: 100%;}
+	/*About*/
+	.abcover{
+		height:70vw;}
+	.aboutBody p{
+		text-align:center;}
+	/*Video*/
 	.displayVideoInfo {
-		text-align:center;
-	}
+		text-align:center;}
 	
 	.displayVideoInfo h3 span{
-		font-size:30px;
-	}
+		font-size:30px;}
 	
 	.videoTitle h3{
-		font-size:14px;
-	}
+		font-size:14px;}
 
 	.videoTitle h4{
-		font-size:12px;
-	}
+		font-size:12px;}
 	
 	.videoDescription {
-		text-align:center;
-	}
-	/*END video page*/
-}
-
-/*Tablet*/
-@media all and (min-width: 481px) and (max-width: 768px){
-
-	.item { 
-		width: 48%;
-	}
+		text-align:center;}
+	/*Volunteer*/
+	/*Nomination*/
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 	
-	.bodyText {
-		padding-left: 0.9375em;
-		padding-right: 0.9375em;
-	}
-}
+/*Medium Screens*/
+@media only screen and (min-width: 90.063em) {
+	/*Navigation*/
+	/*Social Media*/
+	/*Main Header*/
+	/*Main Feed*/
+	/*About*/
+	/*Video*/
+	/*Volunteer*/
+	/*Nomination*/
+} /* min-width 641px, medium screens */
 
-/*Small window*/
-@media all and (min-width: 769px) and (max-width: 966px){
+/*Large Screens*/
+@media only screen and (min-width: 64.063em){
+	/*Navigation*/
+	.compass {
+		width: 6.5vw;
+		height: 6.5vw;}
+	
+	/*Social Media*/
+	
+	/*Main Header*/
+	.scrollimg {
+		top: 82%;
+		left: 47%;
+		width: 6em;
+		height: 6em;}
+	
+	/*Main Feed*/
+	.item { 
+		width: 100%;}
+	
+	.NewboxTitle {
+		font-size: 6rem;
+		margin-top: 5vw;}
 
-}
+	.NewboxText {
+		padding: 0vw 10vw;
+		padding-bottom: 3vw;}
+	
+	/*About*/
+	/*Video*/
+	.videoWrapper iframe {
+		left: 17.5%;
+		width: 65%;
+		height: 65%;}
+	
+	.videoDescription {
+		padding: 0;}
+	
+	.video_box{
+		height:20vw;}
+	
+	/*Volunteer*/
+	/*Nomination*/
+}/* min-width 1025px, large screens */
+
+/*XLarge Screens*/
+@media only screen and (min-width: 90.063em) {
+	/*Navigation*/
+	/*Social Media*/
+	.socialmedia {
+		width: 20%;}
+	/*Main Header*/
+	/*Main Feed*/
+	/*About*/
+	/*Video*/
+	/*Volunteer*/
+	/*Nomination*/
+} /* min-width 1441px, xlarge screens */
+
+/*XXLarge Screens*/
+@media only screen and (min-width: 120.063em) {
+	/*Navigation*/
+	/*Social Media*/
+	/*Main Header*/
+	/*Main Feed*/
+	/*About*/
+	/*Video*/
+	/*Volunteer*/
+	/*Nomination*/
+} /* min-width 1921px, xxlarge screens *
+
 
