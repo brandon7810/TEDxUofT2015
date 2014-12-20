@@ -5,7 +5,8 @@ angular.module('tedxUofT2015App', [
 	'ngSanitize',
 	'ngRoute',
 	'LocalStorageModule',
-	'wu.masonry'
+	'wu.masonry',
+	'angularSmoothscroll'
   ], [ "$httpProvider", function($httpProvider) {
   // Use x-www-form-urlencoded Content-Type
   $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
