@@ -136,7 +136,7 @@ body {
 }
 
 .large-header {
-	background-image: url('../img/Header_3.jpg');
+	background-image: url('../img/Header.png');
 }
 
 .scrollimg {
@@ -425,127 +425,6 @@ body {
 /*END */
 
 
-/* Media Queries*/
-/*Small Screens*/
-@media only screen and (max-width: 40em) {
-	/*All Pages*/
-	.bodyText {
-		padding-left: 0.9375em;
-		padding-right: 0.9375em;}
-	/*Navigation*/
-	.compass {
-		width: 10vw;
-		height: 10vw;}
-	/*Social Media*/
-	/*Main Header*/
-	/*Main Feed*/
-	.item { 
-		width: 100%;}
-	/*About*/
-	.abcover{
-		height:70vw;}
-	.aboutBody p{
-		text-align:center;}
-	/*Video*/
-	.displayVideoInfo {
-		text-align:center;}
-	
-	.displayVideoInfo h3 span{
-		font-size:30px;}
-	
-	.videoTitle h3{
-		font-size:14px;}
 
-	.videoTitle h4{
-		font-size:12px;}
-	
-	.videoDescription {
-		text-align:center;}
-	/*Volunteer*/
-	/*Nomination*/
-} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
-	
-/*Medium Screens*/
-@media only screen and (min-width: 90.063em) {
-	/*Navigation*/
-	/*Social Media*/
-	/*Main Header*/
-	/*Main Feed*/
-	/*About*/
-	/*Video*/
-	/*Volunteer*/
-	/*Nomination*/
-} /* min-width 641px, medium screens */
-
-/*Large Screens*/
-@media only screen and (min-width: 64.063em){
-	/*Navigation*/
-	.compass {
-		width: 6.5vw;
-		height: 6.5vw;}
-	
-	/*Social Media*/
-	
-	/*Main Header*/
-	.scrollimg {
-		top: 82%;
-		left: 47%;
-		width: 6em;
-		height: 6em;}
-	
-	/*Main Feed*/
-	.item { 
-		width: 100%;}
-	
-	.NewboxTitle {
-		font-size: 6rem;
-		margin-top: 5vw;}
-
-	.NewboxText {
-		padding: 0vw 10vw;
-		padding-bottom: 3vw;}
-	
-	/*About*/
-	/*Video*/
-	.videoWrapper iframe {
-		left: 17.5%;
-		width: 65%;
-		height: 65%;}
-	
-	.videoDescription {
-		padding: 0;}
-	
-	.video_box{
-		height:20vw;}
-	
-	/*Volunteer*/
-	/*Nomination*/
-}/* min-width 1025px, large screens */
-
-/*XLarge Screens*/
-@media only screen and (min-width: 90.063em) {
-	/*Navigation*/
-	/*Social Media*/
-	.socialmedia {
-		width: 20%;}
-	/*Main Header*/
-	/*Main Feed*/
-	/*About*/
-	/*Video*/
-	/*Volunteer*/
-	/*Nomination*/
-} /* min-width 1441px, xlarge screens */
-
-/*XXLarge Screens*/
-@media only screen and (min-width: 120.063em) {
-	/*Navigation*/
-	/*Social Media*/
-	/*Main Header*/
-	/*Main Feed*/
-	/*About*/
-	/*Video*/
-	/*Volunteer*/
-	/*Nomination*/
-} /* min-width 1921px, xxlarge screens *
 
 
