@@ -66,7 +66,6 @@ body {
 	padding-left: 15px;
 }
 
-
 #trigger-overlay span{
 	opacity: 0;
 }
@@ -207,8 +206,7 @@ body {
 }
 	.item:hover {
 		background-color: #7997F5;
-		cursor: pointer;
-	}
+		cursor: pointer;}
 	.item:hover h3,
 	.item:hover h4 {	
 		color: #fff;
@@ -270,8 +268,8 @@ body {
 	opacity: 0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: scale(0);
-	transform: scale(0);
+	-webkit-transform: scale(0.8);
+	transform: scale(0.8);
 }
 
 .instaitem:hover instatext::before,
@@ -399,18 +397,18 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-	content: '';
+		content: '';
     opacity: 1;
     transform: translate3d(0,0%,0);
     transition: opacity 0.00s, transform 0.35s;
-	background: #000;
-	overflow: hidden;
+		background: #000;
+		overflow: hidden;
 }
  
 .video_box:hover .video_boxContent::before {
     opacity: .5;
     transform: translate3d(0,0,0);
-	background: #E62C50;
+		background: #E62C50;
 }
 
 .video_box .video_boxContent::before {
@@ -492,21 +490,49 @@ body {
 /*END volunteer */
 
 
-/*Mobile view*/
-@media all and (max-width: 480px) {
+/*Mobile screens*/
+@media all and (max-width: 640px) {
 	/*All page*/
 	.compass {
-		width:75px;
-		height:75px;
-	}
+		right: 0vw;
+		top: 0vw;
+		width: 20vw;
+		height: 20vw;}
 	
 	#trigger-overlay span{
-		opacity: 1;
+		opacity: 0;
 	}
 	
-	/*main page*/
+	/*Main Header*/
+	.NewboxTitle {
+		margin-top: 5vw;
+		line-height: 1;
+	}
+
+	.NewboxText {
+		padding: 3vw;
+		padding-bottom: 6vw;
+	}
+	
+	/*Main Feed*/
 	.item { 
-		width: 48%;
+		width: 100%; 
+		min-height: 100vw;
+	}
+	
+	.FeedboxText {
+		padding: 3vw;
+		padding-top: 35vw;
+	}
+
+	.FeedboxText h3 {
+		padding-bottom: 1em;
+	}
+	
+	.firstBox {
+		text-align: left;
+		padding-top: 10vw;
+		padding-bottom: 5vw;
 	}
 	
 	.scrollimg{
@@ -526,30 +552,30 @@ body {
 		padding-right: 0.9375em;
 	}
 
-	/*VIdeo*/
-	.displayVideoInfo {
-		text-align:center;
-	}
+	/*Video*/
+	.videoWrapper iframe {
+		top: 35vw;
+		left: 0;
+		width: 100%;
+		height: 100%;}
 	
-	.displayVideoInfo h3 span{
-		font-size:30px;
-	}
-	
-	.videoTitle h3{
-		font-size:14px;
-	}
+	.displayVideoInfo{
+		text-align: center;
+		padding-top: 65vw;}
 
-	.videoTitle h4{
-		font-size:12px;
-	}
-	
 	.videoDescription {
-		text-align:center;
-	}
-	
+		padding: 0 .5em;
+		margin-top: 5vw;
+		margin-bottom: 10vw;
+		text-align: left;}
+
 	.video_box{
-		height: 200px
-	}
+		height:60vw;}
+	
+	.video_box .video_boxContent::before {
+    opacity: .5;
+		background: #E62C50;
+}
 	
 /*Navigation*/
 /*Social Media*/
@@ -558,43 +584,121 @@ body {
 }
 
 /*Tablet*/
-@media all and (min-width: 481px) and (max-width: 768px){
+@media all and (min-width: 641px) and (max-width: 1024px){
+	/*All Pages*/
+	.compass {
+		right: 0vw;
+		top: 0vw;
+		width: 12vw;
+		height: 12vw;}
+	
+	/*Navigation*/
+	/*Social Media*/
+	/*Main Header*/
+	.NewboxTitle {
+		margin-top: 5vw;
+		line-height: 1;
+	}
 
-/*Navigation*/
-/*Social Media*/
-/*Main Header*/
+	.NewboxText {
+		padding: 3vw;
+		padding-bottom: 6vw;
+	}
+	
 	/*Main Feed*/
+	.item { 
+		width: 50%; 
+		min-height: 50vw;
+	}
+	
+	.FeedboxText {
+		padding: 3vw;
+		padding-top: 10vw;
+	}
+
+	.FeedboxText h3 {
+		padding-bottom: 1em;
+	}
+	
+	.firstBox {
+		text-align: left;
+		min-height: 80vw;
+		padding-top: 4vw;
+	}
+		
 	.scrollimg{
 		left: 43%;
 	}
 
-/*About*/
-/*VIdeo*/
-/*Volunteer*/
-/*Nomination*/
+	/*About*/
+	/*Video*/
+		.videoWrapper iframe {
+			top: 10vw;
+			left: 0;
+			width: 100%;
+			height: 100%;}
 
-	.item { 
-		width: 48%;
+		.displayVideoInfo{
+			padding: 35vw 3vw 0vw 3vw;}
+
+		.videoDescription {
+			margin-top: 5vw;
+			margin-bottom: 8vw;}
+
+		.video_box{
+			height:50vw;}
+
+		.video_box .video_boxContent::before {
+			opacity: .5;
+			background: #E62C50;
 	}
-	
-	.bodyText {
-		padding-left: 0.9375em;
-		padding-right: 0.9375em;
+
+	/*Volunteer*/
+	/*Nomination*/
+
+		.bodyText {
+			padding-left: 0.9375em;
+			padding-right: 0.9375em;
+		}
 	}
-}
 
-/*Small window*/
-@media all and (min-width: 769px) and (max-width: 966px){
+/*Large screens*/
+@media all and (min-width: 1025px) and (max-width: 1440px){
+	/*Navigation*/
+	#trigger-overlay span{
+		opacity: 1;
+	}
+	/*Social Media*/
+	/*Main Header*/
+	/*Main Feed*/
+	/*About*/
+	/*Video*/
+	/*Volunteer*/
+	/*Nomination*/
+	}
 
+/*XLarge screens*/
+@media all and (min-width: 1441px) and (max-width: 1920px){
 /*Navigation*/
 /*Social Media*/
 /*Main Header*/
 /*Main Feed*/
 /*About*/
-/*VIdeo*/
+/*Video*/
 /*Volunteer*/
 /*Nomination*/
+}
 
+/*XXLarge screens*/
+@media all and (min-width: 1921px) {
+/*Navigation*/
+/*Social Media*/
+/*Main Header*/
+/*Main Feed*/
+/*About*/
+/*Video*/
+/*Volunteer*/
+/*Nomination*/
 }
 
 
