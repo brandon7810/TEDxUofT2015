@@ -452,6 +452,10 @@ body {
 		width: 48%;
 	}
 	
+	.scrollimg{
+		left: 38%;
+	}
+	
 	/*About*/	
 	.abcover{
 		height:70vw;
@@ -486,6 +490,10 @@ body {
 		text-align:center;
 	}
 	
+	.video_box{
+		height: 200px
+	}
+	
 /*Navigation*/
 /*Social Media*/
 /*Volunteer*/
@@ -498,7 +506,11 @@ body {
 /*Navigation*/
 /*Social Media*/
 /*Main Header*/
-/*Main Feed*/
+	/*Main Feed*/
+	.scrollimg{
+		left: 43%;
+	}
+
 /*About*/
 /*VIdeo*/
 /*Volunteer*/
