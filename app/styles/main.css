@@ -36,16 +36,17 @@ body {
 /*Navigation*/
 .compass {
 	background-image: url(../img/compass.png);
+	background-repeat: no-repeat;
 	background-size: contain;
 	position: fixed;
 	right: 5vw;
 	top: 5vw;
 	z-index: 99999;
-	width: 3.5vw;
+	width: 6.5vw;
 	height: 6.5vw;
 	transition: all .2s ease-in-out;
-		-webkit-transition: all .2s ease-in-out;
-		-moz-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
 }
 .compass:hover{
 	transform: scale(1.2);
@@ -61,8 +62,14 @@ body {
 	background-color:rgba(0,0,0,0);
 	border-radius: 10px;
 	cursor: pointer;
+	padding-top: 70px;
+	padding-left: 15px;
 }
 
+
+#trigger-overlay span{
+	opacity: 0;
+}
 .animate-hide {
   -webkit-transition: all linear 0.5s;
   transition: all linear 0.5s;
@@ -83,8 +90,11 @@ body {
 }
 
 .socialicon {
-	opacity: .8;}
-	.socialicon:hover {opacity: 1;}
+	opacity: .8;
+	padding: 2vw 5vw 1.5vw 5vw;
+}
+	
+.socialicon:hover {opacity: 1;}
 
 .footer {
 	min-height:2vw;
@@ -422,7 +432,101 @@ body {
     -ms-transition: all 250ms linear;
     transition: all 250ms linear;
 }
-/*END */
+/*END volunteer */
+
+
+/*Mobile view*/
+@media all and (max-width: 480px) {
+	/*All page*/
+	.compass {
+		width:75px;
+		height:75px;
+	}
+	
+	#trigger-overlay span{
+		opacity: 1;
+	}
+	
+	/*main page*/
+	.item { 
+		width: 48%;
+	}
+	
+	/*About*/	
+	.abcover{
+		height:70vw;
+	}
+	.aboutBody p{
+		text-align:center;
+	}
+	
+	.bodyText {
+		padding-left: 0.9375em;
+		padding-right: 0.9375em;
+	}
+
+	/*VIdeo*/
+	.displayVideoInfo {
+		text-align:center;
+	}
+	
+	.displayVideoInfo h3 span{
+		font-size:30px;
+	}
+	
+	.videoTitle h3{
+		font-size:14px;
+	}
+
+	.videoTitle h4{
+		font-size:12px;
+	}
+	
+	.videoDescription {
+		text-align:center;
+	}
+	
+/*Navigation*/
+/*Social Media*/
+/*Volunteer*/
+/*Nomination*/
+}
+
+/*Tablet*/
+@media all and (min-width: 481px) and (max-width: 768px){
+
+/*Navigation*/
+/*Social Media*/
+/*Main Header*/
+/*Main Feed*/
+/*About*/
+/*VIdeo*/
+/*Volunteer*/
+/*Nomination*/
+
+	.item { 
+		width: 48%;
+	}
+	
+	.bodyText {
+		padding-left: 0.9375em;
+		padding-right: 0.9375em;
+	}
+}
+
+/*Small window*/
+@media all and (min-width: 769px) and (max-width: 966px){
+
+/*Navigation*/
+/*Social Media*/
+/*Main Header*/
+/*Main Feed*/
+/*About*/
+/*VIdeo*/
+/*Volunteer*/
+/*Nomination*/
+
+}
 
 
 
