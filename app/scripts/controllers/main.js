@@ -1,7 +1,9 @@
 'use strict';
 
 angular.module('tedxUofT2015App')
-  .controller('MainCtrl', ["$scope", "$window", "$http", function ($scope,$window,$http) {
+  .controller('MainCtrl', ["$scope", "$window", "$http", "$rootScope", function ($scope,$window,$http,$rootScope) {	
+	
+	$rootScope.socialMedia = {show:true};
 	
 	//Scroll To Top
 	$window.scrollTo(0,0);
@@ -37,3 +39,4 @@ angular.module('tedxUofT2015App')
 	}
 	
 }]);
+

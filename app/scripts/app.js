@@ -86,4 +86,4 @@ angular.module('tedxUofT2015App', [
       .otherwise({
         redirectTo: '/'
       });
-  }]);
+}]);

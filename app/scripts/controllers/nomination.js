@@ -8,7 +8,11 @@
  * Controller of the tedxUofT2015App
  */
 angular.module('tedxUofT2015App')
-  .controller('NominationCtrl', ["$scope", "$window", "$http", "localStorageService", function ($scope,$window,$http,localStorageService) {	
+  .controller('NominationCtrl', ["$scope", "$window", "$http", "localStorageService", "$rootScope",
+  function ($scope,$window,$http,localStorageService,$rootScope) {	
+	
+	$rootScope.socialMedia.show = false;
+  
 	//Scroll To Top
 	$window.scrollTo(0,0);
 

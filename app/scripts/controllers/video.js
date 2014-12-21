@@ -1,8 +1,10 @@
 'use strict';
 
 angular.module('tedxUofT2015App')
-  .controller('VideoCtrl', ["$scope", "$window", "$sce", function ($scope,$window,$sce) {
+  .controller('VideoCtrl', ["$scope", "$window", "$sce", "$rootScope", function ($scope,$window,$sce,$rootScope) {
     
+	$rootScope.socialMedia.show = true;
+	
 	//Scroll To Top
 	$window.scrollTo(0,0);
 	
