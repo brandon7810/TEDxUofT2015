@@ -188,18 +188,18 @@ body {
 
 .NewboxTitle {
 	font-size: 6rem;
-	margin-top: 5vw;
+	margin-top: 3vw;
 }
 
 .NewboxText {
 	padding: 0vw 10vw;
-	padding-bottom: 3vw;
+	padding-bottom: 3.5vw;
 }
 
 .item { 
-	width: 24.9%; 
+	width: 33.333%; 
 	background-color: #fff;
-	text-align: left;
+	text-align: center;
 	min-height: 22vw;
 	transition: all .2s ease-in;
 		-webkit-transition: all .2s ease-in;
@@ -217,12 +217,68 @@ body {
 .firstBox {
 	background-color: #E62C50;
 	min-height: 44vw;
+	text-align: left;
+	padding-top: 5vw;
+	cursor: default;
 }
+	.item firstbox h3 {color: #fff;}
 
 .twitter-timeline {
-	min-height: 43.7vw;
+	min-height: 1vw;
 	padding-top: 1em;
 	background-color: #fff;
+}
+
+.instaitem {
+	width: 33.333%;
+	overflow: hidden;
+	background-color: #fff;
+	text-align: center;
+	height: 22vw;
+	transition: all .2s ease-in;
+		-webkit-transition: all .2s ease-in;
+		-moz-transition: all .2s ease-in-out;}
+	.instaitem:hover {
+		background-color: #7997F5;
+		cursor: pointer;}
+
+.instaitem img {
+	opacity: .95;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+}
+	.instaitem:hover img {
+		opacity: .8;
+		-webkit-transform: scale(1);
+		transform: scale(1);}
+
+.instaitem h3 {
+	position: absolute;
+	padding: 0;
+	top: 60px;
+	left: 0;
+	visibility: hidden;
+	color: #fff;}
+	.instaitem:hover h3 {
+	visibility:visible;}
+	.instaitem FeedboxText h3 {color: #fff;}
+
+.instaitem instatext::before,
+.instaitem h3 {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
+.instaitem:hover instatext::before,
+.instaitem:hover h3 {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
 }
 
 .FeedboxText {
@@ -231,6 +287,7 @@ body {
 
 .FeedboxText h3 {
 	font-size: 2em;
+	font-weight: 900;
 	color: #222;
 	transition: all .2s ease-in;
 		-webkit-transition: all .2s ease-in;
