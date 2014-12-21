@@ -200,6 +200,7 @@ body {
 }
 
 .item { 
+	float: left;
 	width: 33.333%; 
 	background-color: #fff;
 	text-align: center;
