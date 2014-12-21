@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.4; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     font-size: 60%;
-    color: white;
+    color: #fff;
     line-height: 0; }
 
 h1 {
@@ -82,6 +82,7 @@ h2 {
 h3 {
   font-size: 1.5rem;
 	font-weight: 700;
+	color: #fff;
 }
 	h3 span {
 		color: #fff;
