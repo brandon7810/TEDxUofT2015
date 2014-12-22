@@ -375,10 +375,11 @@ body {
 	margin-bottom: -20%;
 }
 .videoWrapper iframe {
+	z-index: 45;
 	position: absolute;
 	top: 3vw;
 	left: 17.5%;
-	width: 65%;
+	width: 65%;	
 	height: 65%;
 }
 
