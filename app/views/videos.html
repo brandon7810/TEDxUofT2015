@@ -19,7 +19,7 @@
 	<div class="small-12 small-centered columns">
 		<div class="small-12 medium-6 large-4 columns" ng-repeat="video in displayVideos">
 			<div class="video_box" back-img="http://img.youtube.com/vi/{{video['id']}}/maxresdefault.jpg" 
-			ng-click="playVideo(currentIndexFirstDisplayedVideo+$index)">
+			ng-click="playVideo(currentIndexFirstDisplayedVideo+$index)" smooth-scroll-jquery target="" speed="200" >
 				<div class="video_boxContent">
 					<div class="videoTitle">
 						<h3>{{video.speaker}}</h3>
@@ -29,7 +29,6 @@
 			</div>
 		</div> 	
 	</div>
-	
 </div>	
 
 <script>
@@ -37,8 +36,6 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-47529145-1', 'auto');
   ga('send', 'pageview');
-
 </script>

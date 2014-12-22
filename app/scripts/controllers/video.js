@@ -92,8 +92,40 @@ T			hree years ago, Jessie developed an herbicide composed of used coffee ground
 			law. Lesli is the author of 'Animals and the Law', the only Canadian law text on the subject, published by Irwin Law. Lesli was the 2012 international\
 			law lecturer for Australian animal protection institute, Voiceless - she undertook a 12-stop lecture tour of Australia, comparing the commercial \
 			hunts for seals in Canada and kangaroos in Australia. In recent years, Lesli’s full-time work has been in the human rights and poverty law fields, \
-			and she is currently the Barrister at Legal Aid Ontario’s Clinic Resource Office."}
+			and she is currently the Barrister at Legal Aid Ontario’s Clinic Resource Office."},
+			
+		{title:"In defence of the generalist in a specialists' world" , link:"http://www.youtube.com/embed/a70HvvdGOrQ",
+			id:"a70HvvdGOrQ", speaker:"Sarah Kenvyn",
+			description:"Sarah Kenvyn draws attention to the importance and fascination of being a generalist in this 21st century that is full of specialists. \
+			She first takes the stage and captivates the audience with a beautiful piece that she has composed with her band, The Craft.\
+			Sarah Barnett Burns, also known by her stage name Sarah Kenvyn, is a 4th year neuroscience and cell biology student here at U of T. \
+			She is currently doing a 4th year thesis investigating the epigenetic effects of social isolation on the foraging gene in Drosophila, \
+			and hopes to continue on to graduate school to study the long term epigenetic effects of early deprivation and stress. When she isn't studying however,\
+			she juggles many other roles including being an entrepreneur and a singer/songwriter. "},
 		
+		{title:"The Dark Side of the Chew" , link:"http://www.youtube.com/embed/Myce8GLcJsQ",
+			id:"Myce8GLcJsQ", speaker:"Andrew Nisker",
+			description:"In high school, in the mid-80's, Andrew Nisker wanted to play guitar in a rock band so he cold change the world through music. \
+			Nobody wanted to play with him, so instead, he picked up a camera and started making documentaries about social environmental issues.\
+			In 2013 Nisker traveled many miles to weave together a story of something that is so prevalent today throughout the world,\
+			yet has a tremendous economic and environmental impact. It's considered a habit that everybody does, or has done, \
+			but that no one thinks much about. That is, until now. Andrew Nisker makes films that inspire people to take action and revolutionize the way they treat the environment and themselves.\
+			His latest film, Dark Side of the Chew, takes on the world's second most common form of litter: chewing gum. \
+			Andrew believes that the story will act as a gateway to young minds to enhance their awareness of this seemingly invisible pollution that has an enormous social, \
+			environmental and economic impact. "},
+		
+		{title:"Por Una Cabeza" , link:"http://www.youtube.com/embed/97Qr8TEcHj8",
+			id:"97Qr8TEcHj8", speaker:"Jessy Je Young Kim, Christina Choi, Tess Crowther",
+			description:"A captivating string trio opens the show with the familiar and beautiful tango from the 1992 film 'Scent of a Woman'.\
+			The three musicians are from the Glenn Gould School at the Royal Conservatory of Music, with Jessy Je Young Kim and Christina Choi as violinists, \
+			and Tess Crowther on the cello. "},
+			
+		{title:"Epic Song Mashup" , link:"http://www.youtube.com/embed/u_RJhOEaiCY",
+			id:"u_RJhOEaiCY", speaker:"Tunes. Beats. Awesome.",
+			description:"TBA (Tunes. Beats. Awesome.), the student acapella at University of Toronto, brings great joy to the audience with their creative popular song medley. \
+			TBA is an award-winning co-ed collegiate a cappella group at the University of Toronto. Formed in 2003, TBA has since made a name for itself with its fresh sound, tight harmonies,\
+			and innovative arrangements.The group now heads into its eleventh year full speed ahead, backed by the momentum of three stellar seasons at the International Championship of Collegiate A Cappella,\
+			where they turned heads and took home awards for Outstanding Arrangement, Outstanding Choreography, Outstanding Vocal Percussion and Outstanding Soloist."}
 	];
 	
 	$scope.displayVideoInfo = {
@@ -125,13 +157,11 @@ T			hree years ago, Jessie developed an herbicide composed of used coffee ground
 		$scope.displayVideoInfo.title = $scope.videos[index].title;
 		$scope.displayVideoInfo.speaker = $scope.videos[index].speaker;
 		$scope.displayVideoInfo.description = $scope.videos[index].description;
-		$window.scrollTo(0,0);
 	};
 	
 	//videos displayed on the list
 	$scope.displayVideos=[];
 	for(var i=0; i<$scope.videos.length; i++){
 		$scope.displayVideos.push($scope.videos[i]);
-	}
-	
-  }]);
+	}	
+}]);
