@@ -11,6 +11,8 @@ angular.module('tedxUofT2015App')
   .controller('VolunteerCtrl', ["$scope", "$window", "$http", "localStorageService", "$rootScope",
 	function ($scope,$window,$http,localStorageService, $rootScope) {	
 	
+	ga('send', 'pageview', '/volunteer');
+	
 	$rootScope.socialMedia.show = false;
 	
 	//Scroll To Top

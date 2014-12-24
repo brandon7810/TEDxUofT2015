@@ -5,6 +5,8 @@ angular.module('tedxUofT2015App')
     
 	$rootScope.socialMedia.show = true;
 	
+	ga('send', 'pageview', '/videos');
+	
 	//Scroll To Top
 	$window.scrollTo(0,0);
 	

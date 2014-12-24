@@ -11,6 +11,8 @@ angular.module('tedxUofT2015App')
   .controller('NominationCtrl', ["$scope", "$window", "$http", "localStorageService", "$rootScope",
   function ($scope,$window,$http,localStorageService,$rootScope) {	
 	
+	ga('send', 'pageview', '/nomination');
+	
 	$rootScope.socialMedia.show = false;
   
 	//Scroll To Top
