@@ -581,12 +581,36 @@ body {
 .cfspeakerBox {
 	background-color: #595ee8;
 	border: 5px solid #000025;
-	height: 30vw;
+	height: 25vw;
 	padding: 2em;
 }
 
 .onebox {
-	background-image: url(/img/obama.jpg);
+	background-image: url(/img/speakers/Glaze.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.twobox {
+	background-image: url(/img/speakers/Tobias.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.threebox {
+	background-image: url(/img/speakers/JLiu.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.fourbox {
+	background-image: url(/img/speakers/Joel.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.fivebox {
+	background-image: url(/img/speakers/Logie.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
