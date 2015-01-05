@@ -6,7 +6,8 @@ angular.module('tedxUofT2015App', [
 	'ngRoute',
 	'LocalStorageModule',
 	'wu.masonry',
-	'angularSmoothscroll'
+	'angularSmoothscroll',
+	'mm.foundation'
   ], [ "$httpProvider", function($httpProvider) {
   // Use x-www-form-urlencoded Content-Type
   $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
@@ -68,7 +69,7 @@ angular.module('tedxUofT2015App', [
       })
 	  .when('/conference', {
         templateUrl: 'views/conference.html',
-        controller: 'MainCtrl'
+        controller: 'ConferenceCtrl'
       })
 	  .when('/videos', {
         templateUrl: 'views/videos.html',

@@ -32,7 +32,6 @@
     "commit": "6973190ee328a0ef517fd1c005c68a9625ea10a4"
   },
   "_source": "git://github.com/arnaudbreton/angular-smoothscroll.git",
-  "_target": "~1.1.1",
-  "_originalSource": "angular-smoothscroll",
-  "_direct": true
+  "_target": "1.1.1",
+  "_originalSource": "angular-smoothscroll"
 }
