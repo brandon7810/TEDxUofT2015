@@ -564,8 +564,45 @@ body {
 
 .cfTheme img {
 	margin-top: 15em;
-	margin-bottom: 3em;
+	margin-bottom: 4em;
 	width: 40vw;
+}
+
+.cfvideo {
+	height: 40vw;
+	margin: 0 10em;
+	background-color: #2b2e71;
+}
+
+.cfspeakerGrid {
+	margin-top: 3em;
+}
+
+.cfspeakerBox {
+	background-color: #595ee8;
+	border: 5px solid #000025;
+	height: 30vw;
+	padding: 2em;
+}
+
+.onebox {
+	background-image: url(/img/obama.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ticketsbutton {
+	border: 4px solid #E62B1E;
+	-webkit-border-radius: 45px;
+	-moz-border-radius: 45px;
+	border-radius: 45px;
+	padding: .5em;
+	margin-top: 5em;
+}
+
+.ticketsbutton h3 {
+	color: #E62B1E;
+	font-weight: 600;
 }
 
 /*END Conference */
