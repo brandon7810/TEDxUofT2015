@@ -38,5 +38,101 @@ angular.module('tedxUofT2015App')
 		loadTwitter(); 
 	}
 	
+	//mailing list
+	$scope.mailingButton = "Subscribe";
+	$scope.mailingPlaceHolder = "AwesomeEmail@mail.com";
+	$scope.mailingLabel = ""
+	$scope.mailingMsg = "";
+	$scope.mailingLeft = "";
+	$scope.mailingInput = "";
+	$scope.steps = 0;
+	$scope.focusInput = true;
+	
+	$scope.mailingInfo = {
+		email:"",
+		name:"",
+		year:"",
+		campus:"",
+		interest:"",
+		involvement:""
+	};
+
+	$scope.mailingNext = function(){
+		$scope.mailingMsg = "";
+		$scope.mailingFocusInput = true;
+		if($scope.steps == 0){
+			if($scope.mailingInput == "" || !validateEmail($scope.mailingInput) ){
+				$scope.mailingMsg = "Please fill in valid email"
+			}else{
+				$scope.mailingInfo.email = $scope.mailingInput;
+				$scope.mailingButton = "Next";
+				$scope.mailingPlaceHolder = "Cool Buddy";
+				$scope.mailingLeft = "0/4";
+				$scope.mailingLabel = "Name:"
+				$scope.steps++;
+				$scope.mailingInput = "";
+			}
+		}
+		else if($scope.steps == 1){
+			if($scope.mailingInput == ""){
+				$scope.mailingMsg = "Please fill in your name"
+			}else{
+				$scope.mailingInfo.name = $scope.mailingInput;
+				$scope.mailingButton = "Next";
+				$scope.mailingPlaceHolder = "3rd";
+				$scope.mailingLeft = "1/4";
+				$scope.mailingLabel = "Year of Study:"
+				$scope.steps++;
+				$scope.mailingInput = "";
+			}
+		}
+		else if($scope.steps == 2){
+			if($scope.mailingInput == ""){
+				$scope.mailingMsg = "Please fill in your name"
+			}else{
+				$scope.mailingInfo.campus = $scope.mailingInput;
+				$scope.mailingButton = "Next";
+				$scope.mailingPlaceHolder = "Victoria/UTSG";
+				$scope.mailingLeft = "2/4";
+				$scope.mailingLabel = "College/Campus:"
+				$scope.steps++;
+				$scope.mailingInput = "";
+			}
+		}
+		else if($scope.steps == 3){
+			if($scope.mailingInput == ""){
+				$scope.mailingMsg = "Please fill in your name"
+			}else{
+				$scope.mailingInfo.interest = $scope.mailingInput;
+				$scope.mailingButton = "Next";
+				$scope.mailingPlaceHolder = "Science/Research/Education/Technology/GlobalIssues/Environment/Art";
+				$scope.mailingLeft = "3/4";
+				$scope.mailingLabel = "Area of Interest:"
+				$scope.steps++;
+				$scope.mailingInput = "";
+			}
+		}
+		else if($scope.steps == 4){
+			if($scope.mailingInput == ""){
+				$scope.mailingMsg = "Please fill in your name"
+			}else{
+				$scope.mailingInfo.interest = $scope.mailingInput;
+				$scope.mailingButton = "Finish";
+				$scope.mailingPlaceHolder = "Volunteer/Executive/Events/Conference";
+				$scope.mailingLeft = "4/4";
+				$scope.mailingLabel = "Involvement in TEDxUofT:"
+				$scope.steps++;
+				$scope.mailingInput = "";
+			}
+		}
+	};
+	
+	
+	
+	function validateEmail(email) { 
+		var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		return re.test(email);
+	} 
+	
 }]);
 
