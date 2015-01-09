@@ -75,7 +75,7 @@ angular.module('tedxUofT2015App')
 		}
 		else if($scope.steps == 1){
 			if($scope.mailingInput == ""){
-				$scope.mailingMsg = "Please fill in your name"
+				$scope.mailingMsg = "Please fill in your name";
 			}else{
 				$scope.mailingInfo.name = $scope.mailingInput;
 				$scope.mailingButton = "Next";
@@ -88,7 +88,7 @@ angular.module('tedxUofT2015App')
 		}
 		else if($scope.steps == 2){
 			if($scope.mailingInput == ""){
-				$scope.mailingMsg = "Please fill in your name"
+				$scope.mailingMsg = "Please fill in your year of study";
 			}else{
 				$scope.mailingInfo.campus = $scope.mailingInput;
 				$scope.mailingButton = "Next";
@@ -101,7 +101,8 @@ angular.module('tedxUofT2015App')
 		}
 		else if($scope.steps == 3){
 			if($scope.mailingInput == ""){
-				$scope.mailingMsg = "Please fill in your name"
+			
+				$scope.mailingMsg = "Please fill in your college/campus";
 			}else{
 				$scope.mailingInfo.interest = $scope.mailingInput;
 				$scope.mailingButton = "Next";
@@ -114,7 +115,7 @@ angular.module('tedxUofT2015App')
 		}
 		else if($scope.steps == 4){
 			if($scope.mailingInput == ""){
-				$scope.mailingMsg = "Please fill in your name"
+				$scope.mailingMsg = "Please fill in your area of interest";
 			}else{
 				$scope.mailingInfo.interest = $scope.mailingInput;
 				$scope.mailingButton = "Finish";
@@ -123,6 +124,10 @@ angular.module('tedxUofT2015App')
 				$scope.mailingLabel = "Involvement in TEDxUofT:"
 				$scope.steps++;
 				$scope.mailingInput = "";
+			}
+		}else if($scope.steps == 5){
+			if($scope.mailingInput == ""){
+				$scope.mailingMsg = "Please fill in the blank";
 			}
 		}
 	};
