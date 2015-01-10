@@ -56,6 +56,9 @@ angular.module('tedxUofT2015App')
 		interest:"",
 		involvement:""
 	};
+	
+	$('#mailingFail').hide();
+	$('#mailingSuccess').hide();
 
 	$scope.mailingNext = function(){
 		$scope.mailingMsg = "";
@@ -90,7 +93,7 @@ angular.module('tedxUofT2015App')
 			if($scope.mailingInput == ""){
 				$scope.mailingMsg = "Please fill in your year of study";
 			}else{
-				$scope.mailingInfo.campus = $scope.mailingInput;
+				$scope.mailingInfo.year = $scope.mailingInput;
 				$scope.mailingButton = "Next";
 				$scope.mailingPlaceHolder = "Victoria/UTSG";
 				$scope.mailingLeft = "2/4";
@@ -104,7 +107,7 @@ angular.module('tedxUofT2015App')
 			
 				$scope.mailingMsg = "Please fill in your college/campus";
 			}else{
-				$scope.mailingInfo.interest = $scope.mailingInput;
+				$scope.mailingInfo.campus = $scope.mailingInput;
 				$scope.mailingButton = "Next";
 				$scope.mailingPlaceHolder = "Science/Research/Education/Technology/GlobalIssues/Environment/Art";
 				$scope.mailingLeft = "3/4";
@@ -128,6 +131,21 @@ angular.module('tedxUofT2015App')
 		}else if($scope.steps == 5){
 			if($scope.mailingInput == ""){
 				$scope.mailingMsg = "Please fill in the blank";
+			}else{
+				$scope.mailingInfo.involvement = $scope.mailingInput;
+				$http.post('php/mailingListEngine.php', $scope.mailingInfo).
+					success(function(data, status, headers, config) {
+						$('#mailingSystem').fadeOut(300, function() {
+							$('#mailingSuccess').fadeIn(300);
+							localStorageService.remove('speakerSubmission');
+						});
+					}).
+					error(function(data, status, headers, config) {
+						$('#mailingSystem').fadeOut(300, function() {
+							$('#mailingFail').fadeIn(300);
+						});
+				});
+
 			}
 		}
 	};
