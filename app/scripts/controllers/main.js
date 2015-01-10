@@ -59,6 +59,8 @@ angular.module('tedxUofT2015App')
 	
 	$('#mailingFail').hide();
 	$('#mailingSuccess').hide();
+	$('#mailingSubmitting').hide();
+	
 
 	$scope.mailingNext = function(){
 		$scope.mailingMsg = "";
@@ -133,19 +135,27 @@ angular.module('tedxUofT2015App')
 				$scope.mailingMsg = "Please fill in the blank";
 			}else{
 				$scope.mailingInfo.involvement = $scope.mailingInput;
+				$('#mailingSystem').fadeOut(300, function() {
+					$('#mailingSubmitting').fadeIn(300);
+				});
+				
+				
 				$http.post('php/mailingListEngine.php', $scope.mailingInfo).
 					success(function(data, status, headers, config) {
-						$('#mailingSystem').fadeOut(300, function() {
+						$('#mailingSubmitting').fadeOut(300, function() {
 							$('#mailingSuccess').fadeIn(300);
-							localStorageService.remove('speakerSubmission');
 						});
 					}).
 					error(function(data, status, headers, config) {
-						$('#mailingSystem').fadeOut(300, function() {
+						$('#mailingSubmitting').fadeOut(300, function() {
 							$('#mailingFail').fadeIn(300);
 						});
 				});
-
+				
+				$.post( "php/postSpreadSheet/post_SpreadSheet_MailingList.php?name=" + $scope.mailingInfo.name + "&email=" + $scope.mailingInfo.email + "&year=" + $scope.mailingInfo.year + "&campus=" + $scope.mailingInfo.campus
+					+ "&interest=" + $scope.mailingInfo.interest + "&involvement=" + $scope.mailingInfo.involvement );
+				
+				$scope.steps++;
 			}
 		}
 	};
