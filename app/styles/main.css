@@ -601,9 +601,10 @@ body {
 
 .cfspeakerBox {
 	background-color: #595ee8;
-	border: 5px solid #000025;
+	border: 2px solid #000025;
 	height: 25vw;
 	padding: 2em;
+	opacity: .9;
 }
 
 .onebox {
@@ -664,7 +665,7 @@ body {
 }
 
 .cfsponsorlogo {
-	padding: 1.5em;
+	padding: 2em;
 }
 
 /*END Conference */
