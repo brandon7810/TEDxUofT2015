@@ -641,6 +641,26 @@ body {
 	margin-top: 16em;
 }
 
+.accordion .accordion-navigation.active>a, .accordion dd.active>a {
+	background: #3c4599;
+}
+
+.accordion .accordion-navigation>a, .accordion dd>a {
+	background: #3c4599;
+	color: #eee;
+	font-weight: 400;
+	padding: 1.5rem;
+	font-family: "Open Sans";
+	font-size: 1rem;
+}
+
+..accordion .accordion-navigation>a:hover, .accordion dd a:hover {
+	background: #3c4599;}
+	
+.accordion .accordion-navigation>.content.active, .accordion dd>.content.active {
+	background: #3c4599;
+}
+
 .cftickets {
 	margin-bottom: 0;
 }
@@ -670,6 +690,10 @@ body {
 
 /*END Conference */
 
+/*Mailing List*/
+.smbackground .button {
+	background-color: #424ba8;
+}
 
 /*Mobile screens*/
 @media all and (max-width: 640px) {
