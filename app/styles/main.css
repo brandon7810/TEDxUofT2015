@@ -762,12 +762,12 @@ body {
 }
 
 .ticketsbutton h3 {
-	color: #eee;
+	color: #E62B1E;
 	font-weight: 400;
 }
 
 .ticketsbutton h3 span {
-	color: #eee;
+	color: #E62B1E;
 	}
 
 .sponsors {
@@ -777,6 +777,10 @@ body {
 
 .cfsponsorlogo {
 	padding: 1em 2em;
+}
+
+.illucity {
+	margin-top: -7em;
 }
 
 /*END Conference */
