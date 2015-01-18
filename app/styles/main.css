@@ -571,15 +571,29 @@ body {
 	width: 40vw;
 }
 
+.illuConstellations {
+	width: 90%;
+	position: absolute;
+	top: 38em;
+	left: 4.5em;
+}
+
 .joinustitle h1 {
 	margin-bottom: .8em;
 }
 
 .svgPlanet {
 	position: absolute;
-	left: 5em;
+	left: 3em;
 	top: -3em;
 	width: 30em;
+}
+
+.svgMoon {
+	position: absolute;
+	left: 23em;
+	top: 17em;
+	width: 4em;
 }
 
 .svgRocket {
@@ -595,38 +609,47 @@ body {
 	background-color: #2b2e71;
 }
 
-.cfspeakerGrid {
-	margin-top: 3em;
+.speakersTitle {
+	text-align: center;
 }
 
-.cfspeakerBox {
-	background-color: #595ee8;
-	border: 2px solid #000025;
-	height: 25vw;
-	padding: 2em;
-	opacity: .9;
+.speakerContent {
+	background-color: #efefef;
+	height: 30em;
+	padding: 3em;
+	margin-top: 3.5em;
+}
+
+.speakerContent h2 {
+	color: #E62B1E;
+	font-weight: 800;
+	padding-bottom: .5em;
+}
+
+.speakerContent p {
+	color: #0d0e22;
+}
+
+.speakerPhoto {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 .onebox {
 	background-image: url(/img/speakers/Glaze.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 .twobox {
-	background-image: url(/img/speakers/Tobias.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-image: url(/img/speakers/JLiu.jpg);
 }
 
 .threebox {
-	background-image: url(/img/speakers/JLiu.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-image: url(/img/speakers/Joel.jpg);
 }
 
 .fourbox {
-	background-image: url(/img/speakers/Joel.jpg);
+	background-image: url(/img/speakers/Pilcher.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -635,6 +658,38 @@ body {
 	background-image: url(/img/speakers/Logie.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.sixbox {
+	background-image: url(/img/speakers/Eric%20Miller%203.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.sevenbox {
+	background-image: url(/img/speakers/Pilcher.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.eightbox {
+	background-image: url(/img/speakers/Pilcher.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ninebox {
+	background-image: url(/img/speakers/Solano.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.tenbox {
+	background-image: url(/img/speakers/Tobias.jpg);
+}
+
+.cfFAQ {
+	margin-top: 10em;
 }
 
 .cfFAQ h1 {
@@ -651,14 +706,33 @@ body {
 	font-weight: 400;
 	padding: 1.5rem;
 	font-family: "Open Sans";
-	font-size: 1rem;
+	font-size: 1.1rem;
 }
 
-..accordion .accordion-navigation>a:hover, .accordion dd a:hover {
+.accordion .accordion-navigation>.content, .accordion dd>.content {
+	background-color: #353c87;
+	padding-bottom: 1.8em;
+}
+
+..accordion .accordion-navigation>a:hover, .accordion dd>a:hover {
 	background: #3c4599;}
 	
 .accordion .accordion-navigation>.content.active, .accordion dd>.content.active {
-	background: #3c4599;
+	background: #fff;
+}
+
+.airBalloon {
+	position: absolute;
+	left: 10em;
+	top: 0em;
+	width: 10vw;
+}
+
+.airBalloonSmall {
+	position: absolute;
+	right: 13em;
+	top: 14em;
+	width: 6vw;
 }
 
 .cftickets {
@@ -667,9 +741,9 @@ body {
 
 .ticketsbutton {
 	border: 4px solid #E62B1E;
-	-webkit-border-radius: 45px;
-	-moz-border-radius: 45px;
-	border-radius: 45px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
 	padding: .5em;
 	margin-top: 5em;
 }
@@ -685,7 +759,7 @@ body {
 }
 
 .cfsponsorlogo {
-	padding: 2em;
+	padding: 1em 2em;
 }
 
 /*END Conference */
