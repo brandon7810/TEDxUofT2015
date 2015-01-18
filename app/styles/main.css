@@ -574,8 +574,23 @@ body {
 .illuConstellations {
 	width: 90%;
 	position: absolute;
-	top: 38em;
+	top: 37em;
 	left: 4.5em;
+}
+
+.illustars {
+	position: absolute;
+	top: -22em;
+	left: 0em;
+	width: 100vw;
+	opacity: .9;
+}
+
+.cftickets .illustars {
+	opacity: .2;
+	width: 80vw;
+	left: 5em;
+	top: -15em;
 }
 
 .joinustitle h1 {
@@ -584,23 +599,23 @@ body {
 
 .svgPlanet {
 	position: absolute;
-	left: 3em;
-	top: -3em;
-	width: 30em;
+	left: 5em;
+	top: 2em;
+	width: 22em;
 }
 
 .svgMoon {
 	position: absolute;
-	left: 23em;
+	left: 22em;
 	top: 17em;
 	width: 4em;
 }
 
 .svgRocket {
 	position: absolute;
-	right: 22em;
-	top: 6em;
-	height: 10em;
+	right: 17em;
+	top: 7em;
+	height: 8em;
 }
 
 .cfvideo {
@@ -614,7 +629,7 @@ body {
 }
 
 .speakerContent {
-	background-color: #efefef;
+	background-color: #fafafa;
 	height: 30em;
 	padding: 3em;
 	margin-top: 3.5em;
@@ -689,11 +704,8 @@ body {
 }
 
 .cfFAQ {
-	margin-top: 10em;
-}
-
-.cfFAQ h1 {
-	margin-top: 16em;
+	margin: 10em;
+	text-align: center;
 }
 
 .accordion .accordion-navigation.active>a, .accordion dd.active>a {
@@ -741,20 +753,25 @@ body {
 
 .ticketsbutton {
 	border: 4px solid #E62B1E;
-	-webkit-border-radius: 50px;
-	-moz-border-radius: 50px;
-	border-radius: 50px;
+	-webkit-border-radius: 60px;
+	-moz-border-radius: 60px;
+	border-radius: 60px;
 	padding: .5em;
+	padding-bottom: .7em;
 	margin-top: 5em;
 }
 
 .ticketsbutton h3 {
-	color: #E62B1E;
-	font-weight: 600;
+	color: #eee;
+	font-weight: 400;
 }
 
+.ticketsbutton h3 span {
+	color: #eee;
+	}
+
 .sponsors {
-	margin: 5em 0em;
+	margin-top: 8em;
 	text-align: center;
 }
 
