@@ -648,6 +648,11 @@ body {
 	background-position: center;
 }
 
+.comingSoon {
+	text-align: center;
+	margin: 3em 0em;
+}
+
 .onebox {
 	background-image: url(/img/speakers/Glaze.jpg);
 }
@@ -752,7 +757,6 @@ body {
 }
 
 .ticketsbutton {
-	border: 4px solid #E62B1E;
 	-webkit-border-radius: 60px;
 	-moz-border-radius: 60px;
 	border-radius: 60px;
@@ -762,12 +766,12 @@ body {
 }
 
 .ticketsbutton h3 {
-	color: #E62B1E;
+	color: #121123;
 	font-weight: 400;
 }
 
 .ticketsbutton h3 span {
-	color: #E62B1E;
+	color: #121123;
 	}
 
 .sponsors {

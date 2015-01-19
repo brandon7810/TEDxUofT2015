@@ -107,7 +107,7 @@ a:hover, a:focus {
 }
 
 .overlay-hugeinc.open {
-	opacity: .9;
+	opacity: .95;
 	visibility: visible;
 	-webkit-transition: opacity 0.5s;
 	transition: opacity 0.5s;
