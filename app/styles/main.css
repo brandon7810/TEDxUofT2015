@@ -635,7 +635,11 @@ body {
 .speakerContent h2 {
 	color: #E62B1E;
 	font-weight: 800;
-	padding-bottom: .5em;
+	line-height: 1;	
+}
+
+.speakerContent h3 {
+	color: #E62B1E;
 }
 
 .speakerContent p {
@@ -756,13 +760,14 @@ body {
 	margin-bottom: 0;
 }
 
+.illuticket {
+	position: absolute;
+	top: -3.5em;
+	left: 0;
+}
+
 .ticketsbutton {
-	-webkit-border-radius: 60px;
-	-moz-border-radius: 60px;
-	border-radius: 60px;
-	padding: .5em;
-	padding-bottom: .7em;
-	margin-top: 5em;
+	margin-top: 10em;
 }
 
 .ticketsbutton h3 {
@@ -775,7 +780,7 @@ body {
 	}
 
 .sponsors {
-	margin-top: 5em;
+	margin-top: 8em;
 	text-align: center;
 }
 
