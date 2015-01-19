@@ -19,7 +19,6 @@ body {
 	color: #fff;
 	font-size: 100%;
 	line-height: 1.25;
-	font-family: 'Lato', 'Avenir Next', Arial, sans-serif;
 }
 
 /*a {
@@ -39,8 +38,8 @@ a:hover, a:focus {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: #eee;
 	z-index: 50;
+	background: #121123;
 }
 
 /* Overlay closing cross */
@@ -89,13 +88,13 @@ a:hover, a:focus {
 .overlay ul li a {
 	font-weight: 600;
 	display: block;
-	color: #E62B1E;
+	color: #fefefe;
 	font-size: 38px;
 }
 
 .overlay ul li a:hover,
 .overlay ul li a:focus {
-	font-weight: 300;
+	font-weight: 400;
 	color: #E62B1E;
 }
 
@@ -108,7 +107,7 @@ a:hover, a:focus {
 }
 
 .overlay-hugeinc.open {
-	opacity: 1;
+	opacity: .9;
 	visibility: visible;
 	-webkit-transition: opacity 0.5s;
 	transition: opacity 0.5s;
