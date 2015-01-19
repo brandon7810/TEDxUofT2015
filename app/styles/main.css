@@ -548,8 +548,6 @@ body {
 .confTitle {
 	position: absolute;
 	top: 18vw;
-	left: 50vw;
-	margin-left: -24vw;
 	text-align: center;
 }
 
@@ -568,7 +566,6 @@ body {
 .cfTheme img {
 	margin-top: 15em;
 	margin-bottom: 4em;
-	width: 40vw;
 }
 
 .illuConstellations {
@@ -704,8 +701,11 @@ body {
 }
 
 .cfFAQ {
-	margin: 10em;
 	text-align: center;
+}
+
+.FAQline {
+	padding: 5em;
 }
 
 .accordion .accordion-navigation.active>a, .accordion dd.active>a {
@@ -736,14 +736,14 @@ body {
 .airBalloon {
 	position: absolute;
 	left: 10em;
-	top: 0em;
+	top: 6em;
 	width: 10vw;
 }
 
 .airBalloonSmall {
 	position: absolute;
 	right: 13em;
-	top: 14em;
+	top: 20em;
 	width: 6vw;
 }
 
@@ -771,7 +771,7 @@ body {
 	}
 
 .sponsors {
-	margin-top: 8em;
+	margin-top: 5em;
 	text-align: center;
 }
 
@@ -881,6 +881,46 @@ body {
 /*Social Media*/
 /*Volunteer*/
 /*Nomination*/
+/*Conference*/
+	.illuConstellations {
+	visibility: hidden;}
+		
+	.cfTheme img {
+	margin-top: 22em;}
+	
+	.svgPlanet {
+	left: -10em;
+	top: -7em;
+}
+
+.svgMoon {
+	left: 2em;
+	top: 9em;
+	width: 3em;
+}
+
+.svgRocket {
+	right: 2.5em;
+	top: 7em;
+	height: 6em;
+}
+	
+	.airBalloon {
+	left: 1em;
+	top: 0em;
+	width: 16vw;
+}
+
+.airBalloonSmall {
+	position: absolute;
+	right: 1.5em;
+	top: 5em;
+	width: 12vw;
+}
+	
+	.illucity {
+	margin-top: 0em;
+}
 }
 
 /*Tablet*/
