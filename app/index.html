@@ -62,30 +62,57 @@
 	
 	<!-- Mailing List -->
 	<div class="row smbackground" ng-controller = "MainCtrl">
-		<div class="small-10 medium-3 large-3 columns small-centered" style="margin-top:1vw;" id="mailingSystem">
+		<div class="small-10 medium-8 large-4 columns small-centered" style="margin-top:1vw;" id="mailingSystem">
 			 <div class="row">
 				<div class="large-12 columns">
 				  <div class="row collapse">
-					<div class="small-10 columns" style="margin-bottom:10px;font-size:16px">
-					 <p><strong>{{mailingLabel}}</strong></p>
+					<div class="small-12 columns  small-centered" style="margin-bottom:10px;font-size:16px;text-align:center;" >
+					 <p>{{mailingLabel}}</p>
 					</div>
-					<div class="small-10 columns">
-					  <input type="text" placeholder="{{mailingPlaceHolder}}" style="border-radius:2px 0px 0px 2px" ng-model="mailingInput" focus-me="mailingFocusInput" >
+					
+					<div class="small-9 columns small-centered">
+						<div class="small-10 columns" >
+							<input type="text" placeholder="{{mailingPlaceHolder}}" style="border-radius:2px 0px 0px 2px; font-weight:800; text-align:center; height: 60px; padding-left:15px"
+							ng-model="mailingInput" focus-me="mailingFocusInput" >
+						</div>
+						<div class="small-2 columns end" ng-show="steps==0">
+						  <a href="javascript:void(0)" class="button postfix" 
+						  style="background-color:#4c54ad; border-radius:0px 2px 2px 0px;height: 60px;vertical-align: middle;display: table-cell;width: 100px;"
+						  ng-click="mailingNext()">
+							{{mailingButton}}
+						  </a>
+						</div>
+						
+						<div class="small-2 columns end" ng-show="steps>0">
+						  <a href="javascript:void(0)" class="button postfix" 
+						  style="background-color:#4c54ad; border-radius:0px 2px 2px 0px;height: 60px;vertical-align: middle;display: table-cell;width: 100px;"
+						  ng-click="mailingNext()">
+							<img src="img/TED15_arrow_icon.png" width="25px" />
+						  </a>
+						</div>
+						<div class="small-12 columns" >
+							<div ng-class="mailingBarleft">
+								<div style="background-color:#4C54AD; height:4px; margin-top:-16px"></div>
+							</div>
+							<div  ng-class="mailingBarRight">
+								<div style="background-color:#7D9DE8; height:4px; margin-top:-16px"></div>
+							</div>
+						</div>
 					</div>
-					<div class="small-2 columns">
-					  <a href="javascript:void(0)" class="button postfix" 
-					  style="background-color:#7189d6; border-radius:0px 2px 2px 0px" 
-					  ng-click="mailingNext()">{{mailingButton}}</a>
+					
+					<div class="small-8	 columns small-centered">
+						<div class="small-10 columns" style="margin-top:-10px; margin-left:-20px;">
+						 {{mailingMsg}}
+						</div>
+						<div class="small-2 columns pull-right" style="margin-top:-10px; color:#5D65BF; font-weight:500; margin-right:-40px;" ng-show="mailingInput || steps>0">
+						 {{mailingLeft}}
+						</div>
 					</div>
-					<div class="small-6 columns" style="margin-top:-15px">
-					 {{mailingMsg}}
-					</div>
-					<div class="small-1 columns pull-right" style="margin-top:-15px">
-					 {{mailingLeft}}
-					</div>
+					
 				  </div>
 				</div>
 			  </div>
+			
 		</div>
 		<div class="small-6 medium-2 large-2  columns small-centered" style="margin-top:1vw;" id="mailingSubmitting">
 		 <h1>Submitting</h1>

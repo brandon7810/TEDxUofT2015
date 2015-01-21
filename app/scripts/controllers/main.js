@@ -43,10 +43,12 @@ angular.module('tedxUofT2015App')
 	$scope.mailingPlaceHolder = "AwesomeEmail@mail.com";
 	$scope.mailingLabel = ""
 	$scope.mailingMsg = "";
-	$scope.mailingLeft = "";
+	$scope.mailingLeft = "0/5";
 	$scope.mailingInput = "";
 	$scope.steps = 0;
-	$scope.focusInput = true;
+	$scope.mailingFocusInput = false;
+	$scope.mailingBarleft = "small-12 columns";
+	$scope.mailingBarRight = "small-12 columns end";
 	
 	$scope.mailingInfo = {
 		email:"",
@@ -69,11 +71,13 @@ angular.module('tedxUofT2015App')
 			if($scope.mailingInput == "" || !validateEmail($scope.mailingInput) ){
 				$scope.mailingMsg = "Please fill in valid email"
 			}else{
+				$scope.mailingBarleft = "small-2 columns" ;
+				$scope.mailingBarRight = "small-10 columns";
 				$scope.mailingInfo.email = $scope.mailingInput;
-				$scope.mailingButton = "Next";
+				$scope.mailingButton = "";
 				$scope.mailingPlaceHolder = "Cool Buddy";
-				$scope.mailingLeft = "0/4";
-				$scope.mailingLabel = "Name:"
+				$scope.mailingLeft = "1/5";
+				$scope.mailingLabel = "First and Last Name"
 				$scope.steps++;
 				$scope.mailingInput = "";
 			}
@@ -82,11 +86,12 @@ angular.module('tedxUofT2015App')
 			if($scope.mailingInput == ""){
 				$scope.mailingMsg = "Please fill in your name";
 			}else{
+				$scope.mailingBarleft = "small-4 columns" ;
+				$scope.mailingBarRight = "small-8 columns";
 				$scope.mailingInfo.name = $scope.mailingInput;
-				$scope.mailingButton = "Next";
 				$scope.mailingPlaceHolder = "3rd";
-				$scope.mailingLeft = "1/4";
-				$scope.mailingLabel = "Year of Study:"
+				$scope.mailingLeft = "2/5";
+				$scope.mailingLabel = "Year of Study"
 				$scope.steps++;
 				$scope.mailingInput = "";
 			}
@@ -95,11 +100,12 @@ angular.module('tedxUofT2015App')
 			if($scope.mailingInput == ""){
 				$scope.mailingMsg = "Please fill in your year of study";
 			}else{
+				$scope.mailingBarleft = "small-6 columns" ;
+				$scope.mailingBarRight = "small-6 columns";
 				$scope.mailingInfo.year = $scope.mailingInput;
-				$scope.mailingButton = "Next";
 				$scope.mailingPlaceHolder = "Victoria/UTSG";
-				$scope.mailingLeft = "2/4";
-				$scope.mailingLabel = "College/Campus:"
+				$scope.mailingLeft = "3/5";
+				$scope.mailingLabel = "College or Campus"
 				$scope.steps++;
 				$scope.mailingInput = "";
 			}
@@ -109,11 +115,12 @@ angular.module('tedxUofT2015App')
 			
 				$scope.mailingMsg = "Please fill in your college/campus";
 			}else{
+				$scope.mailingBarleft = "small-8 columns" ;
+				$scope.mailingBarRight = "small-4 columns";
 				$scope.mailingInfo.campus = $scope.mailingInput;
-				$scope.mailingButton = "Next";
 				$scope.mailingPlaceHolder = "Science/Research/Education/Technology/GlobalIssues/Environment/Art";
-				$scope.mailingLeft = "3/4";
-				$scope.mailingLabel = "Area of Interest:"
+				$scope.mailingLeft = "4/5";
+				$scope.mailingLabel = "Area of Interest"
 				$scope.steps++;
 				$scope.mailingInput = "";
 			}
@@ -122,11 +129,12 @@ angular.module('tedxUofT2015App')
 			if($scope.mailingInput == ""){
 				$scope.mailingMsg = "Please fill in your area of interest";
 			}else{
+				$scope.mailingBarleft = "small-10 columns" ;
+				$scope.mailingBarRight = "small-2 columns";
 				$scope.mailingInfo.interest = $scope.mailingInput;
-				$scope.mailingButton = "Finish";
 				$scope.mailingPlaceHolder = "Volunteer/Executive/Events/Conference";
-				$scope.mailingLeft = "4/4";
-				$scope.mailingLabel = "Involvement in TEDxUofT:"
+				$scope.mailingLeft = "5/5";
+				$scope.mailingLabel = "Involvement in TEDxUofT"
 				$scope.steps++;
 				$scope.mailingInput = "";
 			}
@@ -134,6 +142,8 @@ angular.module('tedxUofT2015App')
 			if($scope.mailingInput == ""){
 				$scope.mailingMsg = "Please fill in the blank";
 			}else{
+				$scope.mailingBarleft = "small-0 columns" ;
+				$scope.mailingBarRight = "small-12 columns";
 				$scope.mailingInfo.involvement = $scope.mailingInput;
 				$('#mailingSystem').fadeOut(300, function() {
 					$('#mailingSubmitting').fadeIn(300);
