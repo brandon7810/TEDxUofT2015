@@ -560,6 +560,10 @@ body {
 	margin-bottom: 1em;
 }
 
+.cfTheme h4 {
+	margin-bottom: 2em;
+}
+
 .cfTheme {
 	margin-bottom: 20vw;
 }
@@ -602,14 +606,14 @@ body {
 .svgPlanet {
 	position: absolute;
 	left: 5em;
-	top: 2em;
+	top: 1em;
 	width: 22em;
 }
 
 .svgMoon {
 	position: absolute;
 	left: 22em;
-	top: 17em;
+	top: 15em;
 	width: 4em;
 }
 
@@ -770,7 +774,7 @@ body {
 	}
 
 .sponsors {
-	margin-top: 10em;
+	margin-top: 13em;
 }
 
 .cfsponsorlogo {
@@ -880,16 +884,31 @@ body {
 /*Volunteer*/
 /*Nomination*/
 /*Conference*/
+	.confTheme p,.confTheme h1,.confTheme h2,.confTheme h3 {
+		padding: 0px 5px;}
+	
+	.confTheme h1 {
+		line-height: 1.2;
+		font-size: 2.6rem;
+	}
+	
+	.confTitle {
+		top: 40vw;
+	}
+	
 	.illuConstellations {
 	visibility: hidden;}
-		
+	
+	.cfTheme {
+	margin-bottom: 40vw;}
+	
 	.cfTheme img {
-	margin-top: 22em;}
+	margin-top: 22em;
+	padding: 0 5px;}
 	
 	.svgPlanet {
 	left: -10em;
-	top: -7em;
-}
+	top: -7em;}
 
 	.svgMoon {
 	left: 2em;
@@ -906,10 +925,12 @@ body {
 	.speakerContent {
 	padding: 1em;
 	margin-top: 0em;
+	min-height: 40em;
 }
 	
 	.speakerPhoto {
 	margin-top: 2em;
+	min-height: 25em;
 }
 	
 	.airBalloon {
