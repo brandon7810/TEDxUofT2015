@@ -499,6 +499,8 @@ body {
 
 /* Conference Page */
 .confTheme {
+	width: 100vw;
+	text-align: center;
 	background: rgb(0,0,37); /* Old browsers */
 	background: -moz-linear-gradient(top, rgba(0,0,37,1) 59%, rgba(50,55,126,1) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(59%,rgba(0,0,37,1)), color-stop(100%,rgba(50,55,126,1))); /* Chrome,Safari4+ */
@@ -548,7 +550,6 @@ body {
 .confTitle {
 	position: absolute;
 	top: 18vw;
-	text-align: center;
 }
 
 .confTitle h1 {
@@ -594,6 +595,10 @@ body {
 	margin-bottom: .8em;
 }
 
+.joinustitle p {
+	margin-bottom: 20vw;
+}
+
 .svgPlanet {
 	position: absolute;
 	left: 5em;
@@ -621,14 +626,12 @@ body {
 	background-color: #2b2e71;
 }
 
-.speakersTitle {
-	text-align: center;
-}
-
 .speakerContent {
+	text-align: left;
 	background-color: #fafafa;
-	height: 30em;
+	min-height: 35em;
 	padding: 3em;
+	padding-bottom: 2em;
 	margin-top: 3.5em;
 }
 
@@ -644,6 +647,7 @@ body {
 
 .speakerContent p {
 	color: #0d0e22;
+	margin-top: 2em;
 }
 
 .speakerPhoto {
@@ -653,12 +657,11 @@ body {
 }
 
 .comingSoon {
-	text-align: center;
-	margin: 3em 0em;
+	margin-top: 2em;
 }
 
 .onebox {
-	background-image: url(/img/speakers/Glaze.jpg);
+	background-image:url(/img/speakers/Glaze.jpg);
 }
 
 .twobox {
@@ -671,46 +674,32 @@ body {
 
 .fourbox {
 	background-image: url(/img/speakers/Pilcher.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 .fivebox {
 	background-image: url(/img/speakers/Logie.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 .sixbox {
 	background-image: url(/img/speakers/Eric%20Miller%203.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 .sevenbox {
 	background-image: url(/img/speakers/Pilcher.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+
 }
 
 .eightbox {
 	background-image: url(/img/speakers/Pilcher.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+
 }
 
 .ninebox {
 	background-image: url(/img/speakers/Solano.jpeg);
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 .tenbox {
 	background-image: url(/img/speakers/Tobias.jpg);
-}
-
-.cfFAQ {
-	text-align: center;
 }
 
 .FAQline {
@@ -744,15 +733,15 @@ body {
 
 .airBalloon {
 	position: absolute;
-	left: 10em;
-	top: 6em;
+	left: -15em;
+	top: -20em;
 	width: 10vw;
 }
 
 .airBalloonSmall {
 	position: absolute;
-	right: 13em;
-	top: 20em;
+	right: -10em;
+	top: -8em;
 	width: 6vw;
 }
 
@@ -762,8 +751,9 @@ body {
 
 .illuticket {
 	position: absolute;
-	top: -3.5em;
-	left: 0;
+	top: -3em;
+	left: 6.7em;
+	width: 65%;
 }
 
 .ticketsbutton {
@@ -780,8 +770,7 @@ body {
 	}
 
 .sponsors {
-	margin-top: 8em;
-	text-align: center;
+	margin-top: 10em;
 }
 
 .cfsponsorlogo {
