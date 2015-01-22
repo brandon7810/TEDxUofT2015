@@ -39,8 +39,8 @@ angular.module('tedxUofT2015App')
 	}
 	
 	//mailing list
-	$scope.mailingButton = "Subscribe";
-	$scope.mailingPlaceHolder = "AwesomeEmail@mail.com";
+	$scope.mailingButton = "Go";
+	$scope.mailingPlaceHolder = "YourEmail@Subscribe.com";
 	$scope.mailingLabel = ""
 	$scope.mailingMsg = "";
 	$scope.mailingLeft = "0/5";
@@ -75,9 +75,9 @@ angular.module('tedxUofT2015App')
 				$scope.mailingBarRight = "small-10 columns";
 				$scope.mailingInfo.email = $scope.mailingInput;
 				$scope.mailingButton = "";
-				$scope.mailingPlaceHolder = "Cool Buddy";
+				$scope.mailingPlaceHolder = "FirstName LastName";
 				$scope.mailingLeft = "1/5";
-				$scope.mailingLabel = "First and Last Name"
+				$scope.mailingLabel = ""
 				$scope.steps++;
 				$scope.mailingInput = "";
 			}
@@ -89,9 +89,9 @@ angular.module('tedxUofT2015App')
 				$scope.mailingBarleft = "small-4 columns" ;
 				$scope.mailingBarRight = "small-8 columns";
 				$scope.mailingInfo.name = $scope.mailingInput;
-				$scope.mailingPlaceHolder = "3rd";
+				$scope.mailingPlaceHolder = "Year of Study";
 				$scope.mailingLeft = "2/5";
-				$scope.mailingLabel = "Year of Study"
+				$scope.mailingLabel = ""
 				$scope.steps++;
 				$scope.mailingInput = "";
 			}
@@ -103,9 +103,9 @@ angular.module('tedxUofT2015App')
 				$scope.mailingBarleft = "small-6 columns" ;
 				$scope.mailingBarRight = "small-6 columns";
 				$scope.mailingInfo.year = $scope.mailingInput;
-				$scope.mailingPlaceHolder = "Victoria/UTSG";
+				$scope.mailingPlaceHolder = "College or Campus";
 				$scope.mailingLeft = "3/5";
-				$scope.mailingLabel = "College or Campus"
+				$scope.mailingLabel = ""
 				$scope.steps++;
 				$scope.mailingInput = "";
 			}
@@ -118,9 +118,9 @@ angular.module('tedxUofT2015App')
 				$scope.mailingBarleft = "small-8 columns" ;
 				$scope.mailingBarRight = "small-4 columns";
 				$scope.mailingInfo.campus = $scope.mailingInput;
-				$scope.mailingPlaceHolder = "Science/Research/Education/Technology/GlobalIssues/Environment/Art";
+				$scope.mailingPlaceHolder = "Area of Interest";
 				$scope.mailingLeft = "4/5";
-				$scope.mailingLabel = "Area of Interest"
+				$scope.mailingLabel = ""
 				$scope.steps++;
 				$scope.mailingInput = "";
 			}
@@ -132,9 +132,9 @@ angular.module('tedxUofT2015App')
 				$scope.mailingBarleft = "small-10 columns" ;
 				$scope.mailingBarRight = "small-2 columns";
 				$scope.mailingInfo.interest = $scope.mailingInput;
-				$scope.mailingPlaceHolder = "Volunteer/Executive/Events/Conference";
+				$scope.mailingPlaceHolder = "Interest in TEDxUofT";
 				$scope.mailingLeft = "5/5";
-				$scope.mailingLabel = "Involvement in TEDxUofT"
+				$scope.mailingLabel = ""
 				$scope.steps++;
 				$scope.mailingInput = "";
 			}
