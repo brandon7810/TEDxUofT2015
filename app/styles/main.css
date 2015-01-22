@@ -790,6 +790,10 @@
 		position: absolute;
 		top: 18vw;
 	}
+	
+	.confTitle .scrollimg {
+		top: 25vw;
+	}
 
 	.confTitle h1 {
 		line-height: 1.1;
