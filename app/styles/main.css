@@ -1082,8 +1082,9 @@
 	height: 12em;}
 	
 	.illuticket {
-		bottom: -7em;
-		left: 9.1em;}
+		bottom: -6em;
+		left: 10em;
+		width: 30em;}
 }
 
 /*XXLarge screens*/
