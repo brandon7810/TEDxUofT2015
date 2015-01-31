@@ -4,6 +4,7 @@ angular.module('tedxUofT2015App')
   .controller('MainCtrl', ["$scope", "$window", "$http", "$rootScope", function ($scope,$window,$http,$rootScope) {	
 	
 	$rootScope.socialMedia = {show:true};
+	$rootScope.mailingList = {show:true};
 	
 	//Scroll To Top
 	$window.scrollTo(0,0);

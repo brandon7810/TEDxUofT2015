@@ -4,6 +4,7 @@ angular.module('tedxUofT2015App')
   .controller('VideoCtrl', ["$scope", "$window", "$sce", "$rootScope", function ($scope,$window,$sce,$rootScope) {
     
 	$rootScope.socialMedia.show = true;
+	$rootScope.mailingList.show = true;
 	
 	ga('send', 'pageview', '/videos');
 	

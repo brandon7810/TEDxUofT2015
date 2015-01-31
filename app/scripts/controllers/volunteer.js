@@ -14,6 +14,7 @@ angular.module('tedxUofT2015App')
 	ga('send', 'pageview', '/volunteer');
 	
 	$rootScope.socialMedia.show = false;
+	$rootScope.mailingList.show = false;
 	
 	//Scroll To Top
 	$window.scrollTo(0,0);

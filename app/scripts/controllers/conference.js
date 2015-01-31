@@ -8,6 +8,9 @@
  * Controller of the tedxUofT2015App
  */
 angular.module('tedxUofT2015App')
-  .controller('ConferenceCtrl', function ($scope) {
-	 $scope.oneAtATime = true;
+  .controller('ConferenceCtrl', function ($scope,$rootScope) {
+	$scope.oneAtATime = true;
+	 
+	$rootScope.socialMedia.show = true;
+	$rootScope.mailingList.show = true;
   });
