@@ -156,7 +156,7 @@
 		background-image: url(../img/scroll.png);
 		background-size: contain;
 		position: absolute;
-		top: 23vw;
+		bottom: 5vw;
 		left: 47%;
 		z-index: 2;
 		width: 6em;
@@ -670,15 +670,15 @@
 	}
 
 	.onebox {
-		background-image:url(/img/speakers/Glaze.jpg);
+		background-image:url(/img/speakers/Joshua.jpg);
 	}
 
 	.twobox {
-		background-image: url(/img/speakers/JLiu.jpg);
+		background-image: url(/img/speakers/Jeffrey.jpg);
 	}
 
 	.threebox {
-		background-image: url(/img/speakers/Joel.jpg);
+		background-image: url(/img/speakers/tobias2.jpg);
 	}
 
 	.fourbox {
@@ -784,6 +784,10 @@
 
 	.cfsponsorlogo {
 		padding: 1em 2em;
+	}
+
+	.manulife {
+		opacity: .85;
 	}
 
 	.illucity {
@@ -1016,6 +1020,7 @@
 		
 	.scrollimg{
 		left: 43%;
+		bottom: 5vw;
 	}
 
 	/*About*/
