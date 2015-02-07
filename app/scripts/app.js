@@ -15,13 +15,13 @@ angular.module('tedxUofT2015App', [
    * The workhorse; converts an object to x-www-form-urlencoded serialization.
    * @param {Object} obj
    * @return {String}
-   */ 
+   */
   var param = function(obj) {
     var query = '', name, value, fullSubName, subName, subValue, innerObj, i;
-      
+
     for(name in obj) {
       value = obj[name];
-        
+
       if(value instanceof Array) {
         for(i=0; i<value.length; ++i) {
           subValue = value[i];
@@ -43,10 +43,10 @@ angular.module('tedxUofT2015App', [
       else if(value !== undefined && value !== null)
         query += encodeURIComponent(name) + '=' + encodeURIComponent(value) + '&';
     }
-      
+
     return query.length ? query.substr(0, query.length - 1) : query;
   };
- 
+
   // Override $http service's default transformRequest
   $httpProvider.defaults.transformRequest = [function(data) {
     return angular.isObject(data) && String(data) !== '[object File]' ? param(data) : data;
@@ -62,7 +62,7 @@ angular.module('tedxUofT2015App', [
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'MainCtrl'
-      })      
+      })
 	  .when('/speakers', {
         templateUrl: 'views/speakers.html',
         controller: 'MainCtrl'
@@ -79,10 +79,12 @@ angular.module('tedxUofT2015App', [
         templateUrl: 'views/nomination.html',
         controller: 'NominationCtrl'
       })
+      /*
       .when('/volunteer', {
         templateUrl: 'views/volunteer.html',
         controller: 'VolunteerCtrl'
       })
+      */
       .otherwise({
         redirectTo: '/'
       });

@@ -30,3 +30,7 @@ node_modules
 .tmp/styles/foundation.min.csss
 .tmp/styles/main.css
 .tmp/styles/normalize.css
+.idea/
+
+.idea/jsLibraryMappings.xml
+.idea/libraries/TEDxUofT2015_node_modules.xml

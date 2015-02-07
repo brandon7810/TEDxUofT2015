@@ -23,12 +23,12 @@
 	  <link rel="stylesheet" href="styles/font.css">
 	  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
 
-	  
+
     <!-- endbuild -->
-	
-	
-	
-	
+
+
+
+
   </head>
   <body ng-app="tedxUofT2015App">
     <!--[if lt IE 7]>
@@ -36,16 +36,16 @@
     <![endif]-->
 		<!-- <div class="header"></div> -->
 
-		
+
 	<div class="header">
 		<div class="compass" id="trigger-overlay">
 			<span>Menu</span>
 		</div>
 	</div>
-	
+
     <div class="container" ng-view="">
 	</div>
-	
+
 	<div class="overlay overlay-hugeinc" ng-controller = "MainCtrl">
 		<button type="button" class="overlay-close" id="close_overlay"></button>
 		<nav>
@@ -53,13 +53,13 @@
 				<li><a href="#/" ng-click="overlayMenuClick()">Home</a></li>
 				<li><a href="#/conference" ng-click="overlayMenuClick()">Conference</a></li>
 				<li><a href="#/videos" ng-click="overlayMenuClick()">Videos</a></li>
-				<li><a href="#/volunteer" ng-click="overlayMenuClick()">Volunteer</a></li>
+				<!--<li><a href="#/volunteer" ng-click="overlayMenuClick()">Volunteer</a></li> -->
 				<li><a href="#/about" ng-click="overlayMenuClick()">About</a></li>
-				
-			</ul>	
+
+			</ul>
 		</nav>
 	</div>
-	
+
 	<!-- Mailing List -->
 	<div class="row smbackground" ng-controller = "MainCtrl" ng-show="mailingList.show">
 		<div class="small-10 medium-8 large-4 columns small-centered" style="margin-top:1vw;" id="mailingSystem">
@@ -69,22 +69,22 @@
 					<div class="small-12 columns  small-centered" style="margin-bottom:10px;font-size:16px;text-align:center;" >
 					 <p>{{mailingLabel}}</p>
 					</div>
-					
+
 					<div class="small-9 columns small-centered">
 						<div class="small-10 columns" >
 							<input type="text" placeholder="{{mailingPlaceHolder}}" style="border-radius:2px 0px 0px 2px; font-weight:800; text-align:center; height: 60px; padding-left:15px"
 							ng-model="mailingInput" focus-me="mailingFocusInput" >
 						</div>
 						<div class="small-2 columns end" ng-show="steps==0">
-						  <a href="javascript:void(0)" class="button postfix" 
+						  <a href="javascript:void(0)" class="button postfix"
 						  style="background-color:#4c54ad; border-radius:0px 2px 2px 0px;height: 60px;vertical-align: middle;display: table-cell;width: 100px;"
 						  ng-click="mailingNext()">
 							{{mailingButton}}
 						  </a>
 						</div>
-						
+
 						<div class="small-2 columns end" ng-show="steps>0">
-						  <a href="javascript:void(0)" class="button postfix" 
+						  <a href="javascript:void(0)" class="button postfix"
 						  style="background-color:#4c54ad; border-radius:0px 2px 2px 0px;height: 60px;vertical-align: middle;display: table-cell;width: 100px;"
 						  ng-click="mailingNext()">
 							<img src="img/TED15_arrow_icon.png" width="25px" />
@@ -99,7 +99,7 @@
 							</div>
 						</div>
 					</div>
-					
+
 					<div class="small-8	 columns small-centered">
 						<div class="small-10 columns" style="margin-top:-10px; margin-left:-20px;">
 						 {{mailingMsg}}
@@ -108,24 +108,24 @@
 						 {{mailingLeft}}
 						</div>
 					</div>
-					
+
 				  </div>
 				</div>
 			  </div>
-			
+
 		</div>
 		<div class="small-6 medium-2 large-2  columns small-centered" style="margin-top:1vw;" id="mailingSubmitting">
 		 <h1>Submitting</h1>
 		</div>
-		
+
 		<div class="small-6 medium-2 large-2  columns small-centered" style="margin-top:1vw;" id="mailingSuccess">
 		 <h1>Thank you!!</h1>
 		</div>
 		<div class="small-6 medium-4 large-4  columns small-centered" style="margin-top:1vw;" id="mailingFail">
 		 <h5>Sorry! Something went wrong. <br> Please send it to Applications@TEDxUofT.com</h5>
 		</div><!-- End Mailing List -->
-		
-		
+
+
 		<div class="small-9 medium-8 large-6 columns small-centered socialmedia" ng-show="socialMedia.show">
 			<ul class="small-block-grid-3">
 				<li><a href="https://twitter.com/TEDxUofT" target="_blank"><img src="img/TED15_Twitter_icon.png" class="socialicon"></a></li>
@@ -133,12 +133,12 @@
 				<li><a href="http://instagram.com/tedxuoft" target="_blank"><img src="img/TED15_Instagram_icon.png" class="socialicon"></a></li>
 			</ul>
 		</div>
-		
+
 		<div class="small-12 columns footer">
 			<p><span>This independent TEDx event is operated under license from TED.<span></p>
 		</div>
 	</div>
-	
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
@@ -156,7 +156,7 @@
     <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
 
-	
+
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
