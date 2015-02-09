@@ -497,6 +497,21 @@
 	}
 	/*END volunteer */
 
+/*Application */
+.applicationBtn{
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  height: 50px;
+  width: 150px;
+  vertical-align:middle;
+}
+.applicationBtn:hover, .applicationBtn:active, .applicationBtn:focus, .applicationBtn:visited{
+  background-color: transparent;
+}
+
+/*END Application */
 
 	/* Conference Page */
 	.confTheme {
@@ -894,21 +909,6 @@
 		background: #E62C50;
 }
 
-  /*Application */
-  .applicationBtn{
-    background-color: transparent;
-    border: 2px solid white;
-    border-radius: 10px;
-    color: white;
-    height: 50px;
-    width: 150px;
-    vertical-align:middle;
-  }
-  .applicationBtn:hover, .applicationBtn:active, .applicationBtn:focus, .applicationBtn:visited{
-    background-color: transparent;
-  }
-
-  /*END Application */
 
 /*Navigation*/
 /*Social Media*/
