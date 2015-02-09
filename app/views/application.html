@@ -1,0 +1,69 @@
+<div style="margin-top: 10%">
+  <div class="row" ng-if="stepIndex.value==0" >
+    <div class="small-8  small-centered columns end" style="text-align: center;">
+      <h1>2015 Delegate Application</h1>
+    </div>
+  </div>
+
+  <div class="row" ng-if="stepIndex.value > 0" ng-hide='done' style="margin-top: -5%; margin-bottom: 5%;">
+    <div class="small-10 columns columns small-centered medium-centered " >
+      <div class="small-8 columns" style="text-align: left;">
+        <h5><b>2015 Delegate Application</b></h5>
+      </div>
+      <div class="small-8 columns" style="text-align: right">
+        <b>{{QuestionLeft}}</b>
+      </div>
+      <div class="small-5 columns" >
+        <h3>{{Question}}</h3>
+      </div>
+      <div class="small-7 columns" >
+        <h3 style="color: darkred">{{ErrorMsg}}</h3>
+      </div>
+      <div class="small-8 columns end" ng-if="stepIndex.value != 4"
+           ng-hide="((stepIndex.value == 6 || stepIndex.value == 7) && route == '2')  || ( (stepIndex.value == 8 || stepIndex.value == 9 ) && route == '1')">
+        <input type="text" ng-model="userInput.s" style="background-color: transparent; border: 0px; border-bottom: 1px solid white; color: white;">
+      </div>
+      <div class="small-8 columns end" ng-if="stepIndex.value == 4">
+        Under Graduate<input type="radio" name="status" ng-model="submission.Status" value="UnderGraduate">
+        Graduate <input type="radio" name="status" ng-model="submission.Status" value="Graduate">
+        Alumnus <input type="radio" name="status" ng-model="submission.Status" value="Alumnus">
+        Other <input type="radio" name="status" ng-model="submission.Status" value="Other">
+      </div>
+      <div class="small-8 columns end" ng-if=" (stepIndex.value == 6 && route == '2') || (stepIndex.value == 8 && route == '1')">
+        <textarea style="background-color: transparent;color: white;" rows="11" ng-model="submission.Dietary"> </textarea>
+      </div>
+      <div class="small-8 columns end" ng-if="(stepIndex.value == 7 && route == '2') || (stepIndex.value == 9 && route == '1')">
+        <textarea style="background-color: transparent;color: white;" rows="11" ng-model="submission.FinalQ"> </textarea>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br>
+  <div class="row" ng-hide="done">
+    <div class="small-10  columns small-centered medium-centered " style="text-align: center;  margin-bottom:10%">
+      <button class="applicationBtn" ng-if="stepIndex.value==0"  ng-click="nextStep()">Apply</button>
+      <div class="small-12 medium-6 columns ">
+        <button class="applicationBtn" ng-if="(stepIndex.value>1)" ng-click="prevStep()" style="color: #CE3940; border-color: #CE3940">Previous</button>
+      </div>
+      <div class="small-12 medium-6 columns end" >
+        <button class="applicationBtn" ng-if="stepIndex.value>0" ng-hide="almostDone"  ng-click="nextStep()">Continue</button>
+        <span><br>{{tip}}</span>
+        <button class="applicationBtn" ng-if="almostDone"  ng-click="nextStep()">Finish</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" style="text-align: center">
+    <div class="small-3 columns small-centered animate-hide" ng-hide="submitStatus!='submitting'">
+      <h1>Submitting....</h1>
+    </div>
+    <div class="small-7 columns small-centered animate-hide" ng-hide="submitStatus!='success'">
+      <h1>Thanks! Your message has been submitted! 	We'll get back to you real soon :)</h1>
+    </div>
+    <div class="small-7 columns small-centered animate-hide" ng-hide="submitStatus!='fail'">
+      <h1>Oh No! Something went wrong with the submission process!</h1>
+      <p>Don't worry! You can email us at <a href="mailto:applications.tedxuoft@gmail.com">Applications@TEDxUofT.com</a> and we'll take a look into this situation</p>
+    </div>
+  </div>
+
+</div>

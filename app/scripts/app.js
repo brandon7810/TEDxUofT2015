@@ -85,6 +85,10 @@ angular.module('tedxUofT2015App', [
         controller: 'VolunteerCtrl'
       })
       */
+      .when('/SecretApplication123', {
+        templateUrl: 'views/application.html',
+        controller: 'ApplicationCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
