@@ -33,20 +33,20 @@
 					<input type="text" ng-model="userInput.s" class="appInputContent" style="background-color: transparent; border: 0px; border-bottom: 2px solid white; color: white;" focus-me="userFocusInput.value" ng-keypress="onEnter($event)">
 				</div>
 				
-				<div class="small-12 columns end" style="text-align="center";" ng-if="stepIndex.value == 4" ng-keypress="onEnter($event)">
+				<div class="small-12 columns end appOccupation" style="text-align="center";" ng-if="stepIndex.value == 4" ng-keypress="onEnter($event)">
 					<h5>
-					<div class="small-6 columns"><input type="radio" name="status" ng-model="submission.Status" value="UnderGraduate" style="margin-right:1%;"> Undergraduate</div>
-						<div class="small-6 columns"><input type="radio" name="status" ng-model="submission.Status" value="Graduate" style="margin-left:8%;margin-right:1%;"> Graduate</div>
-						<div class="small-6 columns"><input type="radio" name="status" ng-model="submission.Status" value="Alumnus" style="margin-left:8%;margin-right:1%;"> Alumni</div> 
-						<div class="small-6 columns"><input type="radio" name="status" ng-model="submission.Status" value="Other" style="margin-left:8%;margin-right:1%;"> Other</div> </h5> 
+					<div class="small-6 columns"><input type="radio" name="status" ng-model="submission.Status" value="UnderGraduate"> Undergraduate</div>
+						<div class="small-6 columns"><input type="radio" name="status" ng-model="submission.Status" value="Graduate"> Graduate</div>
+						<div class="small-6 columns"><input type="radio" name="status" ng-model="submission.Status" value="Alumnus"> Alumni</div> 
+						<div class="small-6 columns"><input type="radio" name="status" ng-model="submission.Status" value="Other"> Other</div> </h5> 
 				</div>
 				
 				<div class="small-12 columns end" ng-if=" (stepIndex.value == 6 && route == '2') || (stepIndex.value == 8 && route == '1')">
-					<textarea style="background-color: transparent;color: white;" rows="11" ng-model="submission.Dietary"> </textarea>
+					<input type="text" ng-model="userInput.s" class="appInputContent" style="background-color: transparent; border: 0px; border-bottom: 2px solid white; color: white;" focus-me="userFocusInput.value" ng-keypress="onEnter($event)">
 				</div>
 				
 				<div class="small-12 columns end" ng-if="(stepIndex.value == 7 && route == '2') || (stepIndex.value == 9 && route == '1')">
-					<textarea style="background-color: transparent;color: white;" rows="11" ng-model="submission.FinalQ"> </textarea>
+					<textarea style="background-color: transparent;" rows="9" ng-model="submission.FinalQ"> </textarea>
 				</div>
 			</div>
     </div>
