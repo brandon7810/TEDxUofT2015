@@ -6,6 +6,8 @@ angular.module('tedxUofT2015App')
 	$rootScope.socialMedia = {show:true};
 	$rootScope.mailingList = {show:true};
 	
+	$('#trigger-overlay').show();
+	
 	//Scroll To Top
 	$window.scrollTo(0,0);
 	
