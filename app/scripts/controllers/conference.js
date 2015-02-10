@@ -13,4 +13,6 @@ angular.module('tedxUofT2015App')
 	 
 	$rootScope.socialMedia.show = true;
 	$rootScope.mailingList.show = true;
+	
+	$('#trigger-overlay').show();
   });
