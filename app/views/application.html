@@ -42,7 +42,7 @@
 				</div>
 				
 				<div class="small-12 columns end" ng-if=" (stepIndex.value == 6 && route == '2') || (stepIndex.value == 8 && route == '1')">
-					<input type="text" ng-model="userInput.s" class="appInputContent" style="background-color: transparent; border: 0px; border-bottom: 2px solid white; color: white;" focus-me="userFocusInput.value" ng-keypress="onEnter($event)">
+					<textarea style="background-color: transparent;" rows="3" ng-model="submission.Dietary"> </textarea>
 				</div>
 				
 				<div class="small-12 columns end" ng-if="(stepIndex.value == 7 && route == '2') || (stepIndex.value == 9 && route == '1')">
