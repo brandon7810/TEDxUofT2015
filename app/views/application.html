@@ -2,7 +2,7 @@
 	<div class="row" ng-if="stepIndex.value==0" >
 		<img src="/img/appbackground.png" class="small-12 columns appBackground">
     <div class="small-8 small-centered columns end appHome" style="text-align: center;">
-      <img src="/img/TEDxUofT_Logo.png" class="small-5 small-centered columns">
+      <img src="/img/TEDxUofT_Logo.png" class="small-12 medium-5 small-centered columns">
 			<h1>2015 Delegate Application</h1>
     </div>
   </div>
@@ -10,12 +10,12 @@
   <div class="row" ng-if="stepIndex.value > 0" ng-hide='done'>
     <div class="small-12 medium-10 small-centered columns appQuestions" >
       
-			<div class="small-8 small-center columns end" style="text-align: left;">
-        <img src="/img/TEDxUofT_Logo.png" class="small-3 columns appTopLogo">
+			<div class="small-12 small-center columns end" style="text-align: left;">
+        <img src="/img/TEDxUofT_Logo.png" class="small-4 medium-3 columns appTopLogo">
 				<h5><b>2015 Delegate Application</b></h5>
       </div>
      
-			<div class="small-7 small-centered columns">
+			<div class="small-11 medium-7 small-centered columns">
 				<div class="small-12 columns appPageNbr">
 					<h2>{{QuestionLeft}}</h2>
 				</div>
@@ -56,7 +56,7 @@
   <br><br><br>
   <div class="row" ng-hide="done">
     <div class="small-8 small-centered columns end appButtons" style="text-align: center;  margin-bottom:10%">
-      <button class="small-2 small-centered columns applicationBtn" ng-if="stepIndex.value==0"  ng-click="nextStep()">Apply</button>
+      <button class="small-10 medium-2 small-centered columns applicationBtn" ng-if="stepIndex.value==0"  ng-click="nextStep()">Apply</button>
       <div class="small-12 medium-6 columns ">
         <button class="applicationBtn" ng-if="(stepIndex.value>1)" ng-click="prevStep()" style="color: #CE3940; border-color: #CE3940">Previous</button>
       </div>
@@ -72,13 +72,15 @@
     <div class="small-3 columns small-centered animate-hide" ng-hide="submitStatus!='submitting'">
       <h1>Submitting....</h1>
     </div>
-    <div class="small-7 columns small-centered animate-hide" ng-hide="submitStatus!='success'">
+    
+		<div class="small-11 medium-7 columns small-centered animate-hide" ng-hide="submitStatus!='success'">
       <img src="/img/rocketship.png" class="small-2 small-centered columns">
 			<h1 class="appTitleSuccess">Success!</h1>
 			<h2>Your application has been submitted!<br>We'll get back to you real soon.</h2>
 			<h1><a href="#/conference" class="appReturnLink">Return to main site</a></h1>
     </div>
-    <div class="small-7 columns small-centered animate-hide" ng-hide="submitStatus!='fail'">
+    
+		<div class="small-11 medium-7 columns small-centered animate-hide" ng-hide="submitStatus!='fail'">
 			<img src="/img/Planets-03.png" class="small-6 small-centered columns">
 			<h1 class="appTitleSuccess">Oops!</h1>
 			<h2>Something went wrong with the submission process.</h2>
