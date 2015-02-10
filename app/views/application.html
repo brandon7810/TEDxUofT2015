@@ -21,9 +21,10 @@
       </div>
       <div class="small-8 columns end" ng-if="stepIndex.value != 4"
            ng-hide="((stepIndex.value == 6 || stepIndex.value == 7) && route == '2')  || ( (stepIndex.value == 8 || stepIndex.value == 9 ) && route == '1')">
-        <input type="text" ng-model="userInput.s" style="background-color: transparent; border: 0px; border-bottom: 1px solid white; color: white;">
+        <input type="text" ng-model="userInput.s" style="background-color: transparent; border: 0px; border-bottom: 1px solid white; color: white;" focus-me="userFocusInput.value"
+               ng-keypress="onEnter($event)">
       </div>
-      <div class="small-8 columns end" ng-if="stepIndex.value == 4">
+      <div class="small-8 columns end" ng-if="stepIndex.value == 4" ng-keypress="onEnter($event)">
         Under Graduate<input type="radio" name="status" ng-model="submission.Status" value="UnderGraduate">
         Graduate <input type="radio" name="status" ng-model="submission.Status" value="Graduate">
         Alumnus <input type="radio" name="status" ng-model="submission.Status" value="Alumnus">

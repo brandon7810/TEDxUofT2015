@@ -15,6 +15,9 @@ angular.module('tedxUofT2015App')
 
       $rootScope.socialMedia.show = false;
       $rootScope.mailingList.show = false;
+      $scope.userFocusInput = {value : false};
+
+      $('#trigger-overlay').hide();
 
       //Scroll To Top
       $window.scrollTo(0,0);
@@ -40,6 +43,10 @@ angular.module('tedxUofT2015App')
 
       $scope.userInput = {s:""};
 
+      $scope.onEnter = function(keyEvent) {
+        if (keyEvent.which === 13)
+          $scope.nextStep();
+      };
 
       $scope.setStepIndex = function(index){
         if($scope.stepIndex.value != 9){
@@ -51,6 +58,7 @@ angular.module('tedxUofT2015App')
 
       $scope.nextStep = function(){
         $window.scrollTo(0,20);
+        $scope.userFocusInput.value = true;
 
         if($scope.stepIndex.value == 0){
           $scope.userInput.s = $scope.submission.Name;
