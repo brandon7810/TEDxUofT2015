@@ -89,6 +89,10 @@ angular.module('tedxUofT2015App', [
         templateUrl: 'views/application.html',
         controller: 'ApplicationCtrl'
       })
+      .when('/application', {
+        templateUrl: 'views/application.html',
+        controller: 'ApplicationCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
