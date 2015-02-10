@@ -65,11 +65,11 @@ angular.module('tedxUofT2015App')
           $scope.stepIndex.value++;
           $scope.QuestionLeft = "0/8";
           $scope.Question = "Full Name";
-          $scope.tip = "Or press Enter"
+          $scope.tip = ""
         }
         else if($scope.stepIndex.value == 1){
           if($scope.userInput.s == ""){
-            $scope.ErrorMsg = "Please Enter";
+            $scope.ErrorMsg = "Required";
           }
           else{
             $scope.submission.Name = $scope.userInput.s;
@@ -78,12 +78,12 @@ angular.module('tedxUofT2015App')
             $scope.stepIndex.value++;
             $scope.QuestionLeft = "1/8";
             $scope.Question = "Email";
-            $scope.tip = "(We will send you the link through your email)";
+            $scope.tip = "";
           }
         }
         else if($scope.stepIndex.value == 2){
           if($scope.userInput.s == ""){
-            $scope.ErrorMsg = "Please Enter";
+            $scope.ErrorMsg = "Required";
           }else{
             $scope.submission.Email = $scope.userInput.s;
             $scope.userInput.s =  $scope.submission.Phone;
@@ -96,7 +96,7 @@ angular.module('tedxUofT2015App')
         }
         else if($scope.stepIndex.value == 3){
           if($scope.userInput.s == ""){
-            $scope.ErrorMsg = "Please Enter";
+            $scope.ErrorMsg = "Required";
           }
           else{
             $scope.submission.Phone = $scope.userInput.s;
@@ -104,26 +104,26 @@ angular.module('tedxUofT2015App')
             $scope.ErrorMsg = "";
             $scope.stepIndex.value++;
             $scope.QuestionLeft = "3/8";
-            $scope.Question = "Are you a";
+            $scope.Question = "Are you a(n)";
             $scope.tip = "";
           }
         }
         else if($scope.stepIndex.value == 4){
           if($scope.submission.Status == ""){
-            $scope.ErrorMsg = "Please Choose";
+            $scope.ErrorMsg = "Required";
           }else{
             $scope.ErrorMsg = "";
             $scope.stepIndex.value++;
             $scope.tip = "";
             switch($scope.submission.Status){
               case 'UnderGraduate':
-                $scope.Question = "Program Of Study";
+                $scope.Question = "Program of Study";
                 $scope.userInput.s = $scope.submission.Program;
                 $scope.QuestionLeft = "4/8";
                 $scope.route = "1";
                 break;
               case 'Graduate':
-                $scope.Question = "Program Of Study";
+                $scope.Question = "Program of Study";
                 $scope.userInput.s = $scope.submission.Program;
                 $scope.QuestionLeft = "4/8";
                 $scope.route = "1";
@@ -145,7 +145,7 @@ angular.module('tedxUofT2015App')
         }
         else if($scope.stepIndex.value == 5){
           if($scope.userInput.s == ""){
-            $scope.ErrorMsg = "Please Enter";
+            $scope.ErrorMsg = "Required";
           }else{
             $scope.ErrorMsg = "";
             $scope.stepIndex.value++;
@@ -166,7 +166,7 @@ angular.module('tedxUofT2015App')
         }
         else if($scope.stepIndex.value == 6 && $scope.route == "1"){
           if($scope.userInput.s == ""){
-            $scope.ErrorMsg = "Please Enter";
+            $scope.ErrorMsg = "Required";
           }else{
             $scope.submission.Year = $scope.userInput.s;
             $scope.userInput.s = $scope.submission.Campus;
@@ -179,7 +179,7 @@ angular.module('tedxUofT2015App')
         }
         else if($scope.stepIndex.value == 7 && $scope.route == "1"){
           if($scope.userInput.s == ""){
-            $scope.ErrorMsg = "Please Enter";
+            $scope.ErrorMsg = "Required";
           }else{
             $scope.submission.Campus = $scope.userInput.s;
             $scope.userInput.s = "";
@@ -193,7 +193,7 @@ angular.module('tedxUofT2015App')
 
         else if( ($scope.stepIndex.value == 6 && $scope.route == "2") || ($scope.stepIndex.value == 8 && $scope.route == "1")  ){
           if($scope.submission.Dietary == ""){
-            $scope.ErrorMsg = "Please Enter";
+            $scope.ErrorMsg = "Required";
           }else{
             $scope.almostDone = true;
             $scope.ErrorMsg = "";
@@ -211,7 +211,7 @@ angular.module('tedxUofT2015App')
 
         else if(($scope.stepIndex.value == 7 && $scope.route == "2") || ($scope.stepIndex.value == 9 && $scope.route == "1") ){
           if($scope.submission.FinalQ == ""){
-            $scope.ErrorMsg = "Please Enter";
+            $scope.ErrorMsg = "Required";
           }else{
             $scope.done = true;
             $scope.submitStatus="submitting";
