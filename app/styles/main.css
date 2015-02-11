@@ -88,6 +88,10 @@
 		background-color: #151515;
 	}
 
+	.smbackground input {
+		font-size: 1.5rem !important;
+	}
+
 	.socialmedia {
 		min-height: 10vw;
 	}
