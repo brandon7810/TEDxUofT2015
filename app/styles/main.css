@@ -748,7 +748,7 @@ textarea {
 	.speakerContent {
 		text-align: left;
 		background-color: #fafafa;
-		min-height: 37em;
+		min-height: 39em;
 		padding: 3em;
 		padding-bottom: 2em;
 		margin-top: 3.5em;
@@ -773,6 +773,7 @@ textarea {
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
+		min-height: 39em;
 	}
 
 	.comingSoon {
@@ -804,7 +805,7 @@ textarea {
 	}
 
 	.sevenbox {
-		background-image: url(/img/speakers/Pilcher.jpg);
+		background-image: url(/img/speakers/logie.jpg);
 
 	}
 
@@ -875,18 +876,21 @@ textarea {
 		width: 40vw;
 	}
 
-	.ticketsbutton {
-		margin-top: 10em;
+	.applyTitle {margin-bottom: 1em;}
+
+	/*SVG Apply*/
+	.applySVG:hover {
+		cursor: pointer;
 	}
 
-	.ticketsbutton h3 {
-		color: #121123;
-		font-weight: 400;
+	.applySVG:hover .st0 {
+		fill: #121221;
 	}
 
-	.ticketsbutton h3 span {
-		color: #121123;
-		}
+	.applySVG .st4 {
+		font-size: 1.7rem;
+		font-weight: 600;
+	}
 
 	.sponsors {
 		margin-top: 13em;
