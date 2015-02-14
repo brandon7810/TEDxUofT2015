@@ -11,7 +11,7 @@ angular.module('tedxUofT2015App')
   .controller('ApplicationCtrl', ["$scope", "$window", "$http", "localStorageService", "$rootScope",
     function ($scope,$window,$http,localStorageService, $rootScope) {
 
-      ga('send', 'pageview', '/volunteer');
+      ga('send', 'pageview', '/application');
 
       $rootScope.socialMedia.show = false;
       $rootScope.mailingList.show = false;
@@ -224,9 +224,9 @@ angular.module('tedxUofT2015App')
               error(function(data, status, headers, config) {
                 $scope.submitStatus="fail";
               });
-	  
+
 			$.post( "php/postSpreadSheet/post_SpreadSheet_Delegate.php?Name=" + $scope.submission.Name + "&Email=" + $scope.submission.Email + "&Year=" + $scope.submission.Year + "&Phone=" + $scope.submission.Phone
-			+ "&Status=" + $scope.submission.Status + "&Occupation=" + $scope.submission.Occupation  + "&Program=" + $scope.submission.Program + "&Campus=" 
+			+ "&Status=" + $scope.submission.Status + "&Occupation=" + $scope.submission.Occupation  + "&Program=" + $scope.submission.Program + "&Campus="
 			+ $scope.submission.Campus + "&Dietary=" + $scope.submission.Dietary + "&FinalQ=" + $scope.submission.FinalQ);
 
           }
