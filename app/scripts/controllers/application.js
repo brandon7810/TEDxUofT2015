@@ -192,21 +192,17 @@ angular.module('tedxUofT2015App')
         }
 
         else if( ($scope.stepIndex.value == 6 && $scope.route == "2") || ($scope.stepIndex.value == 8 && $scope.route == "1")  ){
-          if($scope.submission.Dietary == ""){
-            $scope.ErrorMsg = "Required";
+          $scope.almostDone = true;
+          $scope.ErrorMsg = "";
+          $scope.stepIndex.value++;
+          if($scope.route == "2"){
+            $scope.QuestionLeft = "6/6";
           }else{
-            $scope.almostDone = true;
-            $scope.ErrorMsg = "";
-            $scope.stepIndex.value++;
-            if($scope.route == "2"){
-              $scope.QuestionLeft = "6/6";
-            }else{
-              $scope.QuestionLeft = "8/8";
-            }
-
-            $scope.Question = "Why and how do you wish to be engaged in the TEDxUofT community?";
-            $scope.tip = "";
+            $scope.QuestionLeft = "8/8";
           }
+
+          $scope.Question = "Why and how do you wish to be engaged in the TEDxUofT community?";
+          $scope.tip = "";
         }
 
         else if(($scope.stepIndex.value == 7 && $scope.route == "2") || ($scope.stepIndex.value == 9 && $scope.route == "1") ){
