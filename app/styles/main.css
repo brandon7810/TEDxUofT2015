@@ -749,7 +749,7 @@ textarea {
 		text-align: left;
 		background-color: #fafafa;
 		min-height: 39em;
-		padding: 3em;
+		padding: 30px 15px;
 		padding-bottom: 2em;
 		margin-top: 3.5em;
 	}
@@ -810,16 +810,17 @@ textarea {
 	}
 
 	.eightbox {
-		background-image: url(/img/speakers/Miller.jpg);
+		background-image: url(/img/speakers/Solano.jpg);
 
 	}
-
+	
 	.ninebox {
-		background-image: url(/img/speakers/Solano.jpeg);
+		background-image: url(/img/speakers/Chan.jpg);
+
 	}
 
-	.tenbox {
-		background-image: url(/img/speakers/Tobias.jpg);
+	.tenthbox {
+		background-image: url(/img/speakers/Joel.jpg);
 	}
 
 	.FAQline {
