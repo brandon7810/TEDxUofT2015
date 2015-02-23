@@ -85,7 +85,7 @@ angular.module('tedxUofT2015App', [
         controller: 'VolunteerCtrl'
       })
       */
-      .when('/SecretApplication123', {
+      .when('/ticket', {
         templateUrl: 'views/application.html',
         controller: 'ApplicationCtrl'
       })
