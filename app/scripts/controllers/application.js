@@ -13,14 +13,16 @@ angular.module('tedxUofT2015App')
 
       ga('send', 'pageview', '/application');
 
-      $rootScope.socialMedia.show = false;
-      $rootScope.mailingList.show = false;
+      $rootScope.socialMedia.show = true;
+      $rootScope.mailingList.show = true;
       $scope.userFocusInput = {value : false};
 
-      $('#trigger-overlay').hide();
+      $('#trigger-overlay').show();
 
       //Scroll To Top
       $window.scrollTo(0,0);
+	  
+	  /*
 
       var submissionInStore = localStorageService.get('applicationSubmission');
 
@@ -293,5 +295,5 @@ angular.module('tedxUofT2015App')
           }
         }
       };
-
+		*/
     }]);
