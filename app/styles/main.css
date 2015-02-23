@@ -745,6 +745,10 @@ textarea {
 		background-color: #2b2e71;
 	}
 
+	.speakersTitle {
+		margin-bottom: 1em;
+	}
+
 	.speakerContent {
 		text-align: left;
 		background-color: #fafafa;
