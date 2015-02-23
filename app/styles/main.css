@@ -815,9 +815,7 @@ textarea {
 	}
 	
 	.ninebox {
-		background-image: url(/img/speakers/Chan.jpg);
-
-	}
+		background-image: url(/img/speakers/Chan.jpg);}
 
 	.tenthbox {
 		background-image: url(/img/speakers/Joel.jpg);
