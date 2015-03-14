@@ -1,15 +1,17 @@
 body{
     background-color: black;
 }
-.presentBoxInner{
-    background-color:#24254c;
-}
+
 .presentBoxOuter{
     padding: 0;
     padding-top: 2%;
 }
 .no-padding{
     padding: 0;
+}
+.presentBoxInner{
+    background-color:#24254c;
+	padding-top:1px;
 }
 div.presentBoxOuter a.no-padding{
     padding: 0;
@@ -30,8 +32,28 @@ div.presentBoxOuter a.no-padding{
     margin-left:1.1rem;
 }
 
+.speakerPic{
+	width: 195px; 
+	height: 173px; 
+	background-size: 120% 100%;
+	float:left;
+}
+
+.speakerInfo{
+	height:170px;
+}
+
+#tooBig h3{
+	font-size: 20px;
+}
+
+#tooBig h5{
+	font-size: 15px;
+}
+
 @media all and (max-width: 640px) {
     .infoBox, ul {
         margin-left: 0;
     }
+
 }
