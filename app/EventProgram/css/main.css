@@ -2,11 +2,11 @@ body{
     background-color: black;
 }
 .presentBoxInner{
-    background-color:#000025;
+    background-color:#24254c;
 }
 .presentBoxOuter{
     padding: 0;
-    padding-top: 1%;
+    padding-top: 2%;
 }
 .no-padding{
     padding: 0;
