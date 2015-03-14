@@ -51,9 +51,33 @@ div.presentBoxOuter a.no-padding{
 	font-size: 15px;
 }
 
+.accordion .accordion-navigation>a, .accordion dd>a{
+	color:white;
+}
+
 @media all and (max-width: 640px) {
     .infoBox, ul {
         margin-left: 0;
     }
+	
+	h3{
+		font-size:1.25rem; 
+	}
+	
+	h4{
+		font-size:1.125rem;
+	}
+	
+	h5{
+		font-size:  1.125rem;
+	}
+	
+	#tooBig h3{
+		font-size: 1.125rem;
+	}
+
+	#tooBig h5{
+		font-size: 1rem;
+	}
 
 }
