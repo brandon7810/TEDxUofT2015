@@ -358,11 +358,16 @@
 	}
 
 	.abcover {
-		background-size: cover;
+		background-size: contain;
 		widows: 100vw;
-		height: 35vw;
-		opacity: .8;
+		height: 55vw;
+		opacity: .97;
 	}
+
+.teampic {
+	opacity: .95;
+}
+
 	.abcover1 {background-image: url(../img/beatles.jpg);}
 	.abcover2 {background-image: url(../img/UT1.JPG);}
 	.abcover3 {background-image: url(../img/UT2.jpg);}
@@ -717,21 +722,21 @@ textarea {
 	.svgPlanet {
 		position: absolute;
 		left: 5em;
-		top: 1em;
+		top: -4em;
 		width: 22em;
 	}
 
 	.svgMoon {
 		position: absolute;
 		left: 22em;
-		top: 15em;
+		top: 9em;
 		width: 4em;
 	}
 
 	.svgRocket {
 		position: absolute;
 		right: 17em;
-		top: 7em;
+		top: 2em;
 		height: 8em;
 	}
 
