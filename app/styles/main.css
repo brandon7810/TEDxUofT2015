@@ -153,7 +153,7 @@
 	}
 
 	.large-header {
-		background-image: url('../img/Header.jpg');
+		background-image: url(../img/Header.jpg);
 	}
 
 	.scrollimg {
@@ -640,7 +640,7 @@ textarea {
 	.confGalaxy {
 		width: 100vw;
 		height: 50vw;
-		background-image: url(img/galaxy4.jpg);
+		background-image: url(../img/galaxy4.jpg);
 	}
 
 	.confGalaxyGradient {
@@ -780,52 +780,52 @@ textarea {
 	}
 
 	.onebox {
-		background-image:url(img/speakers/Joshua.jpg);
+		background-image:url(../img/speakers/Joshua.jpg);
 	}
 
 	.twobox {
-		background-image: url(img/speakers/Jeffrey.jpg);
+		background-image: url(../img/speakers/Jeffrey.jpg);
 	}
 
 	.threebox {
-		background-image: url(img/speakers/tobias.jpg);
+		background-image: url(../img/speakers/tobias.jpg);
 	}
 
 	.fourbox {
-		background-image: url(img/speakers/Glaze.jpg)
+		background-image: url(../img/speakers/Glaze.jpg)
 	}
 
 	.fivebox {
-		background-image: url(img/speakers/kang.jpg);
+		background-image: url(../img/speakers/kang.jpg);
 	}
 
 	.sixbox {
-		background-image: url(img/speakers/Pang.jpg);
+		background-image: url(../img/speakers/Pang.jpg);
 	}
 
 	.sevenbox {
-		background-image: url(img/speakers/logie.jpg);
+		background-image: url(../img/speakers/logie.jpg);
 
 	}
 
 	.eightbox {
-		background-image: url(img/speakers/Solano.jpg);
+		background-image: url(../img/speakers/Solano.jpg);
 
 	}
 
 	.ninebox {
-		background-image: url(img/speakers/Chan.jpg);}
+		background-image: url(../img/speakers/Chan.jpg);}
 
 	.tenthbox {
-		background-image: url(img/speakers/Joel.jpg);
+		background-image: url(../img/speakers/Joel.jpg);
 	}
 
 	.eleventhbox {
-		background-image: url(img/speakers/Reid.jpg);
+		background-image: url(../img/speakers/Reid.jpg);
 	}
 
 .elevenbox {
-		background-image: url(img/speakers/miller.jpg);
+		background-image: url(../img/speakers/miller.jpg);
 	}
 
 	.FAQline {
