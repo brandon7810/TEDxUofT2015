@@ -17,4 +17,5 @@ angular.module('tedxUofT2015App')
   ga('send', 'pageview', '/conference');
 
 	$('#trigger-overlay').show();
-  });
+  }
+);

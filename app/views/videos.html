@@ -6,20 +6,19 @@
 		</div>
 	</div>
 </div>
-	
+
 <div class="row">
 	<div class="small-12 large-8 small-centered columns displayVideoInfo">
 		<h2 class="small-12">{{displayVideoInfo.speaker}}</h2>
 		<h3 class="small-12"><span>{{displayVideoInfo.title}}</span></h3>
 		<h5 class="videoDescription small-12 columns">{{displayVideoInfo.description}}</h5>
 	</div>
-</div>	
+</div>
 
 <div class="row">
 	<div class="small-12 small-centered columns">
 		<div class="small-12 medium-6 large-4 columns" ng-repeat="video in displayVideos">
-			<div class="video_box" back-img="http://img.youtube.com/vi/{{video['id']}}/maxresdefault.jpg" 
-			ng-click="playVideo(currentIndexFirstDisplayedVideo+$index)" smooth-scroll-jquery target="" speed="200" >
+			<div class="video_box" back-img="http://img.youtube.com/vi/{{video['id']}}/maxresdefault.jpg" ng-click="playVideo(currentIndexFirstDisplayedVideo+$index)" smooth-scroll-jquery target="" speed="200" >
 				<div class="video_boxContent">
 					<div class="videoTitle">
 						<h3>{{video.speaker}}</h3>
@@ -27,6 +26,6 @@
 					</div>
 				</div>
 			</div>
-		</div> 	
+		</div>
 	</div>
 </div>

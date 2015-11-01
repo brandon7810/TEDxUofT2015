@@ -15,14 +15,15 @@ $Program = Trim(stripslashes($_POST['Program']));
 $Dietary = Trim(stripslashes($_POST['Dietary']));
 $FinalQ = Trim(stripslashes($_POST['FinalQ']));
 
-
 $EmailTo2 = $Email;
 $Subject2 = "Confirmation";
 $EmailFrom2 = "Confirmation@TEDxUofT.com";
 
 // validation
 $validationOK=true;
+
 if (!$validationOK) {
+
   print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
   exit;
 }
@@ -68,12 +69,9 @@ $Body .= "FinalQ: ";
 $Body .= $FinalQ;
 $Body .= " \n\n";
 
-
 $Body2 = "Hey, we have received your application:\n\n";
 $Body2 .= $Body;
 $Body2 .= "\n\nThank you very much! Please contact us if you wish want to make changes for your submission. \n http://tedxuoft.com/";
-
-
 
 // send email
 mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");

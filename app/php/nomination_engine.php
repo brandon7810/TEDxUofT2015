@@ -4,29 +4,29 @@ $EmailFrom = "Applications@TEDxUofT.com";
 $EmailTo = "Applications@TEDxUofT.com";
 $Subject = "Nomination Submission";
 
-$Name = Trim(stripslashes($_POST['Name'])); 
-$Email = Trim(stripslashes($_POST['Email'])); 
+$Name = Trim(stripslashes($_POST['Name']));
+$Email = Trim(stripslashes($_POST['Email']));
 $Phone = Trim(stripslashes($_POST['Phone']));
 
-$Nominee_Name = Trim(stripslashes($_POST['Nominee_Name'])); 
-$Nominee_Email = Trim(stripslashes($_POST['Nominee_Email'])); 
-$Nominee_Phone = Trim(stripslashes($_POST['Nominee_Phone'])); 
+$Nominee_Name = Trim(stripslashes($_POST['Nominee_Name']));
+$Nominee_Email = Trim(stripslashes($_POST['Nominee_Email']));
+$Nominee_Phone = Trim(stripslashes($_POST['Nominee_Phone']));
 
-$Overview_ans = Trim(stripslashes($_POST['Overview_ans'])); 
-$links_ans = Trim(stripslashes($_POST['links_ans'])); 
-$videos_ans = Trim(stripslashes($_POST['videos_ans'])); 
-$speak_style_ans = Trim(stripslashes($_POST['speak_style_ans'])); 
+$Overview_ans = Trim(stripslashes($_POST['Overview_ans']));
+$links_ans = Trim(stripslashes($_POST['links_ans']));
+$videos_ans = Trim(stripslashes($_POST['videos_ans']));
+$speak_style_ans = Trim(stripslashes($_POST['speak_style_ans']));
 $Why_fits_the_theme = Trim(stripslashes($_POST['Why_fits_the_theme']));
-
 
 $EmailTo2 = $Email;
 $Subject2 = "Confirmation";
 $EmailFrom2 = "Confirmation@TEDxUofT.com";
 
-
 // validation
 $validationOK=true;
+
 if (!$validationOK) {
+
   print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
   exit;
 }
@@ -80,9 +80,7 @@ $Body2 = "Hey, we have received your application:\n\n";
 $Body2 .= $Body;
 $Body2 .= "\n\nThank you very much! Please contact us if you wish want to make changes for your submission. \n http://tedxuoft.com/";
 
-
-
-// send email 
+// send email
 mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
 
 mail($EmailTo2, $Subject2, $Body2, "From: <$EmailFrom2>");

@@ -4,8 +4,8 @@ $EmailFrom = "Applications@TEDxUofT.com";
 $EmailTo = "Applications@TEDxUofT.com";
 $Subject = "Volunteer Application";
 
-$Name = Trim(stripslashes($_POST['Name'])); 
-$Email = Trim(stripslashes($_POST['Email'])); 
+$Name = Trim(stripslashes($_POST['Name']));
+$Email = Trim(stripslashes($_POST['Email']));
 $Phone = Trim(stripslashes($_POST['Phone']));
 $AvailableOnCon = Trim(stripslashes($_POST['AvailableOnCon']));
 $Year = Trim(stripslashes($_POST['Year']));
@@ -17,7 +17,6 @@ $StrongAttr = Trim(stripslashes($_POST['StrongAttr']));
 $PastExper = Trim(stripslashes($_POST['PastExper']));
 $LikeSeeInEvent = Trim(stripslashes($_POST['LikeSeeInEvent']));
 $Questions = Trim(stripslashes($_POST['Questions']));
-
 
 $EmailTo2 = $Email;
 $Subject2 = "Confirmation";
@@ -88,9 +87,7 @@ $Body2 = "Hey, we have received your application:\n\n";
 $Body2 .= $Body;
 $Body2 .= "\n\nThank you very much! Please contact us if you wish want to make changes for your submission. \n http://tedxuoft.com/";
 
-
-
-// send email 
+// send email
 mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
 
 mail($EmailTo2, $Subject2, $Body2, "From: <$EmailFrom2>");
